@@ -1,5 +1,5 @@
 import Input from "@/components/Input/Index.tsx";
-import { useForm } from "react-hook-form";
+import {FieldError, useForm} from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import Button from "@/components/Button/Index.tsx";
@@ -15,6 +15,10 @@ const Login = () => {
         criteriaMode: 'all',
         resolver: zodResolver(schema)
     });
+
+    const getErrorMessage = (error: FieldError | undefined): string | null => {
+        return error?.message || null;
+    }
 
     const handleSubmitForm = (data: any) => {
         console.log(data);
@@ -32,11 +36,12 @@ const Login = () => {
                     error={errors?.email?.message}
                     label={'Email'}
                     name="email"
+                    type={'text'}
                     register={register}
                     outlined={true}
                 />
                 {errors.email?.message ? (
-                    <div className={'text-[red] text-[14px] italic'}>{errors.email?.message}</div>
+                    <div className={'text-[red] text-[14px] italic'}>{getErrorMessage(errors.email)}</div>
                 ) : (
                     <div className={'invisible'}>|</div>
                 )}
@@ -45,16 +50,17 @@ const Login = () => {
                     error={errors?.email?.message}
                     label={'Senha'}
                     name="password"
+                    type={'password'}
                     register={register}
                     outlined={true}
                 />
                 {errors.password?.message ? (
-                    <div className={'text-[red] text-[14px] italic'}>{errors.password?.message}</div>
+                    <div className={'text-[red] text-[14px] italic'}>{getErrorMessage(errors.password)}</div>
                 ) : (
                     <div className={'invisible'}>|</div>
                 )}
             </div>
-            <div className={'w-full grid grid-cols-2 gap-2'}>
+            <div className={'w-full grid grid-cols-2 gap-2 mt-4'}>
                 <Button onClick={registerUser} type={'button'} outlined={true} >Cadastrar</Button>
                 <Button type={'submit'}>Entrar</Button>
             </div>

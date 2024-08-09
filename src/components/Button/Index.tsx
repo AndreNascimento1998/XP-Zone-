@@ -1,13 +1,11 @@
+import React from "react";
+
 interface ButtonProps {
     children: React.ReactNode;
     loading?: boolean;
-    type: type,
+    type?: 'button' | 'submit',
     outlined: boolean
     onClick?: () => void;
-}
-
-interface type {
-    type: 'button' | 'submit';
 }
 
 const Button = ({ children, loading, outlined, type, ...rest }: ButtonProps) => {
