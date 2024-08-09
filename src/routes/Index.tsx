@@ -3,7 +3,7 @@ import App from '@/App.tsx'
 import Home from '@/pages/Home/Index.tsx'
 import Login from '@/views/Login/Index.tsx'
 
-const router = createBrowserRouter([
+const routes = createBrowserRouter([
     {
         path: '/login',
         element: <Login />
@@ -20,4 +20,4 @@ const router = createBrowserRouter([
     }
 ])
 
-export default router
+export default routes
