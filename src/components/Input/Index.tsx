@@ -1,14 +1,14 @@
-import {FieldValues, UseFormRegister} from "react-hook-form";
-import {useState} from "react";
-import HiddenPassword from "../../assets/Icons/Others/HiddenPassword.tsx";
+import {FieldValues, UseFormRegister} from "react-hook-form"
+import {useState} from "react"
+import HiddenPassword from "../../assets/Icons/Others/HiddenPassword.tsx"
 
 interface InputProps {
-    label: string;
-    register: UseFormRegister<FieldValues>;
-    name: string;
-    outlined: boolean;
-    placeholder: string;
-    type: "text" | "password" | "email" | "number";
+    label: string
+    register: UseFormRegister<FieldValues>
+    name: string
+    outlined: boolean
+    placeholder: string
+    type: "text" | "password" | "email" | "number"
 }
 
 const Index = (props: InputProps) => {
@@ -38,7 +38,7 @@ const Index = (props: InputProps) => {
             ) : null}
             </span>
         </div>
-    );
-};
+    )
+}
 
-export default Index;
+export default Index

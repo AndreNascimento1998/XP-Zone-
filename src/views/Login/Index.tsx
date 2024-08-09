@@ -1,5 +1,5 @@
-import Logo from "@/assets/Icons/Logo/Logo.tsx";
-import Form from "@/pages/Login/Form.tsx";
+import Logo from "@/assets/Icons/Logo/Logo.tsx"
+import Form from "@/pages/Login/Form.tsx"
 const Login = () => {
 
     return (
@@ -14,7 +14,7 @@ const Login = () => {
                 <div><Form /></div>
             </div>
         </div>
-    );
-};
+    )
+}
 
-export default Login;
+export default Login

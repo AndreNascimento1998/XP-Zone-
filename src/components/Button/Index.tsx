@@ -1,11 +1,11 @@
-import React from "react";
+import React from "react"
 
 interface ButtonProps {
-    children: React.ReactNode;
-    loading?: boolean;
-    type?: 'button' | 'submit',
+    children: React.ReactNode
+    loading?: boolean
+    type?: 'button' | 'submit'
     outlined: boolean
-    onClick?: () => void;
+    onClick?: () => void
 }
 
 const Button = ({ children, loading, outlined, type, ...rest }: ButtonProps) => {
@@ -22,7 +22,7 @@ const Button = ({ children, loading, outlined, type, ...rest }: ButtonProps) => 
                 {children}
             </button>
         </div>
-    );
+    )
 }
 
-export default Button;
+export default Button
