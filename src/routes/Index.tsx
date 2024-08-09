@@ -5,16 +5,16 @@ import Login from '@/pages/Login/Index.tsx'
 
 const router = createBrowserRouter([
     {
+        path: '/login',
+        element: <Login />
+    },
+    {
         path: '/',
         element: <App />,
         children: [
             {
                 path: '/',
                 element: <Home />
-            },
-            {
-                path: '/login',
-                element: <Login />
             }
         ]
     }
