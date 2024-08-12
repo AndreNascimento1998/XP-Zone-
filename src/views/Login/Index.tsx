@@ -17,7 +17,7 @@ const Login = () => {
                         <span className={'text-[18px] font-light'}>Acesse com seu e-mail</span>
                     </div>
                 </div>
-                <div><Form /></div>
+                <Form />
             </div>
         </div>
     )

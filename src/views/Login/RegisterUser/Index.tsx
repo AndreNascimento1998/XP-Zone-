@@ -1,9 +1,9 @@
 import Logo from "@/assets/Icons/Logo/Logo";
-import Form from "@/pages/Login/Form/FormRegister";
+import FormRegister from "@/pages/Login/Form/FormRegister";
 import ArrowToBack from "@/assets/Icons/Others/ArrowToBack";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import ConfirmRegister from "@/views/Login/RegisterUser/ConfirmRegister.tsx";
+import ConfirmRegister from "@/pages/Login/ConfirmRegister.tsx";
 import IDataForm from "@/types/DataForm.ts";
 const Login = () => {
     const [step, setStep] = useState(1);
@@ -32,7 +32,7 @@ const Login = () => {
                                 <span className={'text-[18px] font-light'}>Cadastra-se agora com seu e-mail</span>
                             </div>
                         </div>
-                        <div><Form onSubmit={handleFormSubmit} /></div>
+                        <FormRegister onSubmit={handleFormSubmit} />
                     </div>
                 </>
             ) :
