@@ -4,6 +4,7 @@ import { zodResolver } from "@hookform/resolvers/zod"
 import { z } from "zod"
 import Button from "@/components/Button/Index.tsx"
 import {Link} from "react-router-dom"
+import IDataForm from "@/types/DataForm.ts";
 
 const schema = z.object({
     email: z.string().min(1, 'Campo obrigatório'),
@@ -21,7 +22,7 @@ const Login = () => {
         return error?.message || null
     }
 
-    const handleSubmitForm = (data: any) => {
+    const handleSubmitForm = (data: IDataForm) => {
         console.log(data)
     }
 
@@ -30,7 +31,6 @@ const Login = () => {
             <div className={'w-full flex flex-col gap-2'}>
                 <Input
                     placeholder={'Digite seu e-mail'}
-                    error={errors?.email?.message}
                     label={'Email'}
                     name="email"
                     type={'text'}
@@ -43,8 +43,7 @@ const Login = () => {
                     <div className={'invisible'}>|</div>
                 )}
                 <Input
-                    placeholder={'Digite seu senha'}
-                    error={errors?.email?.message}
+                    placeholder={'Digite sua senha'}
                     label={'Senha'}
                     name="password"
                     type={'password'}

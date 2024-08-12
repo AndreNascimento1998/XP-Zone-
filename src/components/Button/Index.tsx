@@ -4,11 +4,11 @@ interface ButtonProps {
     children: React.ReactNode
     loading?: boolean
     type?: 'button' | 'submit'
-    outlined: boolean
+    outlined?: boolean
     onClick?: () => void
 }
 
-const Button = ({ children, loading, outlined, type, ...rest }: ButtonProps) => {
+const Button = ({ children, loading, outlined = false, type = 'button', ...rest }: ButtonProps) => {
     return (
         <div className={'w-full'}>
             <button
