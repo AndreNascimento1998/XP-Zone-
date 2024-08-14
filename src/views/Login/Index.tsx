@@ -1,13 +1,17 @@
 import Logo from "@/assets/Icons/Logo/Logo.tsx"
-import Form from "@/pages/Login/FormLogin.tsx"
+import FormLogin from "@/pages/Login/FormLogin.tsx"
 import {Link} from "react-router-dom";
-import ArrowToBack from "@/assets/Icons/Others/ArrowToBack.tsx";
+import ArrowToBackIcon from "@/assets/Icons/Others/ArrowToBackIcon.tsx";
+import ClosePageIcon from "@/assets/Icons/Others/ClosePageIcon.tsx";
 
 const Login = () => {
 
     return (
         <div className={'bg-primary h-[100vh] px-4 py-10'}>
-            <Link to={'/landing-page'}><ArrowToBack /></Link>
+            <div className={'flex justify-between'}>
+                <Link to={'/landing-page'}><ArrowToBackIcon /></Link>
+                <Link to={'/landing-page'}><ClosePageIcon /></Link>
+            </div>
             <div className={'h-full flex flex-col gap-8 items-center'}>
                 <div className={'flex flex-col gap-5 items-center text-[white]'}>
                     <Logo />
@@ -17,7 +21,7 @@ const Login = () => {
                         <span className={'text-[18px] font-light'}>Acesse com seu e-mail</span>
                     </div>
                 </div>
-                <Form />
+                <FormLogin />
             </div>
         </div>
     )

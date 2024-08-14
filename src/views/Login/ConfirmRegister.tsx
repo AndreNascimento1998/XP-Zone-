@@ -1,5 +1,5 @@
 import {Link} from "react-router-dom"
-import Button from "@/components/Button/Index.tsx"
+import Button from "@/components/Button/Button.tsx"
 import {ToastContainer} from "react-toastify"
 import "react-toastify/dist/ReactToastify.css"
 import useNotification from "@/hooks/useNotification.ts";

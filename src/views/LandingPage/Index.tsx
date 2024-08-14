@@ -1,4 +1,5 @@
 import HeroSection from "@/pages/LandingPage/HeroSection.tsx";
+import {useState} from "react";
 
 const LadingPage = () => {
     return (

@@ -20,6 +20,7 @@ export default {
       },
       colors: {
         'white-light': '#E7E6EA',
+        'purple-light': '#210948',
         'primary-gradient': 'linear-gradient(90deg, #E54B65 3.13%, #FF9A51 133.21%)'
       }
     },

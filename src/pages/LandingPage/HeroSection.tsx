@@ -1,19 +1,26 @@
 import Logo from "@/assets/Icons/Logo/Logo.tsx"
 import hero from "@/assets/images/landing-page/hero.png"
 import heroDesktop from "@/assets/images/landing-page/hero-desktop.png"
-import Button from "@/components/Button/Index.tsx"
+import Button from "@/components/Button/Button.tsx"
+import ButtonHamburguer from "@/components/Button/ButtonHamburguer.tsx"
+import useHeroSection from "./hooks/useHeroSection.ts";
 
 const HeroSection = () => {
+    const {
+        items,
+        handleItemClick
+    } = useHeroSection()
+
     return(
         <div className={'relative w-full'}>
             <img className={'w-full block md:hidden'} src={hero} alt={'Imagem de Ilustração'}/>
             <img className={'w-full hidden md:block'} src={heroDesktop} alt={'Imagem de Ilustração'}/>
-            <div className={'absolute top-0 left-0 flex justify-between items-center py-4 px-4 xl:px-16 w-full'}>
+            <div className={'absolute top-0 left-0 flex justify-between items-center py-4 px-8 xl:px-16 w-full'}>
                 <div>
                     <Logo width={80} height={60}/>
                 </div>
                 <div className={'block lg:hidden'}>
-                    dsads
+                    <ButtonHamburguer items={items} onItemClick={handleItemClick} />
                 </div>
                 <div className={'hidden lg:block'}>
                     <Button outlined={true}>Entrar</Button>
@@ -22,7 +29,7 @@ const HeroSection = () => {
             <div className={'absolute flex flex-col w-full text-center lg:text-start top-1/2 px-4 xl:px-16'}>
                 <div className={'text-[28px] lg:text-[32px] font-oxanium'}>
                     <span
-                        className="font-bold bg-btn-primary bg-clip-text text-transparent">&gt;&gt;</span>
+                        className="font-bold bg-btn-primary bg-clip-text text-transparent">&gt&gt</span>
                     <span className="text-white-light font-bold italic underline">Compre</span>
                 </div>
                 <span

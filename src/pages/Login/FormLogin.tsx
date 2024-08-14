@@ -1,5 +1,5 @@
-import Input from "@/components/Input/Index.tsx"
-import Button from "@/components/Button/Index.tsx"
+import Input from "@/components/Input/Input.tsx"
+import Button from "@/components/Button/Button.tsx"
 import {Link} from "react-router-dom"
 import useFormLogin from "@/pages/Login/hooks/useFormLogin.ts";
 

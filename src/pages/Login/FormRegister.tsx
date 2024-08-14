@@ -1,5 +1,5 @@
-import Input from "@/components/Input/Index.tsx"
-import Button from "@/components/Button/Index.tsx"
+import Input from "@/components/Input/Input.tsx"
+import Button from "@/components/Button/Button.tsx"
 import useRegisterForm from "@/pages/Login/hooks/useFormRegister.ts"
 import IDataForm from "@/types/DataForm.ts"
 

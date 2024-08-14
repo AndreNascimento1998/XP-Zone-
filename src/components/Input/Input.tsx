@@ -1,6 +1,6 @@
 import {FieldValues, UseFormRegister} from "react-hook-form"
 import {useState} from "react"
-import HiddenPassword from "../../assets/Icons/Others/HiddenPassword.tsx"
+import HiddenPasswordIcon from "@/assets/Icons/Others/HiddenPasswordIcon.tsx"
 
 interface InputProps {
     label: string
@@ -11,7 +11,7 @@ interface InputProps {
     type: "text" | "password" | "email" | "number"
 }
 
-const Index = (props: InputProps) => {
+const Input = (props: InputProps) => {
     const { label, register, name, outlined = false, placeholder, type }: InputProps = props;
     const [typeInput, setTypeInput]  = useState(type) ;
 
@@ -33,7 +33,7 @@ const Index = (props: InputProps) => {
                     onClick={() => typeInput === "password" ? setTypeInput('text') : setTypeInput('password') }
                     className={'absolute right-3 top-1/2 transform -translate-y-1/2'}
                 >
-                    <HiddenPassword color={outlined ? '#EAE7F0' : '#000000'} />
+                    <HiddenPasswordIcon color={outlined ? '#EAE7F0' : '#000000'} />
                 </div>
             ) : null}
             </span>
@@ -41,4 +41,4 @@ const Index = (props: InputProps) => {
     )
 }
 
-export default Index
+export default Input
