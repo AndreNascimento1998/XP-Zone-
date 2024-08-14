@@ -1,7 +1,7 @@
 import Logo from "@/assets/Icons/Logo/Logo.tsx"
 import hero from "@/assets/images/landing-page/hero.png"
 import heroDesktop from "@/assets/images/landing-page/hero-desktop.png"
-import Button from "@/components/Button/Index.tsx";
+import Button from "@/components/Button/Index.tsx"
 
 const HeroSection = () => {
     return(
