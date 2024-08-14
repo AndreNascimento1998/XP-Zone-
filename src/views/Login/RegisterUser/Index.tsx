@@ -1,23 +1,15 @@
-import Logo from "@/assets/Icons/Logo/Logo";
-import FormRegister from "@/pages/Login/Form/FormRegister";
-import ArrowToBack from "@/assets/Icons/Others/ArrowToBack";
-import { Link } from "react-router-dom";
-import { useState } from "react";
-import ConfirmRegister from "@/pages/Login/ConfirmRegister.tsx";
-import IDataForm from "@/types/DataForm.ts";
+import Logo from "@/assets/Icons/Logo/Logo"
+import FormRegister from "@/pages/Login/FormRegister"
+import ArrowToBack from "@/assets/Icons/Others/ArrowToBack"
+import { Link } from "react-router-dom"
+import ConfirmRegister from "@/pages/Login/ConfirmRegister.tsx"
+import useRegisterUser from "../hooks/useRegisterUser.ts"
 const Login = () => {
-    const [step, setStep] = useState(1);
-    const [data, setData ] = useState({
-        name: '',
-        email: '',
-        password: '',
-        confirmPassword: ''
-    })
-
-    const handleFormSubmit = (dataUser: IDataForm, stepCurrent: number) => {
-        setData(dataUser)
-        setStep(stepCurrent)
-    };
+  const {
+      step,
+      data,
+      handleFormSubmit
+  } = useRegisterUser()
 
     return (
         <div className={'bg-primary h-[100vh] py-10 px-4'}>
@@ -49,7 +41,7 @@ const Login = () => {
                 </>
             }
         </div>
-    );
-};
+    )
+}
 
-export default Login;
+export default Login

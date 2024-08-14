@@ -1,5 +1,5 @@
 import Logo from "@/assets/Icons/Logo/Logo.tsx"
-import Form from "@/pages/Login/Form/FormLogin.tsx"
+import Form from "@/pages/Login/FormLogin.tsx"
 import {Link} from "react-router-dom";
 import ArrowToBack from "@/assets/Icons/Others/ArrowToBack.tsx";
 

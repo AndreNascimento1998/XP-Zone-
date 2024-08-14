@@ -1,30 +1,16 @@
 import Input from "@/components/Input/Index.tsx"
-import {FieldError, useForm} from "react-hook-form"
-import { zodResolver } from "@hookform/resolvers/zod"
-import { z } from "zod"
 import Button from "@/components/Button/Index.tsx"
 import {Link} from "react-router-dom"
-import IDataForm from "@/types/DataForm.ts";
-
-const schema = z.object({
-    email: z.string().min(1, 'Campo obrigatório'),
-    password: z.string().min(8, 'Campo deve conter no mínimo 8 caracteres')
-})
+import useFormLogin from "@/pages/Login/hooks/useFormLogin.ts";
 
 const Login = () => {
-    const { handleSubmit, register, formState: { errors } } = useForm({
-        mode: 'all',
-        criteriaMode: 'all',
-        resolver: zodResolver(schema)
-    })
-
-    const getErrorMessage = (error: FieldError | undefined): string | null => {
-        return error?.message || null
-    }
-
-    const handleSubmitForm = (data: IDataForm) => {
-        console.log(data)
-    }
+    const {
+        handleSubmit,
+        register,
+        errors,
+        getErrorMessage,
+        handleSubmitForm
+    } = useFormLogin()
 
     return (
         <form onSubmit={handleSubmit(handleSubmitForm)} className={'w-full flex flex-col gap-2'}>

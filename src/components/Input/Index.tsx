@@ -6,13 +6,13 @@ interface InputProps {
     label: string
     register: UseFormRegister<FieldValues>
     name: string
-    outlined: boolean
-    placeholder: string
+    outlined?: boolean
+    placeholder?: string
     type: "text" | "password" | "email" | "number"
 }
 
 const Index = (props: InputProps) => {
-    const { label, register, name, outlined, placeholder, type }: InputProps = props;
+    const { label, register, name, outlined = false, placeholder, type }: InputProps = props;
     const [typeInput, setTypeInput]  = useState(type) ;
 
     return (
@@ -33,7 +33,7 @@ const Index = (props: InputProps) => {
                     onClick={() => typeInput === "password" ? setTypeInput('text') : setTypeInput('password') }
                     className={'absolute right-3 top-1/2 transform -translate-y-1/2'}
                 >
-                    <HiddenPassword />
+                    <HiddenPassword color={outlined ? '#EAE7F0' : '#000000'} />
                 </div>
             ) : null}
             </span>
