@@ -1,8 +1,7 @@
 import {Link} from "react-router-dom"
 import Button from "@/components/Button/Index.tsx"
-import {ToastContainer} from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
-import {useEffect} from "react";
+import {ToastContainer} from "react-toastify"
+import "react-toastify/dist/ReactToastify.css"
 import useNotification from "@/hooks/useNotification.ts";
 
 interface ConfirmRegisterProps {
@@ -11,11 +10,7 @@ interface ConfirmRegisterProps {
 }
 
 const ConfirmRegister = ({ name, email }: ConfirmRegisterProps) => {
-    const { showSuccess } = useNotification()
-
-    useEffect(() => {
-       showSuccess('Usuário cadastrado com sucesso!')
-    }, [showSuccess])
+    useNotification({message: 'Usuário cadastrado com sucesso.', type:'messageSuccess'})
 
     return (
         <>
