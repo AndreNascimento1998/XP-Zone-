@@ -6,6 +6,7 @@ import ButtonHamburguer from "@/components/Button/ButtonHamburguer.tsx"
 import useHeroSection from "@/pages/LandingPage/hooks/useHeroSection.ts";
 import Modal from "@/components/Modal/Modal.tsx";
 import Login from "@/views/Login/Index.tsx";
+import {Link} from "react-router-dom";
 
 const HeroSection = () => {
     const {
@@ -33,7 +34,10 @@ const HeroSection = () => {
                             <Login />
                         </div>
                     </Modal>
-                    <Button onClick={handleClick} outlined={true}>Entrar</Button>
+                    <div className={'flex gap-2'}>
+                        <Link to={'/register-user'}> <Button>Cadastrar</Button></Link>
+                        <Button onClick={handleClick}>Entrar</Button>
+                    </div>
                 </div>
             </div>
             <div className={'absolute flex flex-col w-full text-center lg:text-start top-1/2 px-4 xl:px-16'}>

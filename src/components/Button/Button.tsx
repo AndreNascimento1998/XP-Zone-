@@ -17,8 +17,8 @@ const Button = ({ children, loading, outlined = false, type = 'button', onClick 
                 onClick={onClick}
                 disabled={loading}
                 type={type}
-                className={`py-3 text-white rounded-[5px] px-5 w-full hover:bg-gray-400 active:bg-gray-500
-                ${outlined ? 'bg-transparent border-[1px]' : 'bg-btn-primary hover:bg-btn-primary-hover active:bg-btn-primary'}`}
+                className={`py-[14px] text-white rounded-[5px] px-5 w-full hover:bg-gray-400 active:bg-gray-500
+                ${outlined ? 'bg-transparent border-[1px] py-[13px]' : 'bg-btn-primary hover:bg-btn-primary-hover active:bg-btn-primary'}`}
             >
                 {children}
             </button>

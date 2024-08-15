@@ -14,19 +14,24 @@ const ConfirmRegister = ({ name, email }: ConfirmRegisterProps) => {
 
     return (
         <>
-            <div className={'text-[white] text-[18px]'}>
+            <div className={'text-[white] text-[18px] w-full lg:w-[800px]'}>
                 <span>
-                    O usuário <span className={'font-bold text-[20px]'}> { name } </span>
-                    com e-mail <span className={'font-bold text-[20px]'}> { email } </span>
+                    O usuário <span className={'font-bold text-[20px]'}> {name} </span>
+                    com e-mail <span className={'font-bold text-[20px]'}> {email} </span>
                     foi cadastrado com sucesso.
                 </span>
                 <div className={'font-bold py-4'}>
                     IMPORTANTE: O cadastro é meramente
                     ilustrativo, utilize as contas "cadastradas" para interagir com as funcionalidades entre elas.
                 </div>
-                <Link to={'/login'}><Button >Retornar ao login</Button> </Link>
+                <div className={'grid lg:hidden'}>
+                    <Link to={'/login'}><Button>Retornar ao login</Button></Link>
+                </div>
+                <div className={'hidden lg:grid'}>
+                    <Link to={'/landing-page'}><Button>Retornar à Landing Page</Button></Link>
+                </div>
             </div>
-            <ToastContainer />
+            <ToastContainer/>
         </>
     )
 }
