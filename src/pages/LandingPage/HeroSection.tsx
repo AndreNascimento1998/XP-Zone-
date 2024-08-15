@@ -38,8 +38,7 @@ const HeroSection = () => {
             </div>
             <div className={'absolute flex flex-col w-full text-center lg:text-start top-1/2 px-4 xl:px-16'}>
                 <div className={'text-[28px] lg:text-[32px] font-oxanium'}>
-                    <span
-                        className="font-bold bg-btn-primary bg-clip-text text-transparent">&gt&gt</span>
+                    <span className="font-bold bg-btn-primary bg-clip-text text-transparent">--</span>
                     <span className="text-white-light font-bold italic underline">Compre</span>
                 </div>
                 <span

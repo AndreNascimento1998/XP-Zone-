@@ -2,6 +2,7 @@ import Input from "@/components/Input/Input.tsx"
 import Button from "@/components/Button/Button.tsx"
 import useRegisterForm from "@/pages/Login/hooks/useFormRegister.ts"
 import IDataForm from "@/types/DataForm.ts"
+import {Link} from "react-router-dom";
 
 interface FormProps {
     onSubmit: (data: IDataForm, step: number) => void
@@ -81,8 +82,13 @@ const Login = ({ onSubmit }: FormProps) => {
                         </div>
                     </div>
                 </div>
-                <div className={'w-full grid gap-2 mt-4'}>
-                    <Button type={'submit'}>Criar conta</Button>
+                <div className={'w-full grid grid-cols-1 lg:grid-cols-2 gap-2 mt-4'}>
+                    <div className={'hidden lg:block'}>
+                        <Link to={'/landing-page'}><Button outlined={true}>Voltar à Landing Page</Button></Link>
+                    </div>
+                    <div>
+                        <Button type={'submit'}>Criar conta</Button>
+                    </div>
                 </div>
             </form>
         </>
