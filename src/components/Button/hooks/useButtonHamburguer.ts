@@ -1,7 +1,7 @@
 import { useRef, useState} from "react"
 import useListenerMouseDown from "@/hooks/useListenerMouseDown.ts";
 
-const ButtonHamburguer = (onItemClick: (item: string) => void) => {
+const UseButtonHamburguer = (onItemClick: (item: string) => void) => {
     const [isOpen, setIsOpen] = useState(false)
     const menuRef = useRef<HTMLDivElement>(null)
 
@@ -25,4 +25,4 @@ const ButtonHamburguer = (onItemClick: (item: string) => void) => {
     return {isOpen, menuRef, toggleMenu, handleItemClick}
 }
 
-export default ButtonHamburguer
+export default UseButtonHamburguer
