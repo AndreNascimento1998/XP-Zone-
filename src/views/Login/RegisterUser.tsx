@@ -42,7 +42,7 @@ const Login = () => {
                                     <span className={'text-[24px]'}>Anúncie seus</span>
                                     <span className={'text-[40px] font-bold'}>JOGOS</span>
                                 </div>
-                                <div className={'flex gap-2 flex-wrap justify-center'}>
+                                <div className={'flex gap-4 flex-wrap justify-center'}>
                                     {images && images.map((image, index) => (
                                         <img key={index} className={'rounded-[10px] display-image'} src={image}
                                              alt={'Elden ring'}/>
