@@ -10,14 +10,13 @@ interface ButtonProps {
     onClick?: () => void
 }
 
-const Button = ({ children, loading, outlined = false, type = 'button', ...rest }: ButtonProps) => {
+const Button = ({ children, loading, outlined = false, type = 'button', onClick }: ButtonProps) => {
     return (
         <div className={'w-full'}>
             <button
-                onClick={rest.onClick}
+                onClick={onClick}
                 disabled={loading}
                 type={type}
-                {...rest}
                 className={`py-3 text-white rounded-[5px] px-5 w-full hover:bg-gray-400 active:bg-gray-500
                 ${outlined ? 'bg-transparent border-[1px]' : 'bg-btn-primary hover:bg-btn-primary-hover active:bg-btn-primary'}`}
             >

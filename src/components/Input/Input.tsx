@@ -11,8 +11,7 @@ interface InputProps {
     type: "text" | "password" | "email" | "number"
 }
 
-const Input = (props: InputProps) => {
-    const { label, register, name, outlined = false, placeholder, type }: InputProps = props;
+const Input = ({ label, register, name, outlined = false, placeholder, type }: InputProps) => {
     const [typeInput, setTypeInput]  = useState(type) ;
 
     return (

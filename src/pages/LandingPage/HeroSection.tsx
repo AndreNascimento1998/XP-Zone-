@@ -3,12 +3,17 @@ import hero from "@/assets/images/landing-page/hero.png"
 import heroDesktop from "@/assets/images/landing-page/hero-desktop.png"
 import Button from "@/components/Button/Button.tsx"
 import ButtonHamburguer from "@/components/Button/ButtonHamburguer.tsx"
-import useHeroSection from "./hooks/useHeroSection.ts";
+import useHeroSection from "@/pages/LandingPage/hooks/useHeroSection.ts";
+import Modal from "@/components/Modal/Modal.tsx";
+import Login from "@/views/Login/Index.tsx";
 
 const HeroSection = () => {
     const {
         items,
-        handleItemClick
+        openModal,
+        handleItemClick,
+        handleClick,
+        handleCloseModal
     } = useHeroSection()
 
     return(
@@ -23,7 +28,12 @@ const HeroSection = () => {
                     <ButtonHamburguer items={items} onItemClick={handleItemClick} />
                 </div>
                 <div className={'hidden lg:block'}>
-                    <Button outlined={true}>Entrar</Button>
+                    <Modal openModal={openModal} onClickClose={handleCloseModal} >
+                        <div>
+                            <Login />
+                        </div>
+                    </Modal>
+                    <Button onClick={handleClick} outlined={true}>Entrar</Button>
                 </div>
             </div>
             <div className={'absolute flex flex-col w-full text-center lg:text-start top-1/2 px-4 xl:px-16'}>

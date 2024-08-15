@@ -1,7 +1,9 @@
 import {useNavigate} from 'react-router-dom'
+import {useState} from "react";
 
 const useHeroSection = () => {
     const navigate = useNavigate()
+    const [openModal, setOpenModal] = useState(false)
 
     const items = [
         {
@@ -14,13 +16,24 @@ const useHeroSection = () => {
         }
     ]
 
+    const handleClick = () => {
+        setOpenModal(true)
+    }
+
+    const handleCloseModal = () => {
+        setOpenModal(false);
+    };
+
     const handleItemClick = (item: string) => {
         console.log(`Item clicked: ${item}`)
     }
 
     return {
         items,
-        handleItemClick
+        openModal,
+        handleItemClick,
+        handleCloseModal,
+        handleClick
     }
 }
 
