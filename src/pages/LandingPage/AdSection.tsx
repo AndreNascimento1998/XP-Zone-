@@ -5,16 +5,26 @@ import CheckIcon from "@/assets/Icons/Others/CheckIcon.tsx"
 import Button from "@/components/Button/Button.tsx"
 import spiderMan from '@/assets/images/landing-page/spider-man.png'
 import image from '@/assets/images/register/register-image.png'
+import spiderManDesktop from '@/assets/images/landing-page/spider-man-desktop.png'
 
 const AdSection = () => {
     return (
-        <div className={'relative pb-0 xl:pb-[50%] 2xl:pb-[63%]'}>
+        <div className={'relative pb-0 xl:pb-[50%] 2xl:pb-[53%]'}>
             <div className={'hidden xl:block w-full static  xl:absolute top-[40rem]'}>
                 <img className={'object-cover  w-full '} src={image} alt={'imagem'}/>
             </div>
             <img className={'relative w-full block xl:hidden'} src={kratos} alt={'Kratos'}/>
             <img className={'w-[800px] hidden xl:block'} src={kratosDesktop} alt={'Kratos'}/>
-
+            <div className={'hidden xl:flex relative w-full'}>
+                <div className={'absolute flex pl-16 gap-6 flex-col justify-center items-center w-1/2 xl:top-[10rem] 2xl:top-[20rem]'}>
+                    <div className={'font-oxanium font-bold bg-btn-primary text-center bg-clip-text w-1/2 text-transparent text-[32px]'}>Ganhe XP e cresça na comunidade</div>
+                    <div>A cada troca, compra ou venda, você acumula XP e com eles você é rankeado na sua cidade tornando-se um membro mais confiável para toda a comunidade e recebendo benefícios exclusivos.</div>
+                    <div>
+                        card
+                    </div>
+                </div>
+            </div>
+            <img className={'hidden xl:block absolute right-0 2xl:bottom-20 w-1/2 '} src={spiderManDesktop} alt={'Spider Man'}/>
             <div className={'relative xl:absolute xl:top-[18rem] xl:pl-40 xl:w-full'}>
                 <div
                     className={' flex flex-col absolute bottom-[12rem] xl:static text-center xl:text-start xl:items-end w-full'}>
