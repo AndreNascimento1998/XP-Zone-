@@ -8,8 +8,8 @@ import image from '@/assets/images/register/register-image.png'
 
 const AdSection = () => {
     return (
-        <div className={'relative'}>
-            <div className={'hidden xl:block w-full static  xl:absolute top-[48rem]'}>
+        <div className={'relative pb-0 xl:pb-[50%] 2xl:pb-[63%]'}>
+            <div className={'hidden xl:block w-full static  xl:absolute top-[40rem]'}>
                 <img className={'object-cover  w-full '} src={image} alt={'imagem'}/>
             </div>
             <img className={'relative w-full block xl:hidden'} src={kratos} alt={'Kratos'}/>
