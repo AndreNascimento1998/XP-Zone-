@@ -1,6 +1,6 @@
 import Input from "@/components/Input/Input.tsx"
 import Button from "@/components/Button/Button.tsx"
-import useRegisterForm from "@/pages/Login/hooks/useFormRegister.ts"
+import useRegisterForm from "@/pages/Login/components/hooks/useFormRegister.ts"
 import IDataForm from "@/types/DataForm.ts"
 import {Link} from "react-router-dom";
 
