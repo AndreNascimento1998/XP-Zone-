@@ -7,6 +7,8 @@ import spiderMan from '@/assets/images/landing-page/spider-man.png'
 import image from '@/assets/images/register/register-image.png'
 import spiderManDesktop from '@/assets/images/landing-page/spider-man-desktop.png'
 import fireGif from '@/assets/fire.gif'
+import Card from "@/components/Card/Card.tsx";
+import BarsProgress from "@/components/Bars/BarsProgress.tsx";
 
 const AdSection = () => {
     return (
@@ -21,30 +23,23 @@ const AdSection = () => {
                     <div className={'font-oxanium font-bold bg-btn-primary text-center bg-clip-text w-1/2 text-transparent  text-[32px]'}>Ganhe XP e cresça na comunidade</div>
                     <div>A cada troca, compra ou venda, você acumula XP e com eles você é rankeado na sua cidade tornando-se um membro mais confiável para toda a comunidade e recebendo benefícios exclusivos.</div>
                     <div className={'w-full'}>
-                        <div className={'bg-card w-full p-6 rounded-[10px]'}>
+                        <Card>
                             <div className={'flex flex-col gap-4 items-center'}>
                                 <div className={'font-oxanium font-bold text-center text-[28px]'}>
                                         <span
                                             className={'text-transparent bg-btn-primary bg-clip-text'}>Você ganhou</span>
                                     <span> 100 XP</span>
                                 </div>
-                                <div className="w-full">
-                                    <div className="bg-[#928C9C] rounded-full h-[8px] w-full">
-                                        <div className="relative bg-btn-primary rounded-full h-[8px] w-[82%]">
-                                            <div className="absolute right-[-6px] bottom-3 h-[6px] w-[16px] ">
-                                                <div className={'w-[60px]'}>
-                                                    <img
-                                                        alt={'Fire Icon'}
-                                                        src={fireGif}/>
-                                                </div>
-                                            </div>
-                                        </div>
+                                <BarsProgress percentage={80}>
+                                    <div className={'w-[60px]'}>
+                                        <img
+                                            alt={'Fire Icon'}
+                                            src={fireGif}/>
                                     </div>
-                                </div>
-
+                                </BarsProgress>
                                 <div className={'text-[18px]'}>Acumule XP e ganhe recompensa</div>
                             </div>
-                        </div>
+                        </Card>
                     </div>
                 </div>
             </div>
@@ -126,30 +121,23 @@ const AdSection = () => {
                                 cidade tornando-se um membro mais confiável para toda a comunidade e recebendo
                                 benefícios exclusivos.
                             </div>
-                            <div className={'bg-card w-full p-6 rounded-[10px]'}>
+                            <Card>
                                 <div className={'flex flex-col gap-4 items-center'}>
                                     <div className={'font-oxanium font-bold text-center text-[28px]'}>
                                         <span
                                             className={'text-transparent bg-btn-primary bg-clip-text'}>Você ganhou</span>
                                         <span> 100 XP</span>
                                     </div>
-                                    <div className="w-full">
-                                        <div className="bg-[#928C9C] rounded-full h-[8px] w-full">
-                                            <div className="relative bg-btn-primary rounded-full h-[8px] w-[82%]">
-                                                <div className="absolute right-[-6px] bottom-3 h-[6px] w-[16px] ">
-                                                    <div className={'w-[60px]'}>
-                                                        <img
-                                                            alt={'Fire Icon'}
-                                                            src={fireGif}/>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                    <BarsProgress percentage={80}>
+                                        <div className={'w-[60px]'}>
+                                            <img
+                                                alt={'Fire Icon'}
+                                                src={fireGif}/>
                                         </div>
-                                    </div>
-
+                                    </BarsProgress>
                                     <div className={'text-[18px]'}>Acumule XP e ganhe recompensa</div>
                                 </div>
-                            </div>
+                            </Card>
                         </div>
                     </div>
                 </div>
