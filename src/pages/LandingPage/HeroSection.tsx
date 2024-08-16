@@ -5,7 +5,7 @@ import Button from "@/components/Button/Button.tsx"
 import ButtonHamburguer from "@/components/Button/ButtonHamburguer.tsx"
 import useHeroSection from "@/pages/LandingPage/hooks/useHeroSection.ts";
 import Modal from "@/components/Modal/Modal.tsx";
-import Login from "@/views/Login/Index.tsx";
+import Login from "@/pages/Login/Index.tsx";
 import {Link} from "react-router-dom";
 
 const HeroSection = () => {

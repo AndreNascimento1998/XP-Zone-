@@ -1,12 +1,12 @@
 import Logo from "@/assets/Icons/Logo/Logo"
-import FormRegister from "@/pages/Login/FormRegister"
+import FormRegister from "@/pages/Login/components/FormRegister"
 import ArrowToBackIcon from "@/assets/Icons/Others/ArrowToBackIcon"
 import { Link } from "react-router-dom"
-import ConfirmRegister from "@/views/Login/ConfirmRegister.tsx"
-import useRegisterUser from "./hooks/useRegisterUser.ts"
+import ConfirmRegister from "@/pages/Login/ConfirmRegister.tsx"
+import useRegisterUser from "@/pages/Login/hooks/useRegisterUser.ts"
 import ClosePageIcon from "@/assets/Icons/Others/ClosePageIcon.tsx"
 import imageRegister from "@/assets/images/register/register-image.png"
-import '@/views/Login/styles/RegisterUser.scss'
+import '@/pages/Login/styles/RegisterUser.scss'
 const Login = () => {
   const {
       step,
