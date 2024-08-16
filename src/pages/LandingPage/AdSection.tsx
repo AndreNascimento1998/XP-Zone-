@@ -6,10 +6,11 @@ import Button from "@/components/Button/Button.tsx"
 import spiderMan from '@/assets/images/landing-page/spider-man.png'
 import image from '@/assets/images/register/register-image.png'
 import spiderManDesktop from '@/assets/images/landing-page/spider-man-desktop.png'
+import fireGif from '@/assets/fire.gif'
 
 const AdSection = () => {
     return (
-        <div className={'relative pb-0 xl:pb-[50%] 2xl:pb-[53%] 3xl:pb-[57%] 4xl:pb-[60%] 5xl:pb-[62%]'}>
+        <div className={'relative pb-1 xl:pb-[50%] 2xl:pb-[53%] 3xl:pb-[57%] 4xl:pb-[60%] 5xl:pb-[62%]'}>
             <div className={'hidden xl:block w-full static  xl:absolute top-[40rem]'}>
                 <img className={'object-cover  w-full '} src={image} alt={'imagem'}/>
             </div>
@@ -19,8 +20,31 @@ const AdSection = () => {
                 <div className={'absolute flex pl-16 gap-6 flex-col justify-center items-center w-1/2 xl:top-[10rem] 2xl:top-[20rem] 3xl:top-[40rem] 4xl:top-[50rem] 5xl:top-[70rem]'}>
                     <div className={'font-oxanium font-bold bg-btn-primary text-center bg-clip-text w-1/2 text-transparent  text-[32px]'}>Ganhe XP e cresça na comunidade</div>
                     <div>A cada troca, compra ou venda, você acumula XP e com eles você é rankeado na sua cidade tornando-se um membro mais confiável para toda a comunidade e recebendo benefícios exclusivos.</div>
-                    <div>
-                        card
+                    <div className={'w-full'}>
+                        <div className={'bg-card w-full p-6 rounded-[10px]'}>
+                            <div className={'flex flex-col gap-4 items-center'}>
+                                <div className={'font-oxanium font-bold text-center text-[28px]'}>
+                                        <span
+                                            className={'text-transparent bg-btn-primary bg-clip-text'}>Você ganhou</span>
+                                    <span> 100 XP</span>
+                                </div>
+                                <div className="w-full">
+                                    <div className="bg-[#928C9C] rounded-full h-[8px] w-full">
+                                        <div className="relative bg-btn-primary rounded-full h-[8px] w-[82%]">
+                                            <div className="absolute right-[-6px] bottom-3 h-[6px] w-[16px] ">
+                                                <div className={'w-[60px]'}>
+                                                    <img
+                                                        alt={'Fire Icon'}
+                                                        src={fireGif}/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className={'text-[18px]'}>Acumule XP e ganhe recompensa</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -40,10 +64,10 @@ const AdSection = () => {
                             a XP Zone
                         </div>
                         <span>
-                                Aqui você encontra jogadores da sua cidade em uma comunidade segura para você trocar,
-                                comprar ou vender seus artigos gamers, além disso, você terá a
-                                possibilidade de se conectar com amigos e montar a sua própria comunidade.
-                            </span>
+                            Aqui você encontra jogadores da sua cidade em uma comunidade segura para você trocar,
+                            comprar ou vender seus artigos gamers, além disso, você terá a
+                            possibilidade de se conectar com amigos e montar a sua própria comunidade.
+                        </span>
                         <div className={'hidden xl:flex xl:flex-col xl:gap-6'}>
                             <div className={'flex flex-col gap-4'}>
                                 <div className={'flex gap-2'}>
@@ -101,6 +125,30 @@ const AdSection = () => {
                                 A cada troca, compra ou venda, você acumula XP e com eles você é rankeado na sua
                                 cidade tornando-se um membro mais confiável para toda a comunidade e recebendo
                                 benefícios exclusivos.
+                            </div>
+                            <div className={'bg-card w-full p-6 rounded-[10px]'}>
+                                <div className={'flex flex-col gap-4 items-center'}>
+                                    <div className={'font-oxanium font-bold text-center text-[28px]'}>
+                                        <span
+                                            className={'text-transparent bg-btn-primary bg-clip-text'}>Você ganhou</span>
+                                        <span> 100 XP</span>
+                                    </div>
+                                    <div className="w-full">
+                                        <div className="bg-[#928C9C] rounded-full h-[8px] w-full">
+                                            <div className="relative bg-btn-primary rounded-full h-[8px] w-[82%]">
+                                                <div className="absolute right-[-6px] bottom-3 h-[6px] w-[16px] ">
+                                                    <div className={'w-[60px]'}>
+                                                        <img
+                                                            alt={'Fire Icon'}
+                                                            src={fireGif}/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className={'text-[18px]'}>Acumule XP e ganhe recompensa</div>
+                                </div>
                             </div>
                         </div>
                     </div>

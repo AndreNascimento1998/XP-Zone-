@@ -1,6 +1,5 @@
 import HeroSection from "@/pages/LandingPage/HeroSection.tsx"
-import AdSection from "@/pages/LandingPage/AdSection.tsx";
-import image from '@/assets/images/register/register-image.png'
+import AdSection from "@/pages/LandingPage/AdSection.tsx"
 
 const LadingPage = () => {
     return (
