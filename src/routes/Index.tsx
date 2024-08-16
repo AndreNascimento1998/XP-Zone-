@@ -3,7 +3,7 @@ import App from '@/App.tsx'
 import Home from '@/pages/Home/Index.tsx'
 import Login from '@/pages/Login/Index.tsx'
 import RegisterUser from "@/pages/Login/RegisterUser.tsx"
-import LandingPage from "@/views/LandingPage/Index.tsx"
+import LandingPage from "@/pages/LandingPage/Index.tsx"
 
 const routes = createBrowserRouter([
     {

@@ -1,5 +1,5 @@
-import HeroSection from "@/pages/LandingPage/HeroSection.tsx"
-import AdSection from "@/pages/LandingPage/AdSection.tsx"
+import HeroSection from "@/pages/LandingPage/components/HeroSection.tsx"
+import AdSection from "@/pages/LandingPage/components/AdSection.tsx"
 
 const LadingPage = () => {
     return (
