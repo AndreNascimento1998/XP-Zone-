@@ -16,8 +16,8 @@ const GiftCard = () => {
                     </div>
                 </div>
                 <div className={'font-oxanium font-bold mt-10 text-center lg:text-start text-[20px]'}>
-                    <div className={'text-[32px]'}>Card Zone</div>
-                    <div className={'bg-btn-primary bg-clip-text text-[32px] text-transparent'}>Presenteie um amigo</div>
+                    <div className={'text-[28px]'}>Card Zone</div>
+                    <div className={'bg-btn-primary bg-clip-text text-[28px] text-transparent'}>Presenteie um amigo</div>
                     <div className={'hidden lg:block'}>
                         <div className={'flex px-6 lg:px-0 flex-col gap-6'}>
                             <div className={'text-justify'}>

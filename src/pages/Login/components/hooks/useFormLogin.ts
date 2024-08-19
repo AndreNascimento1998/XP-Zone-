@@ -2,13 +2,15 @@ import {z} from "zod"
 import {FieldError, useForm} from "react-hook-form"
 import {zodResolver} from "@hookform/resolvers/zod"
 import IDataForm from "@/types/DataForm.ts"
+import {useNavigate} from "react-router-dom";
 
 const schema = z.object({
     email: z.string().min(1, 'Campo obrigatório'),
     password: z.string().min(8, 'Campo deve conter no mínimo 8 caracteres')
 })
-
 const useFormLogin = () => {
+    const navigate = useNavigate()
+
     const { handleSubmit, register, formState: { errors } } = useForm({
         mode: 'all',
         criteriaMode: 'all',
@@ -21,6 +23,7 @@ const useFormLogin = () => {
 
     const handleSubmitForm = (data: IDataForm) => {
         console.log(data)
+        navigate('/')
     }
 
     return {

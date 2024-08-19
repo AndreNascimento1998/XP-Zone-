@@ -16,7 +16,7 @@ const Login = () => {
   } = useRegisterUser()
 
     return (
-        <div className={'bg-primary'}>
+        <div>
             <img className={'absolute w-full h-full overflow-hidden object-cover'} src={imageRegister} alt={'Imagem de registro'}/>
             <div className={'h-[100vh] relative py-10 px-4 lg:px-10'}>
                 {step === 1 ? (

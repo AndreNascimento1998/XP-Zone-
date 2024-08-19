@@ -27,7 +27,8 @@ export default {
       backgroundColor: {
         'primary': '#210948',
         'secondary': '#120428',
-        'card': '#2F0C66'
+        'card': '#2F0C66',
+        'card-light': '#280A57'
       },
       colors: {
         'white-light': '#E7E6EA',
