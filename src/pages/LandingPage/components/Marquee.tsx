@@ -6,7 +6,7 @@ const Marquee = () => {
 
     return (
         <div className="marquee">
-            <div className="track">
+            <div className="marquee_track">
                 <div className="flex gap-4 h-[50px] xl:h-full">
                     {marqueeData && marqueeData.map(((item, index) => (
                         <img src={item} alt={'Plataforma'} key={index}/>

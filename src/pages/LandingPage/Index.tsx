@@ -1,6 +1,7 @@
 import HeroSection from "@/pages/LandingPage/components/HeroSection.tsx"
 import AdSection from "@/pages/LandingPage/components/AdSection.tsx"
 import Marquee from "@/pages/LandingPage/components/Marquee.tsx";
+import GiftCard from "./components/GiftCard.tsx";
 
 const LadingPage = () => {
     return (
@@ -9,6 +10,7 @@ const LadingPage = () => {
                 <HeroSection/>
                 <AdSection/>
                 <Marquee />
+                <GiftCard />
             </div>
         </div>
     );
