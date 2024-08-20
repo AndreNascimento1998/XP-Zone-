@@ -1,8 +1,10 @@
+import HeroSection from "@/pages/Home/components/HeroSection.tsx";
+
 const Home = () => {
 
     return (
         <div>
-            <div>Home Page</div>
+            <HeroSection />
         </div>
     )
 }
