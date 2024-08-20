@@ -1,44 +1,42 @@
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import {Autoplay, Pagination} from 'swiper/modules';
 import '@/components/Carousel/styles/Slider.scss'
-import useSlider from "@/components/Carousel/hooks/useSlider.ts"
 
 interface SliderProps {
-    slides: string[]
+    slides: string[],
+    slidesPerView?: number,
+    spaceBetween?: number,
+    autoplay?: { delay: number, disableOnInteraction: boolean } | boolean,
+    pagination?: { clickable: boolean, dynamicBullets: boolean } | boolean,
+    dynamicBullets?: boolean
 }
-const Slider = ({slides}: SliderProps) => {
-    const {
-        activeIndex,
-        handleNavigationClick
-    } = useSlider();
 
+const Slider = ({
+                    slides,
+                    slidesPerView = 4,
+                    spaceBetween = 30,
+                    pagination = false,
+                    autoplay = false
+}: SliderProps) => {
 
     return (
-        <div className={' px-4 content relative'}>
-            <section className="carousel" aria-label="Gallery">
-                <ol className="carousel__viewport">
-                    {slides.map((slide, index) => (
-                        <li key={index} id={`carousel__slide${index + 1}`} className="carousel__slide">
-                            <div className="carousel__snapper">
-                                <img src={slide} className={''} alt={`Slide ${index + 1}`} />
-                                <a href={`#carousel__slide${index === 0 ? slides.length : index}`} className="carousel__prev" />
-                                <a href={`#carousel__slide${(index + 2) > slides.length ? 1 : (index + 2)}`} className="carousel__next" />
-                            </div>
-                        </li>
-                    ))}
-                </ol>
-                <aside className="carousel__navigation">
-                    <ol className="carousel__navigation-list">
-                        {slides.map((_, index) => (
-                            <li key={index} className="carousel__navigation-item">
-                                <a
-                                    href={`#carousel__slide${index + 1}`}
-                                    className={`carousel__navigation-button ${index === activeIndex ? 'active' : ''}`}
-                                    onClick={() => handleNavigationClick(index)}
-                                />
-                            </li>
-                        ))}
-                    </ol>
-                </aside>
-            </section>
+        <div>
+            <Swiper
+                slidesPerView={slidesPerView}
+                spaceBetween={spaceBetween}
+                pagination={pagination}
+                autoplay={autoplay}
+                modules={[Pagination, Autoplay]}
+                className="mySwiper"
+            >
+                {slides.map((slide, index) => (
+                    <SwiperSlide key={index}>
+                        <img src={slide} alt={`Slide ${index + 1}`} />
+                    </SwiperSlide>
+                ))}
+            </Swiper>
         </div>
     );
 }
