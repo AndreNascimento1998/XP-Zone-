@@ -11,11 +11,14 @@ import carousel4 from '@/assets/images/carousel/carousel4.png'
 import { useEffect, useState } from 'react'
 
 const useHome = () => {
-    const slides = [banner1, banner2, banner3]
-    const slidesMobile = [banner1Mobile, banner2Mobile, banner3Mobile]
-    const carousel = [carousel1, carousel2, carousel3, carousel4, carousel1, carousel2, carousel3, carousel4, ]
+    const slides = [{value: '', image: banner1}, {value: '', image:banner2}, {value: '', image: banner3}]
+    const slidesMobile = [{value:'', image: banner1Mobile}, {value: '', image: banner2Mobile}, {value: '', image: banner3Mobile}]
+    const carousel = [
+        {value: 'assassin', image: carousel1}, {value: 'halo', image: carousel2}, {value: 'spider',image: carousel3}, {value: 'mario', image:carousel4},
+        {value: 'assassinsCred', image: carousel1}, {value: 'haloInfity', image:carousel2}, {value: 'spiderMan', image:carousel3}, {value: 'marioOdyssey', image: carousel4}
+    ]
     const [responsiveSlides, setResponsiveSlides] = useState(slides)
-    const [responsiveCarousel, setResponsiveCarousel] = useState(carousel)
+    const [responsiveCarousel] = useState(carousel)
 
     const handleResize = () => {
         if (window.innerWidth > 640) {

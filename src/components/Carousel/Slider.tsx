@@ -5,8 +5,13 @@ import { Autoplay, Pagination } from 'swiper/modules';
 import '@/components/Carousel/styles/Slider.scss';
 import useSlider from "./hooks/useSlider.ts";
 
+interface Slide {
+    value: string;
+    image: string;
+}
+
 interface SliderProps {
-    slides: string[],
+    slides: Slide[],
     slidesPerView?: number,
     spaceBetween?: number,
     autoplay?: { delay: number, disableOnInteraction: boolean } | boolean,
@@ -17,7 +22,7 @@ interface SliderProps {
 const Slider = ({
                     slides,
                     slidesPerView = 4,
-                    spaceBetween = 30,
+                    spaceBetween = 0,
                     pagination = false,
                     autoplay = false
                 }: SliderProps) => {
@@ -34,8 +39,8 @@ const Slider = ({
                 className="mySwiper"
             >
                 {slides.map((slide, index) => (
-                    <SwiperSlide key={index}>
-                        <img src={slide} alt={`Slide ${index + 1}`} />
+                    <SwiperSlide  key={index}>
+                        <img className={!autoplay ? 'cursor-pointer' : ''} src={slide.image} alt={`Slide ${index + 1}`} />
                     </SwiperSlide>
                 ))}
             </Swiper>
