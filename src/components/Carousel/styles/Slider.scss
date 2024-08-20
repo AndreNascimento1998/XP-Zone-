@@ -43,33 +43,28 @@
   }
 }
 
-.content {
-  max-width: 37.5rem;
-  margin: 0 auto;
-  padding: 0 1.25rem;
-  font-family: 'Lato', sans-serif;
-}
 
-* {
+
+.content {
   box-sizing: border-box;
   scrollbar-color: transparent transparent;
   scrollbar-width: 0px;
 }
 
-*::-webkit-scrollbar {
+.content::-webkit-scrollbar {
   width: 0;
 }
 
-*::-webkit-scrollbar-track {
+.content::-webkit-scrollbar-track {
   background: transparent;
 }
 
-*::-webkit-scrollbar-thumb {
+.content::-webkit-scrollbar-thumb {
   background: transparent;
   border: none;
 }
 
-* {
+.content {
   -ms-overflow-style: none;
 }
 
@@ -81,9 +76,9 @@ ol, li {
 
 .carousel {
   position: relative;
-  padding-top: 75%;
-  filter: drop-shadow(0 0 10px #0003);
-  perspective: 100px;
+  padding-top: 35%;
+  width: 100%;
+  height: 100%;
 }
 
 .carousel__viewport {
@@ -94,6 +89,7 @@ ol, li {
   left: 0;
   display: flex;
   overflow-x: scroll;
+  overflow-y: hidden;
   counter-reset: item;
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
@@ -103,16 +99,17 @@ ol, li {
   position: relative;
   flex: 0 0 100%;
   width: 100%;
-  background-color: #f99;
+  height: fit-content;
+  //background-color: #f99;
   counter-increment: item;
 }
 
-.carousel__slide:nth-child(even) {
-  background-color: #99f;
-}
+//.carousel__slide:nth-child(even) {
+//  background-color: #99f;
+//}
 
 .carousel__slide:before {
-  content: counter(item);
+  content: none;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -130,13 +127,17 @@ ol, li {
   scroll-snap-align: center;
 }
 
+.carousel__navigation-button.active {
+  background-color: #E54B65;
+}
+
 @media (hover: hover) {
-  .carousel__snapper {
-    animation-name: tonext, snap;
-    animation-timing-function: ease;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-  }
+  //.carousel__snapper {
+  //  animation-name: tonext, snap;
+  //  animation-timing-function: ease;
+  //  animation-duration: 4s;
+  //  animation-iteration-count: infinite;
+  //}
 
   .carousel__slide:last-child .carousel__snapper {
     animation-name: tostart, snap;
@@ -157,7 +158,7 @@ ol, li {
 .carousel__navigation {
   position: absolute;
   right: 0;
-  bottom: 1rem;
+  bottom: 10vh;
   left: 0;
   text-align: center;
 }
@@ -171,7 +172,7 @@ ol, li {
   display: inline-block;
   width: 3.5rem;
   height: 1rem;
-  background-color: #333;
+  background-color: #8a7d7d;
   background-clip: content-box;
   border: 0.25rem solid transparent;
   border-radius: 10px;

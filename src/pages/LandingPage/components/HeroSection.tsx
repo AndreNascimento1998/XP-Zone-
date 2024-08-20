@@ -30,7 +30,7 @@ const HeroSection = () => {
                 </div>
                 <div className={'hidden lg:block'}>
                     <Modal openModal={openModal} onClickClose={handleCloseModal} >
-                        <div>
+                        <div className={'bg-primary'}>
                             <Login />
                         </div>
                     </Modal>

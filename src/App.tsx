@@ -5,10 +5,10 @@ import Header from '@/pages/Header/Index.tsx'
 function App() {
 
   return (
-    <>
-      <Header />
+    <div className={'3xl:px-[20rem]'}>
+      <Header  />
       <Outlet />
-    </>
+    </div>
   )
 }
 

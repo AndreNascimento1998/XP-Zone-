@@ -1,67 +1,46 @@
 import '@/components/Carousel/styles/Slider.scss'
+import useSlider from "@/components/Carousel/hooks/useSlider.ts"
 
-const Slider = () => {
+interface SliderProps {
+    slides: string[]
+}
+const Slider = ({slides}: SliderProps) => {
+    const {
+        activeIndex,
+        handleNavigationClick
+    } = useSlider();
+
+
     return (
-        <div className={'content'}>
+        <div className={' px-4 content relative'}>
             <section className="carousel" aria-label="Gallery">
                 <ol className="carousel__viewport">
-                    <li id="carousel__slide1"
-                        className="carousel__slide">
-                        <div className="carousel__snapper">
-                            <a href="#carousel__slide4"
-                               className="carousel__prev">Go to last slide</a>
-                            <a href="#carousel__slide2"
-                               className="carousel__next">Go to next slide</a>
-                        </div>
-                    </li>
-                    <li id="carousel__slide2"
-                        className="carousel__slide">
-                        <div className="carousel__snapper"></div>
-                        <a href="#carousel__slide1"
-                           className="carousel__prev">Go to previous slide</a>
-                        <a href="#carousel__slide3"
-                           className="carousel__next">Go to next slide</a>
-                    </li>
-                    <li id="carousel__slide3"
-                        className="carousel__slide">
-                        <div className="carousel__snapper"></div>
-                        <a href="#carousel__slide2"
-                           className="carousel__prev">Go to previous slide</a>
-                        <a href="#carousel__slide4"
-                           className="carousel__next">Go to next slide</a>
-                    </li>
-                    <li id="carousel__slide4"
-                        className="carousel__slide">
-                        <div className="carousel__snapper"></div>
-                        <a href="#carousel__slide3"
-                           className="carousel__prev">Go to previous slide</a>
-                        <a href="#carousel__slide1"
-                           className="carousel__next">Go to first slide</a>
-                    </li>
+                    {slides.map((slide, index) => (
+                        <li key={index} id={`carousel__slide${index + 1}`} className="carousel__slide">
+                            <div className="carousel__snapper">
+                                <img src={slide} className={''} alt={`Slide ${index + 1}`} />
+                                <a href={`#carousel__slide${index === 0 ? slides.length : index}`} className="carousel__prev" />
+                                <a href={`#carousel__slide${(index + 2) > slides.length ? 1 : (index + 2)}`} className="carousel__next" />
+                            </div>
+                        </li>
+                    ))}
                 </ol>
                 <aside className="carousel__navigation">
                     <ol className="carousel__navigation-list">
-                        <li className="carousel__navigation-item">
-                            <a href="#carousel__slide1"
-                               className="carousel__navigation-button">Go to slide 1</a>
-                        </li>
-                        <li className="carousel__navigation-item">
-                            <a href="#carousel__slide2"
-                               className="carousel__navigation-button">Go to slide 2</a>
-                        </li>
-                        <li className="carousel__navigation-item">
-                            <a href="#carousel__slide3"
-                               className="carousel__navigation-button">Go to slide 3</a>
-                        </li>
-                        <li className="carousel__navigation-item">
-                            <a href="#carousel__slide4"
-                               className="carousel__navigation-button">Go to slide 4</a>
-                        </li>
+                        {slides.map((_, index) => (
+                            <li key={index} className="carousel__navigation-item">
+                                <a
+                                    href={`#carousel__slide${index + 1}`}
+                                    className={`carousel__navigation-button ${index === activeIndex ? 'active' : ''}`}
+                                    onClick={() => handleNavigationClick(index)}
+                                />
+                            </li>
+                        ))}
                     </ol>
                 </aside>
             </section>
         </div>
-    )
+    );
 }
 
-export default Slider
+export default Slider;

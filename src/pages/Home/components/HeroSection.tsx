@@ -1,9 +1,12 @@
-import Slider from "@/components/Carousel/Slider.tsx";
+import Slider from "@/components/Carousel/Slider.tsx"
+import useHome from "@/pages/Home/hooks/useHome.ts"
 
 const HeroSection = () => {
+    const { slides } = useHome()
+
     return (
         <div>
-            <Slider />
+            <Slider slides={slides} />
         </div>
     )
 }
