@@ -1,8 +1,9 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import {Autoplay, Pagination} from 'swiper/modules';
-import '@/components/Carousel/styles/Slider.scss'
+import { Autoplay, Pagination } from 'swiper/modules';
+import '@/components/Carousel/styles/Slider.scss';
+import useSlider from "./hooks/useSlider.ts";
 
 interface SliderProps {
     slides: string[],
@@ -19,12 +20,13 @@ const Slider = ({
                     spaceBetween = 30,
                     pagination = false,
                     autoplay = false
-}: SliderProps) => {
+                }: SliderProps) => {
+    const { sliderPerViewResponsive } = useSlider(slidesPerView)
 
     return (
-        <div>
+        <div className={!autoplay ? 'margim-left' : ''}>
             <Swiper
-                slidesPerView={slidesPerView}
+                slidesPerView={sliderPerViewResponsive}
                 spaceBetween={spaceBetween}
                 pagination={pagination}
                 autoplay={autoplay}

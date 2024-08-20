@@ -1,15 +1,27 @@
-import {useState} from "react"
+import {useEffect, useState} from "react"
 
-const useSlider = () => {
-    const [activeIndex, setActiveIndex] = useState(0)
+const useSlider = (slidesPerView: number) => {
+    const [sliderPerViewResponsive, setSliderPerViewResponsive] = useState(slidesPerView)
 
-    const handleNavigationClick = (index: number) => {
-        setActiveIndex(index)
-    };
+    const handleResize = () => {
+        if(window.innerWidth < 640 && slidesPerView !== 1) {
+            setSliderPerViewResponsive(1.5)
+        } else {
+            setSliderPerViewResponsive(slidesPerView)
+        }
+    }
+
+    useEffect(() => {
+        window.addEventListener('resize', handleResize)
+        handleResize()
+
+        return () => {
+            window.removeEventListener('resize', handleResize)
+        }
+    }, []);
 
     return {
-        activeIndex,
-        handleNavigationClick
+        sliderPerViewResponsive
     }
 }
 
