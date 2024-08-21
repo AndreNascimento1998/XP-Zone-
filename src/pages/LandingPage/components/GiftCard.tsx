@@ -12,7 +12,7 @@ const GiftCard = () => {
             <div className={'absolute block lg:grid grid-cols-2 px-20 items-center w-full top-40 lg:top-80'}>
                 <div className={'flex flex-col  items-center'}>
                     <div className={'w-full lg:w-1/2'}>
-                        <CardReword/>
+                        <CardReword text={'André J N Cardoso'} patent={'Ouro'} src={'mk11'} />
                     </div>
                 </div>
                 <div className={'font-oxanium font-bold mt-10 text-center lg:text-start text-[20px]'}>

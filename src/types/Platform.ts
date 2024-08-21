@@ -5,8 +5,7 @@ interface Platform {
     switch?: string
     ps5?: string
     x360?: string
-    xseries_s?: string
-    xseries_x?: string
+    xseries?: string
     wii?: string
     ps3?: string
 }

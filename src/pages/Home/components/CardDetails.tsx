@@ -1,11 +1,16 @@
 import Card from "@/components/Card/Card.tsx";
 import useFirstLetter from "@/hooks/useFirstLetter.ts";
-import useCardDetails from "@/pages/Home/components/hooks/useCardDetails.ts";
+import usePlatformEnum from "@/hooks/usePlatformEnum.ts";
 import "@/pages/Home/components/styles/CardDetails.scss";
+import User from "@/types/User.ts";
+import Game from "@/types/Game.ts";
 
-const CardDetails = ({ users }) => {
+interface CardDetailsProps {
+    users: User[]
+}
+const CardDetails = ({ users }: CardDetailsProps) => {
     const { firstLetter } = useFirstLetter();
-    const { platformName } = useCardDetails();
+    const { platformName } = usePlatformEnum();
 
     return (
         <div className={'flex text-[20px] flex-col gap-2'}>
@@ -19,7 +24,7 @@ const CardDetails = ({ users }) => {
                         <Card>
                             <div className="flex flex-col gap-4">
                                 <div className="flex gap-4">
-                                    <div className="relative">
+                                    <div >
                                         <div className="bg-[#E54B65] rounded-full font-bold text-[20px] px-6 py-4">
                                             {firstLetter(item.name)}
                                         </div>
@@ -40,9 +45,9 @@ const CardDetails = ({ users }) => {
                                 </div>
                                 <div className="bg-[#E54B65] w-full h-[2px] rounded-full"/>
                                 <div className="grid grid-cols-3  gap-2">
-                                    {item.games && item.games.map((game: string, index: number) => (
+                                    {item.games && item.games.map((game: Game, index: number) => (
                                         index < 8 ? (
-                                            <div key={index} className={'border-2 text-center rounded-[10px] text-[12px] py-2 px-1'}>{game}</div>
+                                            <div key={index} className={'border-2 text-center rounded-[10px] text-[12px] py-2 px-1'}>{game.name}</div>
                                         ) : (
                                             index === 8 && <div key={index} className={'border-2 border-[#E54B65] text-[#E54B65] text-center rounded-[10px] text-[12px] py-2 px-1'}>+ {item.games.length - 8} restantes</div>
                                         )

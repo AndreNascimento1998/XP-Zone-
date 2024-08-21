@@ -4,39 +4,107 @@ const useHome = () => {
         {
             name: 'John Doe',
             email: 'adsadsa@dsadsa',
-            platform: ['ps4', 'xone', 'switch', 'xseries_s' ],
-            games: ['Fifa', 'Silent Hill', 'Halo', 'Baldurs gate 3']
-        },
-        {
-            name: 'Chico Bento',
-            email: 'adsadsa@dsadsa',
-            platform: ['ps4', 'xone', 'ps5', 'wii', 'xseries_s', 'xseries_x', 'ps3', 'switch'],
-            games: ['Elden Ring', 'BloodBorn', 'Mortal Kombat', 'Fifa', 'Silent Hill', 'Halo', 'Baldurs gate 3', 'Silent Hill', 'Halo', 'Halo']
-        },
-        {
-            name: 'Mario World',
-            email: 'adsadsa@dsadsa',
-            platform: ['x360', 'xone'],
-            games: ['Dark Souls 3']
+            platform: ['ps4', 'xone', 'switch', 'xseries' ],
+            games: [
+                {
+                    name: 'FIFA 22',
+                    platform: ['ps4' ],
+                    src: 'fifa'
+                },
+                {
+                    name: 'Demon Souls',
+                    platform: ['switch', 'xseries' ],
+                    src: 'demon-souls'
+                }
+            ]
         },
         {
             name: 'John Doe',
             email: 'adsadsa@dsadsa',
-            platform: ['ps4', 'xone', 'switch', 'xseries_s' ],
-            games: ['Red Dead Redemption 2', 'GTA V', 'GTA IV']
+            platform: ['ps4', 'xone', 'switch', 'xseries' ],
+            games: [
+                {
+                    name: 'FIFA 22',
+                    platform: ['ps4' ],
+                    src: 'fifa'
+                },
+                {
+                    name: 'Demon Souls',
+                    platform: ['switch', 'xseries' ],
+                    src: 'demon-souls'
+                }
+            ]
         },
         {
-            name: 'Chico Bento',
+            name: 'John Doe',
             email: 'adsadsa@dsadsa',
-            platform: ['ps4', 'xone', 'ps5', 'wii', 'xseries_s', 'xseries_x', 'ps3', 'switch'],
-            games: ['Mario kart 8', 'Zelda', 'Super Mario World']
+            platform: ['ps4', 'xone', 'switch', 'xseries' ],
+            games: [
+                {
+                    name: 'FIFA 22',
+                    platform: ['ps4' ],
+                    src: 'fifa'
+                },
+                {
+                    name: 'Demon Souls',
+                    platform: ['switch', 'xseries' ],
+                    src: 'demon-souls'
+                }
+            ]
         },
         {
-            name: 'Mario World',
+            name: 'John Doe',
             email: 'adsadsa@dsadsa',
-            platform: ['x360', 'xone'],
-            games: ['Dark Souls 3', 'Dark Souls 2', 'Dark Souls 1']
+            platform: ['ps4', 'xone', 'switch', 'xseries' ],
+            games: [
+                {
+                    name: 'FIFA 22',
+                    platform: ['ps4' ],
+                    src: 'fifa'
+                },
+                {
+                    name: 'Demon Souls',
+                    platform: ['switch', 'xseries' ],
+                    src: 'demon-souls'
+                }
+            ]
         },
+        {
+            name: 'John Doe',
+            email: 'adsadsa@dsadsa',
+            platform: ['ps4', 'xone', 'switch', 'xseries' ],
+            games: [
+                {
+                    name: 'FIFA 22',
+                    platform: ['ps4' ],
+                    src: 'fifa'
+                },
+                {
+                    name: 'Demon Souls',
+                    platform: ['switch', 'xseries' ],
+                    src: 'demon-souls'
+                }
+            ]
+        },
+        {
+            name: 'John Doe',
+            email: 'adsadsa@dsadsa',
+            platform: ['ps4', 'xone', 'switch', 'xseries' ],
+            games: [
+                {
+                    name: 'FIFA 22',
+                    platform: ['ps4' ],
+                    src: 'uncharted4',
+                    highlight: false
+                },
+                {
+                    name: 'Demon Souls',
+                    platform: ['ps5'],
+                    src: 'demon-souls',
+                    highlight: true
+                }
+            ]
+        }
     ]
 
     return { users }
