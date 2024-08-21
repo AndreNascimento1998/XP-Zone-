@@ -1,14 +1,14 @@
 import Slider from "@/components/Carousel/Slider.tsx"
-import useHome from "@/pages/Home/hooks/useHome.ts"
+import useHeroSection from "@/pages/Home/components/hooks/useHeroSection.ts"
 
 const HeroSection = () => {
     const {
         responsiveSlides,
         responsiveCarousel
-    } = useHome()
+    } = useHeroSection()
 
     return (
-        <div className={'flex flex-col gap-20'}>
+        <div className={'flex text-[20px] flex-col gap-20'}>
             <div className={'px-4'}>
                 <Slider
                     slides={responsiveSlides}
@@ -24,8 +24,8 @@ const HeroSection = () => {
                     }}
                 />
             </div>
-            <div>
-                <div className={'px-4 text-[20px]'}>Filtre seu console</div>
+            <div className={'flex flex-col gap-2'}>
+                <div className={'px-4'}>Filtre seu console</div>
                 <div className={'px-2 lg:px-0'}>
                     <Slider
                         onClick={(slide) => console.log(slide)}

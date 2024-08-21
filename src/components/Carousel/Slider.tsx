@@ -1,13 +1,13 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/pagination';
-import { Autoplay, Pagination } from 'swiper/modules';
-import '@/components/Carousel/styles/Slider.scss';
-import useSlider from "./hooks/useSlider.ts";
+import { Swiper, SwiperSlide } from 'swiper/react'
+import 'swiper/css'
+import 'swiper/css/pagination'
+import { Autoplay, Pagination } from 'swiper/modules'
+import '@/components/Carousel/styles/Slider.scss'
+import useSlider from "@/components/Carousel/hooks/useSlider.ts"
 
 interface Slide {
-    value: string;
-    image: string;
+    value: string
+    image: string
 }
 
 interface SliderProps {
@@ -47,7 +47,7 @@ const Slider = ({
                 ))}
             </Swiper>
         </div>
-    );
+    )
 }
 
-export default Slider;
+export default Slider
