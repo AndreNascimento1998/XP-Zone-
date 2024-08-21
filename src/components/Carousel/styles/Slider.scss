@@ -7,10 +7,6 @@
   opacity: 1;
 }
 
-.margim-left .mySwiper .swiper-slide:first-child {
-  margin-left: 20px;
-}
-
 .swiper-pagination-bullet.swiper-pagination-bullet-clickable {
   cursor: pointer;
   background-color: #888;
@@ -22,6 +18,10 @@
 
 
 @media (min-width: 1024px) {
+  .margim-left .mySwiper .swiper-slide:first-child {
+    margin-left: 20px;
+  }
+
   .swiper-pagination-bullet {
     background-color: #ccc;
     opacity: 1;

@@ -26,9 +26,12 @@ const HeroSection = () => {
             </div>
             <div>
                 <div className={'px-4 text-[20px]'}>Filtre seu console</div>
-                <Slider
-                    slides={responsiveCarousel}
-                />
+                <div className={'px-2 lg:px-0'}>
+                    <Slider
+                        onClick={(slide) => console.log(slide)}
+                        slides={responsiveCarousel}
+                    />
+                </div>
             </div>
         </div>
     )

@@ -11,22 +11,24 @@ interface Slide {
 }
 
 interface SliderProps {
-    slides: Slide[],
-    slidesPerView?: number,
-    spaceBetween?: number,
-    autoplay?: { delay: number, disableOnInteraction: boolean } | boolean,
-    pagination?: { clickable: boolean, dynamicBullets: boolean } | boolean,
+    slides: Slide[]
+    slidesPerView?: number
+    spaceBetween?: number
+    autoplay?: { delay: number, disableOnInteraction: boolean } | boolean
+    pagination?: { clickable: boolean, dynamicBullets: boolean } | boolean
     dynamicBullets?: boolean
+    onClick?: (slide: Slide) => void
 }
 
 const Slider = ({
                     slides,
                     slidesPerView = 4,
-                    spaceBetween = 0,
+                    spaceBetween = 30,
                     pagination = false,
-                    autoplay = false
+                    autoplay = false,
+                    onClick
                 }: SliderProps) => {
-    const { sliderPerViewResponsive } = useSlider(slidesPerView)
+    const { sliderPerViewResponsive, handleClick } = useSlider(slidesPerView, onClick)
 
     return (
         <div className={!autoplay ? 'margim-left' : ''}>
@@ -40,7 +42,7 @@ const Slider = ({
             >
                 {slides.map((slide, index) => (
                     <SwiperSlide  key={index}>
-                        <img className={!autoplay ? 'cursor-pointer' : ''} src={slide.image} alt={`Slide ${index + 1}`} />
+                        <img onClick={() => handleClick(slide)} className={!autoplay ? 'cursor-pointer' : ''} src={slide.image} alt={`Slide ${index + 1}`} />
                     </SwiperSlide>
                 ))}
             </Swiper>
