@@ -23,7 +23,7 @@ const Login = () => {
                         <div className={'block gap-20 lg:grid lg:grid-cols-2'}>
                             <div>
                                 <div className={'flex lg:hidden justify-between'}>
-                                    <Link to={'/login'}><ArrowToBackIcon/></Link>
+                                    <Link to={'/landing-page'}><ArrowToBackIcon/></Link>
                                     <Link to={'/landing-page'}><ClosePageIcon/></Link>
                                 </div>
                                 <div className={'h-full flex flex-col gap-8 items-center'}>

@@ -8,7 +8,7 @@ const useHeroSection = () => {
     const items = [
         {
             name: 'Login',
-            callback: () => navigate('/login')
+            callback: () => ''
         },
         {
             name: 'Register',
@@ -25,7 +25,7 @@ const useHeroSection = () => {
     };
 
     const handleItemClick = (item: string) => {
-        console.log(`Item clicked: ${item}`)
+        setOpenModal(true)
     }
 
     return {

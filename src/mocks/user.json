@@ -3,6 +3,7 @@
         "id": 1,
         "name": "João da Silva",
         "email": "joao@out.com",
+        "password": "12345678",
         "games": [
             {
                 "id": 1,
@@ -135,6 +136,7 @@
         "id": 2,
         "name": "Maria Gomes",
         "email": "maria@out.com",
+        "password": "01234567",
         "games": [
             {
                 "id": 19,
@@ -169,13 +171,14 @@
         "id": 3,
         "name": "Lucas Rodrigues",
         "email": "lucas@out.com",
+        "password": "123456789",
         "games": [
             {
                 "id": 23,
                 "name": "Cyberpunk 2077",
                 "platform": "ps5",
                 "src": "cyberpunk",
-                "description": "Cyberpunk 2077 é um RPG de ação em mundo aberto que se passa em Night City, uma metrópole futurista dominada por corporações e gangues. O jogo acompanha a jornada de V, um mercenário em busca de um implante que concede a imortalidade, em uma narrativa repleta de escolhas morais e consequências. O jogo é ambientado no universo do RPG de mesa Cyberpunk 2020 e apresenta gráficos de última geração e mecânicas de jogo inovadoras.",
+                "description": "Cyberpunk 2077 é um RPG de ação em mundo aberto que se passa em Night City, uma metrópole futurista dominada por corporações e gangues. O jogo acompanha a jornada de V, um mercenário em busca de um implante que concede a imortalidade, em uma narrativa repleta de escolhas morais e consequências. O jogo é ambientado no universo do RPG de mesa Cyberpunk 2020 e apresenta gráficos de última geração e mecânicas de jogo inovadoras."
             },
             {
                 "id": 24,

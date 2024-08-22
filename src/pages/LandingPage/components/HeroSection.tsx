@@ -7,8 +7,11 @@ import useHeroSection from "@/pages/LandingPage/components/hooks/useHeroSection.
 import Modal from "@/components/Modal/Modal.tsx";
 import Login from "@/pages/Login/Index.tsx";
 import {Link} from "react-router-dom";
+import useUserContext from "@/context/UserContext/useUserContext.ts";
 
 const HeroSection = () => {
+    const { user } = useUserContext()
+
     const {
         items,
         openModal,
@@ -19,6 +22,11 @@ const HeroSection = () => {
 
     return(
         <div className={'relative w-full'}>
+            <Modal openModal={openModal} onClickClose={handleCloseModal} >
+                <div className={'bg-primary'}>
+                    <Login />
+                </div>
+            </Modal>
             <img className={'w-full block md:hidden'} src={hero} alt={'Imagem de Ilustração'}/>
             <img className={'w-full hidden md:block'} src={heroDesktop} alt={'Imagem de Ilustração'}/>
             <div className={'absolute top-0 left-0 flex justify-between items-center py-4 px-8 xl:px-16 w-full'}>
@@ -26,18 +34,23 @@ const HeroSection = () => {
                     <Logo width={80} height={60}/>
                 </div>
                 <div className={'block lg:hidden'}>
-                    <ButtonHamburguer items={items} onItemClick={handleItemClick} />
+                    {
+                        !user ? (
+                                <ButtonHamburguer items={items} onItemClick={handleItemClick} />
+                            ):
+                            <Link to={'/'}><Button>Home</Button></Link>
+                    }
                 </div>
                 <div className={'hidden lg:block'}>
-                    <Modal openModal={openModal} onClickClose={handleCloseModal} >
-                        <div className={'bg-primary'}>
-                            <Login />
-                        </div>
-                    </Modal>
-                    <div className={'flex gap-2'}>
-                        <Link to={'/register-user'}> <Button>Cadastrar</Button></Link>
-                        <Button onClick={handleClick}>Entrar</Button>
-                    </div>
+                    {
+                        !user ? (
+                            <div className={'flex gap-2'}>
+                                <Link to={'/register-user'}> <Button>Cadastrar</Button></Link>
+                                <Button onClick={handleClick}>Entrar</Button>
+                            </div>
+                        ):
+                            <Link to={'/'}><Button>Home</Button></Link>
+                    }
                 </div>
             </div>
             <div className={'absolute flex flex-col w-full text-center lg:text-start top-1/2 px-4 xl:px-16'}>
@@ -51,9 +64,6 @@ const HeroSection = () => {
                 </span>
                 <div className={'py-5 text-[16px] lg:text-[18px]'}>
                     Nunca foi tão fácil conseguir aquele jogo ou console tão sonhado com a XP Zone.
-                </div>
-                <div>
-                    COLOCAR ALGUMA COISA AQUI
                 </div>
             </div>
         </div>

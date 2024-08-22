@@ -5,10 +5,10 @@ interface UserProviderProps {
 }
 
 const UserProvider = ({children}: UserProviderProps) => {
-    const {user, UserContext} = useUserContext()
+    const {user, setUser, UserContext} = useUserContext()
 
     return (
-        <UserContext.Provider value={{user}}>
+        <UserContext.Provider value={{user, setUser}}>
             {children}
         </UserContext.Provider>
     )
