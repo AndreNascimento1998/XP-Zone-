@@ -2,7 +2,6 @@ import {createContext, useState} from "react";
 
 interface UserContextType {
     user: string
-    setUser: (user: string) => void
 }
 
 const useUserContext = () => {
@@ -11,8 +10,7 @@ const useUserContext = () => {
 
     return {
         UserContext,
-        user,
-        setUser,
+        user
     }
 }
 
