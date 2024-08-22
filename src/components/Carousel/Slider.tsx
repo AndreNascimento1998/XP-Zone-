@@ -1,7 +1,8 @@
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import 'swiper/css/pagination'
-import { Autoplay, Pagination } from 'swiper/modules'
+import 'swiper/css/navigation'
+import {Autoplay, Navigation, Pagination} from 'swiper/modules'
 import '@/components/Carousel/styles/Slider.scss'
 import useSlider from "@/components/Carousel/hooks/useSlider.ts"
 
@@ -17,15 +18,17 @@ interface SliderProps {
     autoplay?: { delay: number, disableOnInteraction: boolean } | boolean
     pagination?: { clickable: boolean, dynamicBullets: boolean } | boolean
     dynamicBullets?: boolean
+    navigation?: boolean
     onClick?: (slide: Slide) => void
 }
 
 const Slider = ({
                     slides,
                     slidesPerView = 4,
-                    spaceBetween = 30,
+                    spaceBetween = 10,
                     pagination = false,
                     autoplay = false,
+                    navigation = true,
                     onClick
                 }: SliderProps) => {
     const { sliderPerViewResponsive, handleClick } = useSlider(slidesPerView, onClick)
@@ -37,7 +40,8 @@ const Slider = ({
                 spaceBetween={spaceBetween}
                 pagination={pagination}
                 autoplay={autoplay}
-                modules={[Pagination, Autoplay]}
+                navigation={navigation}
+                modules={[Pagination, Autoplay, Navigation]}
                 className="mySwiper"
             >
                 {slides.map((slide, index) => (

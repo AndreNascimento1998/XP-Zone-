@@ -17,6 +17,18 @@
 }
 
 
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  color: #E54B65;
+}
+
+@media (max-width: 640px) {
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    display: none;
+  }
+}
+
 @media (min-width: 1024px) {
   .margim-left .mySwiper .swiper-slide:first-child {
     margin-left: 16px;

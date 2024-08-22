@@ -14,6 +14,7 @@ const HeroSection = () => {
                     slides={responsiveSlides}
                     slidesPerView={1}
                     spaceBetween={0}
+                    navigation={false}
                     pagination={{
                         clickable: true,
                         dynamicBullets: true,
