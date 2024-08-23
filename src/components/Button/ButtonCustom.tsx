@@ -1,6 +1,4 @@
 import useButtonCustom from '@/components/Button/hooks/useButtonCustom.ts'
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-expect-error
 import React from 'react'
 
 interface ButtonCustomProps {
