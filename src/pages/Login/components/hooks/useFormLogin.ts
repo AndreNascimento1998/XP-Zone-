@@ -4,7 +4,7 @@ import {zodResolver} from "@hookform/resolvers/zod"
 import IDataForm from "@/types/DataForm.ts"
 import {useNavigate} from "react-router-dom";
 import mock from "@/mocks/user.json"
-import useUserContext from "@/context/UserContext/useUserContext.ts"
+import useAuth from "@/hooks/useAuth.ts";
 
 const schema = z.object({
     email: z.string().min(1, 'Campo obrigatório'),
@@ -13,7 +13,7 @@ const schema = z.object({
 const useFormLogin = () => {
     const navigate = useNavigate()
     const mockParsed = JSON.parse(JSON.stringify(mock))
-    const { setUser } = useUserContext()
+    const { login } = useAuth()
 
     const { handleSubmit, register, formState: { errors } } = useForm({
         mode: 'all',
@@ -38,8 +38,7 @@ const useFormLogin = () => {
     const handleSubmitForm = (data: IDataForm) => {
         const response = resolveMockUser(data.email, data.password)
         if ( response ) {
-            localStorage.setItem('id', response.id)
-            setUser(response)
+            login(response)
             navigate('/')
         }
     }

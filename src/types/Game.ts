@@ -3,6 +3,7 @@ interface Game {
     name: string
     platform: string
     src: string
+    highlight: boolean
 }
 
 export default Game

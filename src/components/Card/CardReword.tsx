@@ -13,7 +13,7 @@ const CardReword = ({text, patent, src, platform}: CardRewordProps) => {
     return (
         <div className={'min-w-0 bg-card border-[2px] border-[#E54B65] rounded-[16px]'}>
             <div className={''}>
-                <img src={images[src]} alt={"Mortal Kombat"} className={'w-full'} />
+                <img src={images[src]} alt={text} className={'w-full'} />
             </div>
             <div className={'flex flex-col p-2 gap-2'}>
                 <div className={'flex items-center justify-between gap-2 font-oxanium font-bold bg-btn-primary bg-clip-text text-transparent'}>

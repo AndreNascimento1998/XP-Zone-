@@ -7,7 +7,11 @@ const UserHook = () => {
         return mockParsed.find((user: any) => user.id == id)
     }
 
-    return { resolveMock }
+    const getAll = () => {
+        return mockParsed
+    }
+
+    return { resolveMock, getAll }
 }
 
 export default UserHook

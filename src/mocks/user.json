@@ -10,125 +10,144 @@
                 "name": "Uncharted 4",
                 "platform": "ps4",
                 "src": "uncharted4",
-                "description": "Uncharted 4: A Thief's End é um jogo de ação-aventura que acompanha Nathan Drake, um caçador de tesouros renomado, em sua última grande aventura. Após se aposentar, Drake é arrastado de volta para o mundo da pirataria e da busca por tesouros perdidos, em uma jornada emocionante e repleta de perigos."
+                "description": "Uncharted 4: A Thief's End é um jogo de ação-aventura que acompanha Nathan Drake, um caçador de tesouros renomado, em sua última grande aventura. Após se aposentar, Drake é arrastado de volta para o mundo da pirataria e da busca por tesouros perdidos, em uma jornada emocionante e repleta de perigos.",
+                "highlight": false
             },
             {
                 "id": 2,
                 "name": "Demon Souls",
                 "platform": "ps5",
                 "src": "ds",
-                "descriptipn": "Demon's Souls é um jogo de RPG de ação que marcou época ao popularizar o gênero Souls-like, conhecido por sua dificuldade elevada, mundo intrigante e sistema de combate profundo. Lançado originalmente para PlayStation 3 em 2009, o jogo foi remasterizado para PlayStation 5, introduzindo uma nova geração de jogadores a essa experiência desafiadora e recompensadora."
+                "description": "Demon's Souls é um jogo de RPG de ação que marcou época ao popularizar o gênero Souls-like, conhecido por sua dificuldade elevada, mundo intrigante e sistema de combate profundo. Lançado originalmente para PlayStation 3 em 2009, o jogo foi remasterizado para PlayStation 5, introduzindo uma nova geração de jogadores a essa experiência desafiadora e recompensadora.",
+                "highlight": false
             },
             {
                 "id": 3,
                 "name": "The Last of Us Part II",
                 "platform": "ps4",
                 "src": "tlou2",
-                "description": "The Last of Us Part II é um jogo de ação-aventura que se passa em um mundo pós-apocalíptico dominado por criaturas infectadas e grupos de sobreviventes hostis. O jogo acompanha a jornada de Ellie, uma jovem corajosa em busca de vingança, em uma narrativa emocionante e repleta de reviravoltas."
+                "description": "The Last of Us Part II é um jogo de ação-aventura que se passa em um mundo pós-apocalíptico dominado por criaturas infectadas e grupos de sobreviventes hostis. O jogo acompanha a jornada de Ellie, uma jovem corajosa em busca de vingança, em uma narrativa emocionante e repleta de reviravoltas.",
+                "highlight": false
             },
             {
                 "id": 4,
                 "name": "Elden Ring",
                 "platform": "xseries",
-                "src": "Elden Ring é um RPG de ação em mundo aberto desenvolvido pela FromSoftware, os mesmos criadores da aclamada série Dark Souls. O jogo, fruto da colaboração com o escritor George R.R. Martin, transporta os jogadores para as Terras Intermédias, um reino devastado onde devem se tornar o Senhor Elden."
+                "src": "eldenRing",
+                "description": "Elden Ring é um RPG de ação em mundo aberto desenvolvido pela FromSoftware, os mesmos criadores da aclamada série Dark Souls. O jogo, fruto da colaboração com o escritor George R.R. Martin, transporta os jogadores para as Terras Intermédias, um reino devastado onde devem se tornar o Senhor Elden.",
+                "highlight": false
             },
             {
                 "id": 5,
                 "name": "God of War Ragnarok",
                 "platform": "ps5",
-                "src": "gow",
-                "description": "God of War é um jogo de ação e aventura que acompanha Kratos, um guerreiro espartano que se tornou o Deus da Guerra, em sua jornada para se redimir de seus pecados e se tornar um pai melhor para seu filho, Atreus. O jogo é ambientado na mitologia nórdica e apresenta uma narrativa emocionante e um sistema de combate desafiador."
+                "src": "gowRagnarock",
+                "description": "God of War é um jogo de ação e aventura que acompanha Kratos, um guerreiro espartano que se tornou o Deus da Guerra, em sua jornada para se redimir de seus pecados e se tornar um pai melhor para seu filho, Atreus. O jogo é ambientado na mitologia nórdica e apresenta uma narrativa emocionante e um sistema de combate desafiador.",
+                "highlight": false
             },
             {
                 "id": 6,
                 "name": "Hogwarts Legacy",
                 "platform": "xseries",
                 "src": "hogwarts",
-                "description": "Hogwarts Legacy é um RPG de ação em mundo aberto que se passa no universo de Harry Potter, permitindo que os jogadores explorem a Escola de Magia e Bruxaria de Hogwarts e suas redondezas. O jogo apresenta uma narrativa original e permite que os jogadores criem seu próprio bruxo, aprendam feitiços e poções, e enfrentem criaturas mágicas."
+                "description": "Hogwarts Legacy é um RPG de ação em mundo aberto que se passa no universo de Harry Potter, permitindo que os jogadores explorem a Escola de Magia e Bruxaria de Hogwarts e suas redondezas. O jogo apresenta uma narrativa original e permite que os jogadores criem seu próprio bruxo, aprendam feitiços e poções, e enfrentem criaturas mágicas.",
+                "highlight": false
             },
             {
                 "id": 7,
                 "name": "Street Fighter V",
                 "platform": "ps5",
                 "src": "sfv",
-                "description": "Street Fighter V é um jogo de luta que faz parte da icônica série de jogos de luta da Capcom. O jogo apresenta uma variedade de personagens jogáveis, cada um com seu próprio estilo de luta e habilidades especiais. Com gráficos de última geração e mecânicas de jogo aprimoradas, Street Fighter V é uma experiência de luta intensa e competitiva."
+                "description": "Street Fighter V é um jogo de luta que faz parte da icônica série de jogos de luta da Capcom. O jogo apresenta uma variedade de personagens jogáveis, cada um com seu próprio estilo de luta e habilidades especiais. Com gráficos de última geração e mecânicas de jogo aprimoradas, Street Fighter V é uma experiência de luta intensa e competitiva.",
+                "highlight": false
             },
             {
                 "id": 8,
                 "name": "Ratchet & Clank: Rift Apart",
                 "platform": "ps5",
                 "src": "ratch",
-                "description": "Ratchet & Clank: Rift Apart é um jogo de ação e aventura que acompanha a dupla de heróis intergalácticos em uma jornada para salvar a galáxia de um malvado imperador robô. O jogo apresenta mecânicas de jogo inovadoras que exploram as possibilidades do PlayStation 5, como viagens interdimensionais e gráficos de última geração."
+                "description": "Ratchet & Clank: Rift Apart é um jogo de ação e aventura que acompanha a dupla de heróis intergalácticos em uma jornada para salvar a galáxia de um malvado imperador robô. O jogo apresenta mecânicas de jogo inovadoras que exploram as possibilidades do PlayStation 5, como viagens interdimensionais e gráficos de última geração.",
+                "highlight": false
             },
             {
                 "id": 9,
                 "name": "Resident Evil Village",
                 "platform": "switch",
-                "src": "re8",
-                "description": "Resident Evil Village é um jogo de terror e sobrevivência que se passa em uma vila misteriosa habitada por criaturas grotescas e seres sobrenaturais. O jogo acompanha a jornada de Ethan Winters em busca de sua filha desaparecida, enfrentando inimigos aterrorizantes e desvendando segredos sombrios. O jogo é uma sequência direta de Resident Evil 7 e promete expandir o universo da franquia com novos mistérios e desafios."
+                "src": "re3",
+                "description": "Resident Evil Village é um jogo de terror e sobrevivência que se passa em uma vila misteriosa habitada por criaturas grotescas e seres sobrenaturais. O jogo acompanha a jornada de Ethan Winters em busca de sua filha desaparecida, enfrentando inimigos aterrorizantes e desvendando segredos sombrios. O jogo é uma sequência direta de Resident Evil 7 e promete expandir o universo da franquia com novos mistérios e desafios.",
+                "highlight": false
             },
             {
                 "id": 10,
                 "name": "Mortal Kombat 11",
-                "platform": "xone1",
+                "platform": "xone",
                 "src": "mk11",
-                "description": "Mortal Kombat 11 é um jogo de luta que faz parte da icônica série de jogos de luta da NetherRealm Studios. O jogo apresenta uma variedade de personagens jogáveis, cada um com seu próprio estilo de luta e habilidades especiais. Com gráficos de última geração e mecânicas de jogo aprimoradas, Mortal Kombat 11 é uma experiência de luta intensa e competitiva."
+                "description": "Mortal Kombat 11 é um jogo de luta que faz parte da icônica série de jogos de luta da NetherRealm Studios. O jogo apresenta uma variedade de personagens jogáveis, cada um com seu próprio estilo de luta e habilidades especiais. Com gráficos de última geração e mecânicas de jogo aprimoradas, Mortal Kombat 11 é uma experiência de luta intensa e competitiva.",
+                "highlight": false
             },
             {
                 "id": 11,
                 "name": "Resident Evil 3 Remake",
                 "platform": "ps5",
                 "src": "re3",
-                "description": "Resident Evil 3 Remake é um jogo de terror e sobrevivência que se passa em Raccoon City, uma cidade infestada por zumbis e criaturas mutantes. O jogo acompanha a jornada de Jill Valentine em busca de sobreviventes e uma maneira de escapar da cidade antes que seja tarde demais. O jogo é uma reimaginação do clássico de 1999 e apresenta gráficos de última geração e mecânicas de jogo aprimoradas."
+                "description": "Resident Evil 3 Remake é um jogo de terror e sobrevivência que se passa em Raccoon City, uma cidade infestada por zumbis e criaturas mutantes. O jogo acompanha a jornada de Jill Valentine em busca de sobreviventes e uma maneira de escapar da cidade antes que seja tarde demais. O jogo é uma reimaginação do clássico de 1999 e apresenta gráficos de última geração e mecânicas de jogo aprimoradas.",
+                "highlight": true
             },
             {
                 "id": 12,
                 "name": "Cyberpunk 2077",
                 "platform": "ps5",
                 "src": "cyberpunk",
-                "description": "Cyberpunk 2077 é um RPG de ação em mundo aberto que se passa em Night City, uma metrópole futurista dominada por corporações e gangues. O jogo acompanha a jornada de V, um mercenário em busca de um implante que concede a imortalidade, em uma narrativa repleta de escolhas morais e consequências. O jogo é ambientado no universo do RPG de mesa Cyberpunk 2020 e apresenta gráficos de última geração e mecânicas de jogo inovadoras."
+                "description": "Cyberpunk 2077 é um RPG de ação em mundo aberto que se passa em Night City, uma metrópole futurista dominada por corporações e gangues. O jogo acompanha a jornada de V, um mercenário em busca de um implante que concede a imortalidade, em uma narrativa repleta de escolhas morais e consequências. O jogo é ambientado no universo do RPG de mesa Cyberpunk 2020 e apresenta gráficos de última geração e mecânicas de jogo inovadoras.",
+                "highlight": false
             },
             {
                 "id": 13,
                 "name": "Deus Ex: Mankind Divided",
                 "platform": "ps3",
                 "src": "deusEx",
-                "description": "Deus Ex: Mankind Divided é um jogo de ação e RPG que se passa em um futuro distópico onde humanos e ciborgues vivem em constante conflito. O jogo acompanha a jornada de Adam Jensen, um agente secreto ciberneticamente aprimorado, em sua missão para desvendar uma conspiração global e impedir uma guerra entre as facções. O jogo apresenta uma narrativa complexa, escolhas morais e um sistema de combate versátil."
+                "description": "Deus Ex: Mankind Divided é um jogo de ação e RPG que se passa em um futuro distópico onde humanos e ciborgues vivem em constante conflito. O jogo acompanha a jornada de Adam Jensen, um agente secreto ciberneticamente aprimorado, em sua missão para desvendar uma conspiração global e impedir uma guerra entre as facções. O jogo apresenta uma narrativa complexa, escolhas morais e um sistema de combate versátil.",
+                "highlight": false
             },
             {
                 "id": 14,
                 "name": "Ghost Recon",
                 "platform": "x360",
-                "src": "ghostRecon",
-                "description": "Ghost Recon é uma série de jogos de tiro tático desenvolvida pela Ubisoft, conhecida por sua ênfase na estratégia, trabalho em equipe e realismo militar. Os jogos da série geralmente se passam em ambientes de guerra moderna e apresentam missões desafiadoras que exigem planejamento e coordenação entre os jogadores. Com gráficos realistas e mecânicas de jogo aprimoradas, Ghost Recon é uma experiência imersiva e intensa para fãs de jogos de tiro."
+                "src": "gr",
+                "description": "Ghost Recon é uma série de jogos de tiro tático desenvolvida pela Ubisoft, conhecida por sua ênfase na estratégia, trabalho em equipe e realismo militar. Os jogos da série geralmente se passam em ambientes de guerra moderna e apresentam missões desafiadoras que exigem planejamento e coordenação entre os jogadores. Com gráficos realistas e mecânicas de jogo aprimoradas, Ghost Recon é uma experiência imersiva e intensa para fãs de jogos de tiro.",
+                "highlight": false
             },
             {
                 "id": 15,
                 "name": "Gears of War 4",
                 "platform": "xone",
                 "src": "gears4",
-                "description": "Gears of War 4 é um jogo de tiro em terceira pessoa que se passa em um mundo pós-apocalíptico dominado por criaturas monstruosas conhecidas como Locusts. O jogo acompanha a jornada de JD Fenix, filho do herói Marcus Fenix, em sua luta para proteger a humanidade da ameaça dos Locusts. Com gráficos de última geração e mecânicas de jogo aprimoradas, Gears of War 4 é uma experiência intensa e emocionante para fãs de jogos de tiro."
+                "description": "Gears of War 4 é um jogo de tiro em terceira pessoa que se passa em um mundo pós-apocalíptico dominado por criaturas monstruosas conhecidas como Locusts. O jogo acompanha a jornada de JD Fenix, filho do herói Marcus Fenix, em sua luta para proteger a humanidade da ameaça dos Locusts. Com gráficos de última geração e mecânicas de jogo aprimoradas, Gears of War 4 é uma experiência intensa e emocionante para fãs de jogos de tiro.",
+                "highlight": true
             },
             {
                 "id": 16,
                 "name": "Asssassins Creed Origins",
                 "platform": "xone",
                 "src": "acorigins",
-                "description": "Assassin's Creed Origins é um jogo de ação e aventura que se passa no Egito Antigo, durante o reinado de Cleópatra e Júlio César. O jogo acompanha a jornada de Bayek, um medjay em busca de vingança pela morte de sua família, em uma narrativa repleta de conspirações e mistérios. Com gráficos de última geração e mecânicas de jogo aprimoradas, Assassin's Creed Origins é uma experiência imersiva e envolvente para fãs de jogos de aventura."
+                "description": "Assassin's Creed Origins é um jogo de ação e aventura que se passa no Egito Antigo, durante o reinado de Cleópatra e Júlio César. O jogo acompanha a jornada de Bayek, um medjay em busca de vingança pela morte de sua família, em uma narrativa repleta de conspirações e mistérios. Com gráficos de última geração e mecânicas de jogo aprimoradas, Assassin's Creed Origins é uma experiência imersiva e envolvente para fãs de jogos de aventura.",
+                "highlight": true
             },
             {
                 "id": 17,
                 "name": "Spider Man Miles Morales",
                 "platform": "ps5",
                 "src": "millesMoraes",
-                "description": "Spider-Man: Miles Morales é mais do que apenas um jogo de videogame; é uma celebração da diversidade e um marco para a representação na indústria dos games. A jornada de Miles Morales como o novo Homem-Aranha de Nova York é inspiradora, abordando temas como identidade, comunidade e superação. A jogabilidade dinâmica, os gráficos impressionantes e a história envolvente fazem deste título um dos melhores da franquia. Além disso, a introdução de novas habilidades e a exploração de um novo bairro de Nova York trazem uma experiência fresca e emocionante para os fãs. Se você é fã de jogos de ação-aventura, super-heróis ou simplesmente busca uma história inspiradora, Spider-Man: Miles Morales é uma experiência imperdível."
+                "description": "Spider-Man: Miles Morales é mais do que apenas um jogo de videogame; é uma celebração da diversidade e um marco para a representação na indústria dos games. A jornada de Miles Morales como o novo Homem-Aranha de Nova York é inspiradora, abordando temas como identidade, comunidade e superação. A jogabilidade dinâmica, os gráficos impressionantes e a história envolvente fazem deste título um dos melhores da franquia. Além disso, a introdução de novas habilidades e a exploração de um novo bairro de Nova York trazem uma experiência fresca e emocionante para os fãs. Se você é fã de jogos de ação-aventura, super-heróis ou simplesmente busca uma história inspiradora, Spider-Man: Miles Morales é uma experiência imperdível.",
+                "highlight": false
             },
             {
                 "id": 18,
                 "name": "Godfall",
                 "platform": "ps4",
                 "src": "godfall",
-                "description": "Godfall é um jogo de ação e RPG que se passa em um mundo de fantasia repleto de criaturas místicas e reinos em guerra. O jogo apresenta um sistema de combate dinâmico e desafiador, no qual os jogadores podem desferir golpes poderosos e usar habilidades especiais para derrotar seus inimigos. Com gráficos de última geração e mecânicas de jogo inovadoras, Godfall é uma experiência imersiva e emocionante para fãs de jogos de ação e aventura."
+                "description": "Godfall é um jogo de ação e RPG que se passa em um mundo de fantasia repleto de criaturas místicas e reinos em guerra. O jogo apresenta um sistema de combate dinâmico e desafiador, no qual os jogadores podem desferir golpes poderosos e usar habilidades especiais para derrotar seus inimigos. Com gráficos de última geração e mecânicas de jogo inovadoras, Godfall é uma experiência imersiva e emocionante para fãs de jogos de ação e aventura.",
+                "highlight": true
             }
         ]
     },
@@ -143,27 +162,24 @@
                 "name": "Asssassins Creed Origins",
                 "platform": "xseries",
                 "src": "acorigins",
-                "description": "Assassin's Creed Origins é um jogo de ação e aventura que se passa no Egito Antigo, durante o reinado de Cleópatra e Júlio César. O jogo acompanha a jornada de Bayek, um medjay em busca de vingança pela morte de sua família, em uma narrativa repleta de conspirações e mistérios. Com gráficos de última geração e mecânicas de jogo aprimoradas, Assassin's Creed Origins é uma experiência imersiva e envolvente para fãs de jogos de aventura."
+                "description": "Assassin's Creed Origins é um jogo de ação e aventura que se passa no Egito Antigo, durante o reinado de Cleópatra e Júlio César. O jogo acompanha a jornada de Bayek, um medjay em busca de vingança pela morte de sua família, em uma narrativa repleta de conspirações e mistérios. Com gráficos de última geração e mecânicas de jogo aprimoradas, Assassin's Creed Origins é uma experiência imersiva e envolvente para fãs de jogos de aventura.",
+                "highlight": false
             },
             {
                 "id": 20,
                 "name": "Cyberpunk 2077",
                 "platform": "xseries",
                 "src": "cyberpunk",
-                "description": "Cyberpunk 2077 é um RPG de ação em mundo aberto que se passa em Night City, uma metrópole futurista dominada por corporações e gangues. O jogo acompanha a jornada de V, um mercenário em busca de um implante que concede a imortalidade, em uma narrativa repleta de escolhas morais e consequências. O jogo é ambientado no universo do RPG de mesa Cyberpunk 2020 e apresenta gráficos de última geração e mecânicas de jogo inovadoras."
+                "description": "Cyberpunk 2077 é um RPG de ação em mundo aberto que se passa em Night City, uma metrópole futurista dominada por corporações e gangues. O jogo acompanha a jornada de V, um mercenário em busca de um implante que concede a imortalidade, em uma narrativa repleta de escolhas morais e consequências. O jogo é ambientado no universo do RPG de mesa Cyberpunk 2020 e apresenta gráficos de última geração e mecânicas de jogo inovadoras.",
+                "highlight": true
             },
             {
                 "id": 21,
                 "name": "Gears of War 4",
                 "platform": "xseries",
                 "src": "gears4",
-                "description": "Gears of War 4 é um jogo de tiro em terceira pessoa que se passa em um mundo pós-apocalíptico dominado por criaturas monstruosas conhecidas como Locusts. O jogo acompanha a jornada de JD Fenix, filho do herói Marcus Fenix, em sua luta para proteger a humanidade da ameaça dos Locusts. Com gráficos de última geração e mecânicas de jogo aprimoradas, Gears of War 4 é uma experiência intensa e emocionante para fãs de jogos de tiro."
-            },
-            {
-                "id": 22,
-                "name": "Elden Ring",
-                "platform": "xseries",
-                "src": "Elden Ring é um RPG de ação em mundo aberto desenvolvido pela FromSoftware, os mesmos criadores da aclamada série Dark Souls. O jogo, fruto da colaboração com o escritor George R.R. Martin, transporta os jogadores para as Terras Intermédias, um reino devastado onde devem se tornar o Senhor Elden."
+                "description": "Gears of War 4 é um jogo de tiro em terceira pessoa que se passa em um mundo pós-apocalíptico dominado por criaturas monstruosas conhecidas como Locusts. O jogo acompanha a jornada de JD Fenix, filho do herói Marcus Fenix, em sua luta para proteger a humanidade da ameaça dos Locusts. Com gráficos de última geração e mecânicas de jogo aprimoradas, Gears of War 4 é uma experiência intensa e emocionante para fãs de jogos de tiro.",
+                "highlight": true
             }
         ]
     },
@@ -178,35 +194,40 @@
                 "name": "Cyberpunk 2077",
                 "platform": "ps5",
                 "src": "cyberpunk",
-                "description": "Cyberpunk 2077 é um RPG de ação em mundo aberto que se passa em Night City, uma metrópole futurista dominada por corporações e gangues. O jogo acompanha a jornada de V, um mercenário em busca de um implante que concede a imortalidade, em uma narrativa repleta de escolhas morais e consequências. O jogo é ambientado no universo do RPG de mesa Cyberpunk 2020 e apresenta gráficos de última geração e mecânicas de jogo inovadoras."
+                "description": "Cyberpunk 2077 é um RPG de ação em mundo aberto que se passa em Night City, uma metrópole futurista dominada por corporações e gangues. O jogo acompanha a jornada de V, um mercenário em busca de um implante que concede a imortalidade, em uma narrativa repleta de escolhas morais e consequências. O jogo é ambientado no universo do RPG de mesa Cyberpunk 2020 e apresenta gráficos de última geração e mecânicas de jogo inovadoras.",
+                "highlight": false
             },
             {
                 "id": 24,
                 "name": "Uncharted 4",
                 "platform": "ps4",
                 "src": "uncharted4",
-                "description": "Uncharted 4: A Thief's End é um jogo de ação-aventura que acompanha Nathan Drake, um caçador de tesouros renomado, em sua última grande aventura. Após se aposentar, Drake é arrastado de volta para o mundo da pirataria e da busca por tesouros perdidos, em uma jornada emocionante e repleta de perigos."
+                "description": "Uncharted 4: A Thief's End é um jogo de ação-aventura que acompanha Nathan Drake, um caçador de tesouros renomado, em sua última grande aventura. Após se aposentar, Drake é arrastado de volta para o mundo da pirataria e da busca por tesouros perdidos, em uma jornada emocionante e repleta de perigos.",
+                "highlight": false
             },
             {
                 "id": 25,
                 "name": "Demon Souls",
                 "platform": "ps5",
                 "src": "ds",
-                "descriptipn": "Demon's Souls é um jogo de RPG de ação que marcou época ao popularizar o gênero Souls-like, conhecido por sua dificuldade elevada, mundo intrigante e sistema de combate profundo. Lançado originalmente para PlayStation 3 em 2009, o jogo foi remasterizado para PlayStation 5, introduzindo uma nova geração de jogadores a essa experiência desafiadora e recompensadora."
+                "description": "Demon's Souls é um jogo de RPG de ação que marcou época ao popularizar o gênero Souls-like, conhecido por sua dificuldade elevada, mundo intrigante e sistema de combate profundo. Lançado originalmente para PlayStation 3 em 2009, o jogo foi remasterizado para PlayStation 5, introduzindo uma nova geração de jogadores a essa experiência desafiadora e recompensadora.",
+                "highlight": false
             },
             {
                 "id": 7,
                 "name": "Street Fighter V",
                 "platform": "ps4",
                 "src": "sfv",
-                "description": "Street Fighter V é um jogo de luta que faz parte da icônica série de jogos de luta da Capcom. O jogo apresenta uma variedade de personagens jogáveis, cada um com seu próprio estilo de luta e habilidades especiais. Com gráficos de última geração e mecânicas de jogo aprimoradas, Street Fighter V é uma experiência de luta intensa e competitiva."
+                "description": "Street Fighter V é um jogo de luta que faz parte da icônica série de jogos de luta da Capcom. O jogo apresenta uma variedade de personagens jogáveis, cada um com seu próprio estilo de luta e habilidades especiais. Com gráficos de última geração e mecânicas de jogo aprimoradas, Street Fighter V é uma experiência de luta intensa e competitiva.",
+                "highlight": false
             },
             {
                 "id": 2,
                 "name": "Demon Souls",
                 "platform": "ps5",
                 "src": "ds",
-                "descriptipn": "Demon's Souls é um jogo de RPG de ação que marcou época ao popularizar o gênero Souls-like, conhecido por sua dificuldade elevada, mundo intrigante e sistema de combate profundo. Lançado originalmente para PlayStation 3 em 2009, o jogo foi remasterizado para PlayStation 5, introduzindo uma nova geração de jogadores a essa experiência desafiadora e recompensadora."
+                "description": "Demon's Souls é um jogo de RPG de ação que marcou época ao popularizar o gênero Souls-like, conhecido por sua dificuldade elevada, mundo intrigante e sistema de combate profundo. Lançado originalmente para PlayStation 3 em 2009, o jogo foi remasterizado para PlayStation 5, introduzindo uma nova geração de jogadores a essa experiência desafiadora e recompensadora.",
+                "highlight": false
             }
         ]
     }
