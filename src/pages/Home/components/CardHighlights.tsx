@@ -1,5 +1,4 @@
-import CardReword from "@/components/Card/CardReword.tsx";
-import usePlatformEnum from "@/hooks/usePlatformEnum.ts";
+import CardReword from "@/components/Card/CardReword.tsx"
 
 interface CardHighlightsProps {
     title: string;
@@ -12,7 +11,6 @@ interface CardHighlightsProps {
 }
 
 const CardHighlights = ({ title, games }: CardHighlightsProps) => {
-    const { platformName } = usePlatformEnum();
 
     return (
         <div className={'flex flex-col gap-2'}>
@@ -21,7 +19,7 @@ const CardHighlights = ({ title, games }: CardHighlightsProps) => {
                 {games.map((game, gameIndex) => (
                     <div key={gameIndex}>
                         <div className={'w-[240px] min-w-[90%] padding-left padding-right cursor-pointer'}>
-                            <CardReword text={game.name} src={game.src} platform={platformName[game.platform]} />
+                            <CardReword game={game}/>
                         </div>
                     </div>
                 ))}

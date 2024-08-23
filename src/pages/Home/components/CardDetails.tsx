@@ -8,9 +8,10 @@ import Game from "@/types/Game.ts";
 interface CardDetailsProps {
     users: User[]
 }
+
 const CardDetails = ({ users }: CardDetailsProps) => {
-    const { firstLetter } = useFirstLetter();
-    const { platformName } = usePlatformEnum();
+    const { firstLetter } = useFirstLetter()
+    const { platformName } = usePlatformEnum()
 
     return (
         <div className={'flex text-[20px] flex-col gap-2'}>
@@ -32,7 +33,7 @@ const CardDetails = ({ users }: CardDetailsProps) => {
                                     <div className="flex-1">
                                         <div className="font-bold text-lg">{item.name}</div>
                                         <div className="flex flex-wrap gap-2 mt-2">
-                                            {item.platform && item.platform.map((platform: string, index: number) => (
+                                            { [...new Set(item.games.map((game: Game) => game.platform))].map((platform: string, index: number) => (
                                                 <span key={index} className="italic text-[12px] flex items-center gap-1">
                                                     <div className={'bg-gray-300  h-[5px] w-[5px] rounded-full'} /> {platformName[platform]}
                                                 </span>

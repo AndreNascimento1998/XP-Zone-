@@ -5,7 +5,7 @@ import CardHighlights from "@/pages/Home/components/CardHighlights.tsx"
 
 const Home = () => {
     const {
-        usersMock,
+        users,
         gamesHighlight,
         gamesXbox,
         gamesPs,
@@ -14,7 +14,7 @@ const Home = () => {
     return (
         <div className={'flex flex-col gap-20'}>
             <HeroSection />
-            <CardDetails users={usersMock} />
+            <CardDetails users={users} />
             <CardHighlights title={'Jogos em destaque'} games={gamesHighlight} />
             <CardHighlights title={'Jogos do Xbox'} games={gamesXbox} />
             <CardHighlights title={'Jogos do Playstation'} games={gamesPs} />

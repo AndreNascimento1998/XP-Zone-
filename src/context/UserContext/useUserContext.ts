@@ -26,9 +26,9 @@ const useUserContext = () => {
 
     return {
         UserContext,
-        setUser,
         user,
         users,
+        setUser,
         setUsers,
         getAllGames
     };
