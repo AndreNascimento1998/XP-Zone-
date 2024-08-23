@@ -1,4 +1,5 @@
 import CardReword from "@/components/Card/CardReword.tsx"
+import Game from "@/types/Game.ts";
 
 interface CardHighlightsProps {
     title: string;
@@ -11,6 +12,9 @@ interface CardHighlightsProps {
 }
 
 const CardHighlights = ({ title, games }: CardHighlightsProps) => {
+    const handleClick = (game: Game) => {
+        console.log(game)
+    }
 
     return (
         <div className={'flex flex-col gap-2'}>
@@ -19,7 +23,7 @@ const CardHighlights = ({ title, games }: CardHighlightsProps) => {
                 {games.map((game, gameIndex) => (
                     <div key={gameIndex}>
                         <div className={'w-[240px] min-w-[90%] padding-left padding-right cursor-pointer'}>
-                            <CardReword game={game}/>
+                            <CardReword onClick={handleClick} game={game}/>
                         </div>
                     </div>
                 ))}

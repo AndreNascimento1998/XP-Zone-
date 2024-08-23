@@ -4,15 +4,20 @@ import usePlatformEnum from "@/hooks/usePlatformEnum.ts";
 
 interface CardRewordProps {
     game: Game
+    onClick: (game: Game) => void
 }
 
-const CardReword = ({game}: CardRewordProps) => {
+const CardReword = ({game, onClick}: CardRewordProps) => {
     const { platformName } = usePlatformEnum();
     const { images } = useCardReword()
 
+    const handleClick = (game: Game) => {
+        onClick(game)
+    }
+
     return (
-        <div className={'min-w-0 bg-card border-[2px] border-[#E54B65] rounded-[16px]'}>
-            <div className={''}>
+        <div onClick={() => handleClick(game)} className={'min-w-0 bg-card border-[2px] border-[#E54B65] rounded-[16px]'}>
+            <div>
                 <img src={images[game.src]} alt={game.name} className={'w-full'} />
             </div>
             <div className={'flex flex-col p-2 gap-2'}>
