@@ -1,10 +1,12 @@
-import mock from "@/mocks/user.json"
+// @ts-ignore
+import mock from '@/mocks/user.json'
+import User from '../types/User.ts'
 
 const UserHook = () => {
     const mockParsed = JSON.parse(JSON.stringify(mock))
 
-    const resolveMock = (id: any) => {
-        return mockParsed.find((user: any) => user.id == id)
+    const resolveMock = (id: number | string) => {
+        return mockParsed.find((user: User) => user.id == id)
     }
 
     const getAll = () => {

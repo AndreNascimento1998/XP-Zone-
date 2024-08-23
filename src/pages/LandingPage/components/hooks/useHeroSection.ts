@@ -1,5 +1,5 @@
-import {useNavigate} from 'react-router-dom'
-import {useState} from "react";
+import { useNavigate } from 'react-router-dom'
+import { useState } from 'react'
 
 const useHeroSection = () => {
     const navigate = useNavigate()
@@ -8,12 +8,12 @@ const useHeroSection = () => {
     const items = [
         {
             name: 'Login',
-            callback: () => ''
+            callback: () => '',
         },
         {
             name: 'Register',
-            callback: () => navigate('/register-user')
-        }
+            callback: () => navigate('/register-user'),
+        },
     ]
 
     const handleClick = () => {
@@ -21,10 +21,10 @@ const useHeroSection = () => {
     }
 
     const handleCloseModal = () => {
-        setOpenModal(false);
-    };
+        setOpenModal(false)
+    }
 
-    const handleItemClick = (item: string) => {
+    const handleItemClick = () => {
         setOpenModal(true)
     }
 
@@ -33,7 +33,7 @@ const useHeroSection = () => {
         openModal,
         handleItemClick,
         handleCloseModal,
-        handleClick
+        handleClick,
     }
 }
 

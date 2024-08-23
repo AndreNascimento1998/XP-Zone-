@@ -1,16 +1,11 @@
-import Input from "@/components/Input/Input.tsx"
-import Button from "@/components/Button/Button.tsx"
-import {Link} from "react-router-dom"
-import useFormLogin from "@/pages/Login/components/hooks/useFormLogin.ts"
+import Input from '@/components/Input/Input.tsx'
+import Button from '@/components/Button/Button.tsx'
+import { Link } from 'react-router-dom'
+import useFormLogin from '@/pages/Login/components/hooks/useFormLogin.ts'
+import {FieldError} from "react-hook-form";
 
 const Login = () => {
-    const {
-        handleSubmit,
-        register,
-        errors,
-        getErrorMessage,
-        handleSubmitForm
-    } = useFormLogin()
+    const { handleSubmit, register, errors, getErrorMessage, handleSubmitForm } = useFormLogin()
 
     return (
         <form onSubmit={handleSubmit(handleSubmitForm)} className={'w-full flex flex-col gap-2'}>
@@ -24,7 +19,7 @@ const Login = () => {
                     outlined={true}
                 />
                 {errors.email?.message ? (
-                    <div className={'text-[red] text-[14px] italic'}>{getErrorMessage(errors.email)}</div>
+                    <div className={'text-[red] text-[14px] italic'}>{getErrorMessage(errors.email as FieldError)}</div>
                 ) : (
                     <div className={'invisible'}>|</div>
                 )}
@@ -37,13 +32,17 @@ const Login = () => {
                     outlined={true}
                 />
                 {errors.password?.message ? (
-                    <div className={'text-[red] text-[14px] italic'}>{getErrorMessage(errors.password)}</div>
+                    <div className={'text-[red] text-[14px] italic'}>{getErrorMessage(errors.password as FieldError)}</div>
                 ) : (
                     <div className={'invisible'}>|</div>
                 )}
             </div>
             <div className={'w-full grid grid-cols-2 gap-2 mt-4'}>
-                <Link to={'/register-user'}><Button type={'button'} outlined={true} >Cadastrar</Button></Link>
+                <Link to={'/register-user'}>
+                    <Button type={'button'} outlined={true}>
+                        Cadastrar
+                    </Button>
+                </Link>
                 <Button type={'submit'}>Entrar</Button>
             </div>
         </form>

@@ -1,4 +1,4 @@
-import Game from "@/types/Game.ts";
+import Game from '@/types/Game.ts'
 
 interface User {
     id?: number | string

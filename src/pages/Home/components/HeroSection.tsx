@@ -1,11 +1,8 @@
-import Slider from "@/components/Carousel/Slider.tsx"
-import useHeroSection from "@/pages/Home/components/hooks/useHeroSection.ts"
+import Slider from '@/components/Carousel/Slider.tsx'
+import useHeroSection from '@/pages/Home/components/hooks/useHeroSection.ts'
 
 const HeroSection = () => {
-    const {
-        responsiveSlides,
-        responsiveCarousel
-    } = useHeroSection()
+    const { responsiveSlides, responsiveCarousel } = useHeroSection()
 
     return (
         <div className={'flex text-[20px] flex-col gap-20'}>
@@ -21,17 +18,14 @@ const HeroSection = () => {
                     }}
                     autoplay={{
                         delay: 5000,
-                        disableOnInteraction: true
+                        disableOnInteraction: true,
                     }}
                 />
             </div>
             <div className={'flex flex-col gap-2'}>
                 <div className={'px-4'}>Filtre seu console</div>
                 <div className={'px-2 lg:px-0'}>
-                    <Slider
-                        onClick={(slide) => console.log(slide)}
-                        slides={responsiveCarousel}
-                    />
+                    <Slider onClick={(slide) => console.log(slide)} slides={responsiveCarousel} />
                 </div>
             </div>
         </div>

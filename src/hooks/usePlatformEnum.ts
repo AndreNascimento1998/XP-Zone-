@@ -1,4 +1,4 @@
-import Platform  from "@/types/Platform.ts";
+import Platform from '@/types/Platform.ts'
 
 const usePlatformEnum = () => {
     const platformName: Platform = {

@@ -1,14 +1,14 @@
-import useUserContext from "@/context/UserContext/useUserContext.ts"
+import useUserContext from '@/context/UserContext/useUserContext.ts'
 
 interface UserProviderProps {
     children: React.ReactNode
 }
 
-const UserProvider = ({children}: UserProviderProps) => {
-    const {user, setUser, UserContext} = useUserContext()
+const UserProvider = ({ children }: UserProviderProps) => {
+    const { user, setUser, users, setUsers, UserContext } = useUserContext()
 
     return (
-        <UserContext.Provider value={{user, setUser}}>
+        <UserContext.Provider value={{ user, setUser, users, setUsers, UserContext }}>
             {children}
         </UserContext.Provider>
     )

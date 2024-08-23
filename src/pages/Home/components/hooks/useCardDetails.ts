@@ -1,4 +1,4 @@
-import Platform  from "@/types/Platform.ts";
+import Platform from '@/types/Platform.ts'
 
 const useCardDetails = () => {
     const platformName: Platform = {
@@ -8,8 +8,7 @@ const useCardDetails = () => {
         switch: 'Nintendo Switch',
         ps5: 'PlayStation 5',
         x360: 'Xbox 360',
-        xseries_x: 'Xbox Series X',
-        xseries_s: 'Xbox Series S',
+        xseries: 'Xbox Series S/X',
         wii: 'Nintendo Wii',
         ps3: 'PlayStation 3',
     }

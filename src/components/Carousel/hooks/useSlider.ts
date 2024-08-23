@@ -1,8 +1,8 @@
-import {useEffect, useState} from "react"
+import { useEffect, useState } from 'react'
 
 interface Slide {
-    value: string;
-    image: string;
+    value: string
+    image: string
 }
 const useSlider = (slidesPerView: number, onClick: (slide: Slide) => void) => {
     const [sliderPerViewResponsive, setSliderPerViewResponsive] = useState(slidesPerView)
@@ -12,7 +12,7 @@ const useSlider = (slidesPerView: number, onClick: (slide: Slide) => void) => {
     }
 
     const handleResize = () => {
-        if(window.innerWidth < 640 && slidesPerView !== 1) {
+        if (window.innerWidth < 640 && slidesPerView !== 1) {
             setSliderPerViewResponsive(1.5)
         } else {
             setSliderPerViewResponsive(slidesPerView)
@@ -26,11 +26,11 @@ const useSlider = (slidesPerView: number, onClick: (slide: Slide) => void) => {
         return () => {
             window.removeEventListener('resize', handleResize)
         }
-    }, []);
+    }, [])
 
     return {
         sliderPerViewResponsive,
-        handleClick
+        handleClick,
     }
 }
 

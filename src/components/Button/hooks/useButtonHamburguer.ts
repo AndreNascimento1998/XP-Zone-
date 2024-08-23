@@ -1,5 +1,5 @@
-import { useRef, useState} from "react"
-import useListenerMouseDown from "@/hooks/useListenerMouseDown.ts";
+import { useRef, useState } from 'react'
+import useListenerMouseDown from '@/hooks/useListenerMouseDown.ts'
 
 const UseButtonHamburguer = (onItemClick: (item: string) => void) => {
     const [isOpen, setIsOpen] = useState(false)
@@ -22,7 +22,7 @@ const UseButtonHamburguer = (onItemClick: (item: string) => void) => {
         toggleMenu()
     }
 
-    return {isOpen, menuRef, toggleMenu, handleItemClick}
+    return { isOpen, menuRef, toggleMenu, handleItemClick }
 }
 
 export default UseButtonHamburguer

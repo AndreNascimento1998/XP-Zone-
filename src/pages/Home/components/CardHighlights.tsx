@@ -1,13 +1,13 @@
-import CardReword from "@/components/Card/CardReword.tsx"
-import Game from "@/types/Game.ts";
+import CardReword from '@/components/Card/CardReword.tsx'
+import Game from '@/types/Game.ts'
 
 interface CardHighlightsProps {
-    title: string;
+    title: string
     games: {
-        name: string;
-        platform: string;
-        src: string;
-        highlight: boolean;
+        name: string
+        platform: string
+        src: string
+        highlight: boolean
     }[]
 }
 
@@ -23,13 +23,13 @@ const CardHighlights = ({ title, games }: CardHighlightsProps) => {
                 {games.map((game, gameIndex) => (
                     <div key={gameIndex}>
                         <div className={'w-[240px] min-w-[90%] padding-left padding-right cursor-pointer'}>
-                            <CardReword onClick={handleClick} game={game}/>
+                            <CardReword onClick={handleClick} game={game} />
                         </div>
                     </div>
                 ))}
             </div>
         </div>
-    );
+    )
 }
 
-export default CardHighlights;
+export default CardHighlights

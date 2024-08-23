@@ -1,9 +1,9 @@
-import {Outlet, useNavigate} from 'react-router-dom'
+import { Outlet, useNavigate } from 'react-router-dom'
 import '@/styles/global.scss'
 import Header from '@/pages/Header/Index.tsx'
-import UserProvider from "@/context/UserContext/UserProvider.tsx"
-import {useEffect} from "react";
-import useUserContext from "./context/UserContext/useUserContext.ts";
+import UserProvider from '@/context/UserContext/UserProvider.tsx'
+import { useEffect } from 'react'
+import useUserContext from './context/UserContext/useUserContext.ts'
 
 function App() {
     const navigate = useNavigate()
@@ -13,12 +13,12 @@ function App() {
         if (!user) {
             navigate('/landing-page')
         }
-    }, [navigate])
+    }, [navigate, user])
 
     return (
         <div className={'3xl:px-[20rem]'}>
             <UserProvider>
-                <Header  />
+                <Header />
                 <Outlet />
             </UserProvider>
         </div>

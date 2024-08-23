@@ -1,6 +1,6 @@
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-expect-error
-import React from "react";
+import React from 'react'
 
 interface ButtonProps {
     children: React.ReactNode

@@ -2,9 +2,9 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import 'swiper/css/pagination'
 import 'swiper/css/navigation'
-import {Autoplay, Navigation, Pagination} from 'swiper/modules'
+import { Autoplay, Navigation, Pagination } from 'swiper/modules'
 import '@/components/Carousel/styles/Slider.scss'
-import useSlider from "@/components/Carousel/hooks/useSlider.ts"
+import useSlider from '@/components/Carousel/hooks/useSlider.ts'
 
 interface Slide {
     value: string
@@ -15,22 +15,22 @@ interface SliderProps {
     slides: Slide[]
     slidesPerView?: number
     spaceBetween?: number
-    autoplay?: { delay: number, disableOnInteraction: boolean } | boolean
-    pagination?: { clickable: boolean, dynamicBullets: boolean } | boolean
+    autoplay?: { delay: number; disableOnInteraction: boolean } | boolean
+    pagination?: { clickable: boolean; dynamicBullets: boolean } | boolean
     dynamicBullets?: boolean
     navigation?: boolean
     onClick?: (slide: Slide) => void
 }
 
 const Slider = ({
-                    slides,
-                    slidesPerView = 4,
-                    spaceBetween = 10,
-                    pagination = false,
-                    autoplay = false,
-                    navigation = true,
-                    onClick
-                }: SliderProps) => {
+    slides,
+    slidesPerView = 4,
+    spaceBetween = 10,
+    pagination = false,
+    autoplay = false,
+    navigation = true,
+    onClick,
+}: SliderProps) => {
     const { sliderPerViewResponsive, handleClick } = useSlider(slidesPerView, onClick)
 
     return (
@@ -45,8 +45,13 @@ const Slider = ({
                 className="mySwiper"
             >
                 {slides.map((slide, index) => (
-                    <SwiperSlide  key={index}>
-                        <img onClick={() => handleClick(slide)} className={!autoplay ? 'cursor-pointer' : ''} src={slide.image} alt={`Slide ${index + 1}`} />
+                    <SwiperSlide key={index}>
+                        <img
+                            onClick={() => handleClick(slide)}
+                            className={!autoplay ? 'cursor-pointer' : ''}
+                            src={slide.image}
+                            alt={`Slide ${index + 1}`}
+                        />
                     </SwiperSlide>
                 ))}
             </Swiper>

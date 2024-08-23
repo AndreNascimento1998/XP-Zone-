@@ -34,10 +34,10 @@ const useCardReword = () => {
         eldenRing,
         millesMoraes,
         godfall,
-        ds
+        ds,
     }
 
-    return {images}
+    return { images }
 }
 
 export default useCardReword

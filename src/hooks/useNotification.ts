@@ -1,15 +1,15 @@
 import { toast, ToastOptions } from 'react-toastify'
-import {useEffect, useMemo} from "react"
+import { useEffect, useMemo } from 'react'
 
 interface IToastOptions {
-    message: string,
-    type: NotificationType,
+    message: string
+    type: NotificationType
     optionsStyle?: ToastOptions
 }
 
 type NotificationType = 'messageSuccess' | 'messageError' | 'messageNeutral'
 
-const useNotification = ({message, type, optionsStyle}: IToastOptions) => {
+const useNotification = ({ message, type, optionsStyle }: IToastOptions) => {
     const showMessageSuccess = (message: string, options?: ToastOptions) => {
         toast.success(message, {
             bodyClassName: 'text-[white]',
@@ -47,7 +47,7 @@ const useNotification = ({message, type, optionsStyle}: IToastOptions) => {
         const typeMessage = {
             messageError: showMessageError,
             messageSuccess: showMessageSuccess,
-            messageNeutral: showMessageNeutral
+            messageNeutral: showMessageNeutral,
         }
 
         return typeMessage[type]

@@ -1,9 +1,9 @@
 .display-image {
-  display: block;
+    display: block;
 }
 
 @media (max-width: 1374px) {
-  .display-image:last-child {
-    display: none;
-  }
+    .display-image:last-child {
+        display: none;
+    }
 }
