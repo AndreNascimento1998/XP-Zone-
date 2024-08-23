@@ -1,4 +1,3 @@
-// @ts-ignore
 import mock from '@/mocks/user.json'
 import User from '../types/User.ts'
 

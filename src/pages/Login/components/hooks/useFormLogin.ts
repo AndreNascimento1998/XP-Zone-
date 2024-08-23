@@ -3,7 +3,6 @@ import { FieldError, useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import IDataForm from '@/types/DataForm.ts'
 import { useNavigate } from 'react-router-dom'
-// @ts-ignore
 import mock from '@/mocks/user.json'
 import useAuth from '@/hooks/useAuth.ts'
 import User from '@/types/User.ts'
