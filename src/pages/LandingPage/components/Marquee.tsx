@@ -1,5 +1,5 @@
 import '@/pages/LandingPage/components/styles/Platforms.scss'
-import useMarquee from '@/pages/LandingPage/components/hooks/useMarquee.ts'
+import useMarquee from '@/pages/LandingPage/components/hooks/useMarquee'
 
 const Marquee = () => {
     const { marqueeData } = useMarquee()

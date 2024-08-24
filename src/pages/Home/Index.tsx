@@ -1,8 +1,8 @@
-import HeroSection from '@/pages/Home/components/HeroSection.tsx'
-import CardDetails from '@/pages/Home/components/CardDetails.tsx'
-import useHome from './hooks/useHome.ts'
-import CardHighlights from '@/pages/Home/components/CardHighlights.tsx'
-import SectionBanner from '@/pages/Home/components/SectionBanner.tsx'
+import HeroSection from '@/pages/Home/components/HeroSection'
+import CardDetails from '@/pages/Home/components/CardDetails'
+import useHome from './hooks/useHome'
+import CardHighlights from '@/pages/Home/components/CardHighlights'
+import SectionBanner from '@/pages/Home/components/SectionBanner'
 
 const Home = () => {
     const { users, gamesHighlight, gamesXbox, gamesPs, gamesNintendo } = useHome()

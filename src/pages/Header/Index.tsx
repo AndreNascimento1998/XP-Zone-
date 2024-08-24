@@ -1,11 +1,11 @@
-import Logo from '@/assets/Icons/Logo/Logo.tsx'
-import ButtonCustom from '@/components/Button/ButtonCustom.tsx'
-import BellIcon from '@/assets/Icons/Others/BellIcon.tsx'
-import BellNotificationIcon from '@/assets/Icons/Others/BellNotificationIcon.tsx'
+import Logo from '@/assets/Icons/Logo/Logo'
+import ButtonCustom from '@/components/Button/ButtonCustom'
+import BellIcon from '@/assets/Icons/Others/BellIcon'
+import BellNotificationIcon from '@/assets/Icons/Others/BellNotificationIcon'
 import '@/pages/Header/styles/Header.scss'
-import useFirstLetter from '@/hooks/useFirstLetter.ts'
-import useUserContext from '@/context/UserContext/useUserContext.ts'
-import useHeader from './hooks/useHeader.ts'
+import useFirstLetter from '@/hooks/useFirstLetter'
+import useUserContext from '@/context/UserContext/useUserContext'
+import useHeader from './hooks/useHeader'
 const Header = () => {
     const { firstLetter } = useFirstLetter()
     const { user } = useUserContext()

@@ -1,9 +1,9 @@
-import Card from '@/components/Card/Card.tsx'
-import useFirstLetter from '@/hooks/useFirstLetter.ts'
-import usePlatformEnum from '@/hooks/usePlatformEnum.ts'
+import Card from '@/components/Card/Card'
+import useFirstLetter from '@/hooks/useFirstLetter'
+import usePlatformEnum from '@/hooks/usePlatformEnum'
 import '@/pages/Home/components/styles/CardDetails.scss'
-import User from '@/types/User.ts'
-import Game from '@/types/Game.ts'
+import User from '@/types/User'
+import Game from '@/types/Game'
 
 interface CardDetailsProps {
     users: User[]

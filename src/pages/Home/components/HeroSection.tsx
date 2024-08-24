@@ -1,5 +1,5 @@
-import Slider from '@/components/Carousel/Slider.tsx'
-import useHeroSection from '@/pages/Home/components/hooks/useHeroSection.ts'
+import Slider from '@/components/Carousel/Slider'
+import useHeroSection from '@/pages/Home/components/hooks/useHeroSection'
 
 const HeroSection = () => {
     const { responsiveSlides, responsiveCarousel } = useHeroSection()

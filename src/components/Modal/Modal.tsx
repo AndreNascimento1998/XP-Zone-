@@ -1,4 +1,4 @@
-import useModal from '@/components/Modal/hooks/useModal.ts'
+import useModal from '@/components/Modal/hooks/useModal'
 
 interface ModalProps {
     children: React.ReactNode

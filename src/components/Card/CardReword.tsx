@@ -1,6 +1,6 @@
-import useCardReword from '@/components/Card/hooks/useCardReword.ts'
-import Game from '@/types/Game.ts'
-import usePlatformEnum from '@/hooks/usePlatformEnum.ts'
+import useCardReword from '@/components/Card/hooks/useCardReword'
+import Game from '@/types/Game'
+import usePlatformEnum from '@/hooks/usePlatformEnum'
 
 interface CardRewordProps {
     game: Game

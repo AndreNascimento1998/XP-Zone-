@@ -1,4 +1,4 @@
-import useUserContext from '@/context/UserContext/useUserContext.ts'
+import useUserContext from '@/context/UserContext/useUserContext'
 
 const UserContext = () => {
     const { UserContext } = useUserContext()

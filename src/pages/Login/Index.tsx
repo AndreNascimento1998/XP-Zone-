@@ -1,8 +1,8 @@
-import Logo from '@/assets/Icons/Logo/Logo.tsx'
-import FormLogin from '@/pages/Login/components/FormLogin.tsx'
+import Logo from '@/assets/Icons/Logo/Logo'
+import FormLogin from '@/pages/Login/components/FormLogin'
 import { Link } from 'react-router-dom'
-import ArrowToBackIcon from '@/assets/Icons/Others/ArrowToBackIcon.tsx'
-import ClosePageIcon from '@/assets/Icons/Others/ClosePageIcon.tsx'
+import ArrowToBackIcon from '@/assets/Icons/Others/ArrowToBackIcon'
+import ClosePageIcon from '@/assets/Icons/Others/ClosePageIcon'
 
 const Login = () => {
     return (

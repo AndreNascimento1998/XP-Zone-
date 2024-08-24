@@ -1,5 +1,5 @@
-import Footer from '@/pages/Footer/Index.tsx'
-import Home from '@/pages/Home/Index.tsx'
+import Footer from '@/pages/Footer/Index'
+import Home from '@/pages/Home/Index'
 
 const HomePageLayout = () => {
     return (

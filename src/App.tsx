@@ -1,9 +1,9 @@
 import { Outlet, useNavigate } from 'react-router-dom'
 import '@/styles/global.scss'
-import Header from '@/pages/Header/Index.tsx'
-import UserProvider from '@/context/UserContext/UserProvider.tsx'
+import Header from '@/pages/Header/Index'
+import UserProvider from '@/context/UserContext/UserProvider'
 import { useEffect } from 'react'
-import useUserContext from './context/UserContext/useUserContext.ts'
+import useUserContext from './context/UserContext/useUserContext'
 
 function App() {
     const navigate = useNavigate()

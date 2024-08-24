@@ -4,7 +4,7 @@ import 'swiper/css/pagination'
 import 'swiper/css/navigation'
 import { Autoplay, Navigation, Pagination } from 'swiper/modules'
 import '@/components/Carousel/styles/Slider.scss'
-import useSlider from '@/components/Carousel/hooks/useSlider.ts'
+import useSlider from '@/components/Carousel/hooks/useSlider'
 
 interface Slide {
     value: string

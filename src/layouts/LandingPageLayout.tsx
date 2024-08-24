@@ -1,5 +1,5 @@
-import Footer from '@/pages/Footer/Index.tsx'
-import LandingPage from '@/pages/LandingPage/Index.tsx'
+import Footer from '@/pages/Footer/Index'
+import LandingPage from '@/pages/LandingPage/Index'
 
 const LandingPageLayout = () => {
     return (

@@ -1,7 +1,7 @@
 import hogwarts from '@/assets/images/landing-page/hogwarts.png'
 import hogwartsMobile from '@/assets/images/landing-page/hogwarts-mobile.png'
-import CardReword from '@/components/Card/CardReword.tsx'
-import Button from '@/components/Button/Button.tsx'
+import CardReword from '@/components/Card/CardReword'
+import Button from '@/components/Button/Button'
 import Game from '@/types/Game'
 
 const GiftCard = () => {

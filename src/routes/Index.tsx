@@ -1,8 +1,8 @@
 import { createBrowserRouter } from 'react-router-dom'
-import App from '@/App.tsx'
-import Home from '@/layouts/HomePageLayout.tsx'
-import RegisterUser from '@/pages/Login/RegisterUser.tsx'
-import LandingPageLayout from '@/layouts/LandingPageLayout.tsx'
+import App from '@/App'
+import Home from '@/layouts/HomePageLayout'
+import RegisterUser from '@/pages/Login/RegisterUser'
+import LandingPageLayout from '@/layouts/LandingPageLayout'
 
 const routes = createBrowserRouter([
     {

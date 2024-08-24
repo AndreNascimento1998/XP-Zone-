@@ -1,7 +1,7 @@
-import Input from '@/components/Input/Input.tsx'
-import Button from '@/components/Button/Button.tsx'
-import useRegisterForm from '@/pages/Login/components/hooks/useFormRegister.ts'
-import IDataForm from '@/types/DataForm.ts'
+import Input from '@/components/Input/Input'
+import Button from '@/components/Button/Button'
+import useRegisterForm from '@/pages/Login/components/hooks/useFormRegister'
+import IDataForm from '@/types/DataForm'
 import { Link } from 'react-router-dom'
 import { FieldError } from 'react-hook-form'
 

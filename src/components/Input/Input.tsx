@@ -1,6 +1,6 @@
 import { FieldValues, UseFormRegister } from 'react-hook-form'
 import { useState } from 'react'
-import HiddenPasswordIcon from '@/assets/Icons/Others/HiddenPasswordIcon.tsx'
+import HiddenPasswordIcon from '@/assets/Icons/Others/HiddenPasswordIcon'
 
 interface InputProps {
     label: string
@@ -21,7 +21,7 @@ const Input = ({ label, register, name, outlined = false, placeholder, type }: I
                 <input
                     {...register(name)}
                     type={typeInput}
-                    className={`px-2 py-3 rounded-[6px] w-full 
+                    className={`px-2 py-3 rounded-[6px] w-full
                     ${outlined ? 'text-[white] border-[1px] border-[white] bg-transparent' : ''}
                     ${type === 'password' ? 'pr-10' : ''}
                 `}

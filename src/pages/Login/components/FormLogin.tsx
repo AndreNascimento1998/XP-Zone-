@@ -1,7 +1,7 @@
-import Input from '@/components/Input/Input.tsx'
-import Button from '@/components/Button/Button.tsx'
+import Input from '@/components/Input/Input'
+import Button from '@/components/Button/Button'
 import { Link } from 'react-router-dom'
-import useFormLogin from '@/pages/Login/components/hooks/useFormLogin.ts'
+import useFormLogin from '@/pages/Login/components/hooks/useFormLogin'
 import { FieldError } from 'react-hook-form'
 
 const Login = () => {

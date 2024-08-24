@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom'
-import Button from '@/components/Button/Button.tsx'
+import Button from '@/components/Button/Button'
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
-import useNotification from '@/hooks/useNotification.ts'
+import useNotification from '@/hooks/useNotification'
 
 interface ConfirmRegisterProps {
     name: string

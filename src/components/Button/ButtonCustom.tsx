@@ -1,4 +1,4 @@
-import useButtonCustom from '@/components/Button/hooks/useButtonCustom.ts'
+import useButtonCustom from '@/components/Button/hooks/useButtonCustom'
 import React from 'react'
 
 interface ButtonCustomProps {

@@ -1,5 +1,5 @@
-import CardReword from '@/components/Card/CardReword.tsx'
-import Game from '@/types/Game.ts'
+import CardReword from '@/components/Card/CardReword'
+import Game from '@/types/Game'
 
 interface CardHighlightsProps {
     title: string

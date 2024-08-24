@@ -1,5 +1,5 @@
-import HamburguerButtonIcon from '@/assets/Icons/Others/HamburguerButtonIcon.tsx'
-import useButtonHamburguer from '@/components/Button/hooks/useButtonHamburguer.ts'
+import HamburguerButtonIcon from '@/assets/Icons/Others/HamburguerButtonIcon'
+import useButtonHamburguer from '@/components/Button/hooks/useButtonHamburguer'
 
 interface ButtonHamburguerProps {
     items: {

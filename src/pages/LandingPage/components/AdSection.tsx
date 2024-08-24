@@ -1,14 +1,14 @@
 import kratos from '@/assets/images/landing-page/Kratos-mobile.png'
 import kratosDesktop from '@/assets/images/landing-page/Kratos-desktop.png'
 import ad from '@/assets/images/landing-page/ad.png'
-import CheckIcon from '@/assets/Icons/Others/CheckIcon.tsx'
-import Button from '@/components/Button/Button.tsx'
+import CheckIcon from '@/assets/Icons/Others/CheckIcon'
+import Button from '@/components/Button/Button'
 import spiderMan from '@/assets/images/landing-page/spider-man.png'
 import image from '@/assets/images/register/register-image.png'
 import spiderManDesktop from '@/assets/images/landing-page/spider-man-desktop.png'
 import fireGif from '@/assets/fire.gif'
-import Card from '@/components/Card/Card.tsx'
-import BarsProgress from '@/components/Bars/BarsProgress.tsx'
+import Card from '@/components/Card/Card'
+import BarsProgress from '@/components/Bars/BarsProgress'
 
 const AdSection = () => {
     return (
