@@ -1,5 +1,5 @@
 import mock from '@/mocks/user.json'
-import User from '../types/User.ts'
+import User from '@/types/User.ts'
 
 const UserHook = () => {
     const mockParsed = JSON.parse(JSON.stringify(mock))

@@ -1,7 +1,7 @@
 import { createContext, Dispatch, SetStateAction, useState } from 'react'
 import UserHook from '@/mocks/UserHook.ts'
-import User from '../../types/User.ts'
-import Game from '../../types/Game.ts'
+import User from '@/types/User.ts'
+import Game from '@/types/Game.ts'
 
 interface UserContextType {
     user: string

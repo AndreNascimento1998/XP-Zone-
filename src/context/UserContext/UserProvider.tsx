@@ -8,9 +8,7 @@ const UserProvider = ({ children }: UserProviderProps) => {
     const { user, setUser, users, setUsers, UserContext } = useUserContext()
 
     return (
-        <UserContext.Provider value={{ user, setUser, users, setUsers, UserContext }}>
-            {children}
-        </UserContext.Provider>
+        <UserContext.Provider value={{ user, setUser, users, setUsers, UserContext }}>{children}</UserContext.Provider>
     )
 }
 

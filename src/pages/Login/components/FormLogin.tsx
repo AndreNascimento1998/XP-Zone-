@@ -2,7 +2,7 @@ import Input from '@/components/Input/Input.tsx'
 import Button from '@/components/Button/Button.tsx'
 import { Link } from 'react-router-dom'
 import useFormLogin from '@/pages/Login/components/hooks/useFormLogin.ts'
-import {FieldError} from "react-hook-form";
+import { FieldError } from 'react-hook-form'
 
 const Login = () => {
     const { handleSubmit, register, errors, getErrorMessage, handleSubmitForm } = useFormLogin()
@@ -32,7 +32,9 @@ const Login = () => {
                     outlined={true}
                 />
                 {errors.password?.message ? (
-                    <div className={'text-[red] text-[14px] italic'}>{getErrorMessage(errors.password as FieldError)}</div>
+                    <div className={'text-[red] text-[14px] italic'}>
+                        {getErrorMessage(errors.password as FieldError)}
+                    </div>
                 ) : (
                     <div className={'invisible'}>|</div>
                 )}

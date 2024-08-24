@@ -3,7 +3,7 @@ import Button from '@/components/Button/Button.tsx'
 import useRegisterForm from '@/pages/Login/components/hooks/useFormRegister.ts'
 import IDataForm from '@/types/DataForm.ts'
 import { Link } from 'react-router-dom'
-import {FieldError} from "react-hook-form";
+import { FieldError } from 'react-hook-form'
 
 interface FormProps {
     onSubmit: (data: IDataForm, step: number) => void
@@ -24,7 +24,9 @@ const Login = ({ onSubmit }: FormProps) => {
                         outlined={true}
                     />
                     {errors.name?.message ? (
-                        <div className={'text-[red] text-[14px] italic'}>{getErrorMessage(errors.name as FieldError)}</div>
+                        <div className={'text-[red] text-[14px] italic'}>
+                            {getErrorMessage(errors.name as FieldError)}
+                        </div>
                     ) : (
                         <div className={'invisible'}>|</div>
                     )}
@@ -38,7 +40,9 @@ const Login = ({ onSubmit }: FormProps) => {
                         outlined={true}
                     />
                     {errors.email?.message ? (
-                        <div className={'text-[red] text-[14px] italic'}>{getErrorMessage(errors.email as FieldError)}</div>
+                        <div className={'text-[red] text-[14px] italic'}>
+                            {getErrorMessage(errors.email as FieldError)}
+                        </div>
                     ) : (
                         <div className={'invisible'}>|</div>
                     )}

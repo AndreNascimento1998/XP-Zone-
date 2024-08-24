@@ -1,5 +1,5 @@
 {
-    "compilerOptions": {"compilerOptions": {
+    "compilerOptions": {
         "target": "ES2022",
         "lib": ["ES2023"],
         "module": "ESNext",
@@ -20,5 +20,5 @@
         "noFallthroughCasesInSwitch": true
     },
     "exclude": ["node_modules"],
-    "include": ["vite.config.ts"],
+    "include": ["vite.config.ts"]
 }
