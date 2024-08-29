@@ -18,7 +18,11 @@ const CardReword = ({ game, onClick }: CardRewordProps) => {
     return (
         <div
             onClick={() => handleClick(game)}
-            className={'min-w-0 bg-card border-[2px] border-[#E54B65] rounded-[16px]'}
+            className={
+            `min-w-0 bg-card border-[3px] border-[#E54B65] rounded-[16px]
+            hover:absolute hover:scale-[1.3] hover:shadow-black hover:border-[3px] hover:border-blue-600
+            transition-all cursor-pointer`
+        }
         >
             <div>
                 <img src={images[game?.src]} alt={game?.name} className={'w-full'} />
