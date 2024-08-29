@@ -16,7 +16,7 @@ function App() {
     }, [navigate, user])
 
     return (
-        <div className={'3xl:px-[20rem]'}>
+        <div className={'4xl:px-[20rem]'}>
             <UserProvider>
                 <Header />
                 <Outlet />

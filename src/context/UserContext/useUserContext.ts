@@ -19,8 +19,11 @@ const useUserContext = () => {
 
     const getAllGames = (): Game[] => {
         if (users) {
-            return users.flatMap((user) => user.games)
+            return users
+                .filter((u) => u.id !== user?.id)
+                .flatMap((u) => u.games)
         }
+        return []
     }
 
     return {
