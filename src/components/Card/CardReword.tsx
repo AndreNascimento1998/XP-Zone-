@@ -20,7 +20,7 @@ const CardReword = ({ game, onClick }: CardRewordProps) => {
             onClick={() => handleClick(game)}
             className={
             `min-w-0 bg-card border-[3px] border-[#E54B65] rounded-[16px]
-            hover:absolute hover:scale-[1.3] hover:shadow-black hover:border-[3px] hover:border-blue-600
+            lg:hover:absolute lg:hover:scale-[1.3] lg:hover:shadow-black lg:hover:border-[3px] lg:hover:border-blue-600
             transition-all cursor-pointer`
         }
         >

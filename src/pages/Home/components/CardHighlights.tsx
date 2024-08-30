@@ -22,7 +22,7 @@ const CardHighlights = ({ title, games }: CardHighlightsProps) => {
             <div className={'flex lg:px-4 flex-grow lg:flex-wrap gap-4 overflow-x-auto lg:overflow-x-hidden'}>
                 {games.map((game, gameIndex) => (
                     <div key={gameIndex}>
-                        <div className={'w-[240px] min-w-[90%] padding-left padding-right cursor-pointer'}>
+                        <div className={'w-[245px] min-w-[90%] padding-left padding-right cursor-pointer'}>
                             <CardReword onClick={handleClick} game={game} />
                         </div>
                     </div>
