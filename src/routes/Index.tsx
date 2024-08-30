@@ -3,6 +3,7 @@ import App from '@/App'
 import Home from '@/layouts/HomePageLayout'
 import RegisterUser from '@/pages/Login/RegisterUser'
 import LandingPageLayout from '@/layouts/LandingPageLayout'
+import DashboardPageLayout from '@/layouts/DashboardPageLayout.tsx'
 
 const routes = createBrowserRouter([
     {
@@ -20,6 +21,10 @@ const routes = createBrowserRouter([
             {
                 path: '/',
                 element: <Home />,
+            },
+            {
+                path: '/dashboard',
+                element: <DashboardPageLayout />,
             },
         ],
     },

@@ -16,7 +16,7 @@ const useHeader = () => {
     ]
 
     const items = [
-        { name: 'Dashboard', component: DashboardIcon, callback: () => console.log('um') },
+        { name: 'Dashboard', component: DashboardIcon, callback: () => dashboardRoute() },
         { name: 'Meus dados', component: MyDataIcon, callback: () => console.log('dois') },
         { name: 'Biblioteca', component: LibraryIcon, callback: () => console.log('dois') },
         { name: 'Favoritos', component: FavoriteIcon, callback: () => console.log('dois') },
@@ -26,6 +26,10 @@ const useHeader = () => {
     const lougoutUser = () => {
         logout()
         navigate('/landing-page')
+    }
+
+    const dashboardRoute = () => {
+        navigate('/dashboard')
     }
 
     return {

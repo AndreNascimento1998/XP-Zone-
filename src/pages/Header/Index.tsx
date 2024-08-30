@@ -12,7 +12,7 @@ const Header = () => {
     const { itemsNotification, items } = useHeader()
 
     return (
-        <div className={'flex items-center justify-between p-6 '}>
+        <div className={'flex relative z-50 items-center justify-between p-6 '}>
             <div>
                 <Logo width={80} height={60} />
             </div>
