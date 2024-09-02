@@ -7,7 +7,7 @@ import useUserContext from './context/UserContext/useUserContext'
 
 function App() {
     const navigate = useNavigate()
-    const { user } = useUserContext()
+    const { user, favoriteItem } = useUserContext()
 
     useEffect(() => {
         if (!user) {
@@ -18,6 +18,7 @@ function App() {
     return (
         <div className={'4xl:px-[20rem]'}>
             <UserProvider>
+                {favoriteItem}dsds
                 <Header />
                 <Outlet />
             </UserProvider>

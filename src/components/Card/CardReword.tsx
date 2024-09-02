@@ -1,13 +1,15 @@
 import useCardReword from '@/components/Card/hooks/useCardReword'
 import Game from '@/types/Game'
 import usePlatformEnum from '@/hooks/usePlatformEnum'
+import HeartIcon from "@/assets/Icons/Others/HeartIcon.tsx";
 
 interface CardRewordProps {
     game: Game
-    onClick: (game: Game) => void
+    onClick?: (game: Game) => void
+    onClickFavorite?: (game: Game) => void
 }
 
-const CardReword = ({ game, onClick }: CardRewordProps) => {
+const CardReword = ({ game, onClick, onClickFavorite }: CardRewordProps) => {
     const { platformName } = usePlatformEnum()
     const { images } = useCardReword()
 
@@ -15,29 +17,38 @@ const CardReword = ({ game, onClick }: CardRewordProps) => {
         onClick(game)
     }
 
+    const favoriteItem = (game: Game) => {
+        onClickFavorite(game)
+    }
+
     return (
         <div
-            onClick={() => handleClick(game)}
             className={`min-w-0 bg-card border-[3px] border-[#E54B65] rounded-[16px]
-            lg:hover:absolute lg:hover:scale-[1.3] lg:hover:shadow-black lg:hover:border-[3px] lg:hover:border-blue-600
             transition-all cursor-pointer`}
         >
-            <div>
-                <img src={images[game?.src]} alt={game?.name} className={'w-full'} />
+            <div
+                onClick={() => favoriteItem(game)}
+                className={'absolute hover:border-white right-2 hover:scale-[1.2] top-2 bg-card-light p-3 rounded-full border-[2px] border-[#E54B65]'}>
+                <HeartIcon/>
             </div>
-            <div className={'flex flex-col p-2 gap-2'}>
-                <div
-                    className={
-                        'flex items-center justify-between gap-2 font-oxanium font-bold bg-btn-primary bg-clip-text text-transparent'
-                    }
-                >
-                    <div>{game?.name}</div>
+            <div onClick={() => handleClick(game)}>
+                <div>
+                    <img src={images[game?.src]} alt={game?.name} className={'w-full'}/>
                 </div>
-                {game?.platform && (
-                    <div className={'font-bold justify-between'}>
-                        <span>{platformName[game?.platform]}</span>
+                <div className={'flex flex-col p-2 gap-2'}>
+                    <div
+                        className={
+                            'flex items-center justify-between gap-2 font-oxanium font-bold bg-btn-primary bg-clip-text text-transparent'
+                        }
+                    >
+                        <div>{game?.name}</div>
                     </div>
-                )}
+                    {game?.platform && (
+                        <div className={'font-bold justify-between'}>
+                            <span>{platformName[game?.platform]}</span>
+                        </div>
+                    )}
+                </div>
             </div>
         </div>
     )

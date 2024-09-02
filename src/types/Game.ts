@@ -1,5 +1,5 @@
 interface Game {
-    id?: number
+    id?: number | string
     name: string
     platform: string
     src: string
