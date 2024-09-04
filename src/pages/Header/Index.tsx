@@ -6,10 +6,11 @@ import '@/pages/Header/styles/Header.scss'
 import useFirstLetter from '@/hooks/useFirstLetter'
 import useUserContext from '@/context/UserContext/useUserContext'
 import useHeader from './hooks/useHeader'
+
 const Header = () => {
     const { firstLetter } = useFirstLetter()
-    const { user } = useUserContext()
     const { itemsNotification, items } = useHeader()
+    const { user } = useUserContext()
 
     return (
         <div className={'flex relative z-50 items-center justify-between p-6 '}>
