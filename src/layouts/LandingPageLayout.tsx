@@ -1,11 +1,14 @@
 import Footer from '@/pages/Footer/Index'
 import LandingPage from '@/pages/LandingPage/Index'
+import UsersProvider from "@/context/UsersContext/UsersProvider.tsx";
 
 const LandingPageLayout = () => {
     return (
         <>
-            <LandingPage />
-            <Footer />
+            <UsersProvider>
+                <LandingPage />
+                <Footer />
+            </UsersProvider>
         </>
     )
 }

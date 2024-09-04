@@ -1,9 +1,9 @@
-import useUserContext from '@/context/UserContext/useUserContext.ts'
+import useUsersContext from '@/context/UsersContext/useUsersContext'
 import { useEffect, useState } from 'react'
 import Game from '@/types/Game.ts'
 
 const useHome = () => {
-    const { getAllGames, users } = useUserContext()
+    const { getAllGames, users } = useUsersContext()
     const [gamesHighlight, setGamesHighlight] = useState<Game[]>([])
     const [gamesXbox, setGamesXbox] = useState<Game[]>([])
     const [gamesPs, setGamesPs] = useState<Game[]>([])

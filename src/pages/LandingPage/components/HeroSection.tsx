@@ -7,10 +7,10 @@ import useHeroSection from '@/pages/LandingPage/components/hooks/useHeroSection'
 import Modal from '@/components/Modal/Modal'
 import Login from '@/pages/Login/Index'
 import { Link } from 'react-router-dom'
-import useUserContext from '@/context/UserContext/useUserContext'
+import useUsersContext from '@/context/UsersContext/useUsersContext'
 
 const HeroSection = () => {
-    const { user } = useUserContext()
+    const { user } = useUsersContext()
 
     const { items, openModal, handleItemClick, handleClick, handleCloseModal } = useHeroSection()
 

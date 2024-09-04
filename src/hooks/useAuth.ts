@@ -1,8 +1,8 @@
-import useUserContext from '@/context/UserContext/useUserContext.ts'
+import useUsersContext from '@/context/UsersContext/useUsersContext'
 import User from '@/types/User.ts'
 
 const useAuth = () => {
-    const { setUser } = useUserContext()
+    const { setUser } = useUsersContext()
 
     const login = (user: User) => {
         localStorage.setItem('id', user.id.toString())
