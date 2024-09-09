@@ -5,7 +5,7 @@ interface UserProviderProps {
 }
 
 const UserProvider = ({ children }: UserProviderProps) => {
-    const { user, setUser, users, setUsers, UserContext, favoriteItem, setFavoriteItem } = useUserContext()
+    const { user, setUser, users, setUsers, UserContext, favoriteItem, setFavoriteItem, getAllGames } = useUserContext()
 
     return (
         <UserContext.Provider value={{
@@ -15,7 +15,8 @@ const UserProvider = ({ children }: UserProviderProps) => {
             setUsers,
             UserContext,
             favoriteItem,
-            setFavoriteItem
+            setFavoriteItem,
+            getAllGames
         }}>{children}</UserContext.Provider>
     )
 }

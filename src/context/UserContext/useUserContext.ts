@@ -11,6 +11,7 @@ interface UserContextType {
     UserContext: React.Context<UserContextType>
     favoriteItem: string | Array<string>;
     setFavoriteItem: Dispatch<SetStateAction<[]>>;
+    getAllGames: () => Game[]
 }
 
 const useUserContext = () => {

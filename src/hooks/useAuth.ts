@@ -11,6 +11,7 @@ const useAuth = () => {
 
     const logout = () => {
         localStorage.removeItem('id')
+        localStorage.removeItem('favorite')
         setUser(null)
     }
 

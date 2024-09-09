@@ -16,7 +16,7 @@ import millesMoraes from '@/assets/images/cardGames/millesMoraes.png'
 import godfall from '@/assets/images/cardGames/godfall.png'
 import ds from '@/assets/images/cardGames/ds.png'
 
-const useCardReword = () => {
+const useImages = () => {
     const images = {
         mk11,
         uncharted4,
@@ -40,4 +40,4 @@ const useCardReword = () => {
     return { images }
 }
 
-export default useCardReword
+export default useImages
