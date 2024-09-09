@@ -1,18 +1,18 @@
-import useCardReword from '@/components/Card/hooks/useCardReword'
 import Game from '@/types/Game'
 import usePlatformEnum from '@/hooks/usePlatformEnum'
 import HeartIcon from "@/assets/Icons/Others/HeartIcon.tsx";
+import useImages from "@/hooks/useImages.ts";
 
 interface CardRewordProps {
     game: Game
     onClick?: (game: Game) => void
     onClickFavorite?: (game: Game) => void
-    isFavorite: boolean
+    isFavorite?: boolean
 }
 
 const CardReword = ({ game, isFavorite, onClick, onClickFavorite }: CardRewordProps) => {
     const { platformName } = usePlatformEnum()
-    const { images } = useCardReword()
+    const { images } = useImages()
 
     const handleClick = (game: Game) => {
         onClick(game)
