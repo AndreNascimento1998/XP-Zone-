@@ -47,7 +47,7 @@ const Slider = ({
                 {slides.map((slide, index) => (
                     <SwiperSlide key={index}>
                         <img
-                            onClick={() => handleClick(slide)}
+                            onClick={onClick ? () => handleClick(slide) : null}
                             className={!autoplay ? 'cursor-pointer' : ''}
                             src={slide.image}
                             alt={`Slide ${index + 1}`}
