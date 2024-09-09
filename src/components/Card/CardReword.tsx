@@ -1,7 +1,7 @@
 import Game from '@/types/Game'
 import usePlatformEnum from '@/hooks/usePlatformEnum'
-import HeartIcon from "@/assets/Icons/Others/HeartIcon.tsx";
-import useImages from "@/hooks/useImages.ts";
+import HeartIcon from '@/assets/Icons/Others/HeartIcon.tsx'
+import useImages from '@/hooks/useImages.ts'
 
 interface CardRewordProps {
     game: Game
@@ -32,13 +32,14 @@ const CardReword = ({ game, isFavorite, onClick, onClickFavorite }: CardRewordPr
                 className={`
                 absolute hover:border-white right-2 hover:scale-[1.2] top-2 p-3 rounded-full border-[2px]
                     ${isFavorite ? 'bg-[#E54B65] border-[#280A57]' : 'border-[#E54B65] bg-card-light'}
-                `}>
+                `}
+            >
                 <HeartIcon favoriteColor={isFavorite} />
             </div>
 
             <div onClick={() => handleClick(game)}>
                 <div>
-                    <img src={images[game?.src]} alt={game?.name} className={'w-full'}/>
+                    <img src={images[game?.src]} alt={game?.name} className={'w-full'} />
                 </div>
                 <div className={'flex flex-col p-2 gap-2'}>
                     <div

@@ -9,8 +9,8 @@ interface UserContextType {
     users: User[]
     setUsers: Dispatch<SetStateAction<User[]>>
     UserContext: React.Context<UserContextType>
-    favoriteItem: string | Array<string>;
-    setFavoriteItem: Dispatch<SetStateAction<[]>>;
+    favoriteItem: string | Array<string>
+    setFavoriteItem: Dispatch<SetStateAction<[]>>
     getAllGames: () => Game[]
 }
 

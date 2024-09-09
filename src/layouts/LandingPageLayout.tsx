@@ -1,6 +1,6 @@
 import Footer from '@/pages/Footer/Index'
 import LandingPage from '@/pages/LandingPage/Index'
-import UsersProvider from "@/context/UsersContext/UsersProvider.tsx";
+import UsersProvider from '@/context/UsersContext/UsersProvider.tsx'
 
 const LandingPageLayout = () => {
     return (

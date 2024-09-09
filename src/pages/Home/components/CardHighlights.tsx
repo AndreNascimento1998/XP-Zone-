@@ -1,6 +1,6 @@
 import CardReword from '@/components/Card/CardReword'
-import useCardHighlights from "./hooks/useCardHighlights.ts";
-import Game from "@/types/Game.ts";
+import useCardHighlights from './hooks/useCardHighlights.ts'
+import Game from '@/types/Game.ts'
 
 interface CardHighlightsProps {
     title: string
@@ -13,11 +13,7 @@ interface CardHighlightsProps {
 }
 
 const CardHighlights = ({ title, games }: CardHighlightsProps) => {
-    const {
-        verifyFavorite,
-        favoriteItemFunction,
-        handleClick
-    } = useCardHighlights()
+    const { verifyFavorite, favoriteItemFunction, handleClick } = useCardHighlights()
 
     return (
         <div className={'flex flex-col gap-2'}>

@@ -25,30 +25,32 @@ const UsersProvider = ({ children }: UsersProviderProps) => {
     }
 
     const verifyFavorite = (id: string | number) => {
-        return Array.isArray(favoriteItem) && favoriteItem.includes(id.toString());
+        return Array.isArray(favoriteItem) && favoriteItem.includes(id.toString())
     }
 
     const setFavorite = (id: string | number) => {
-        setFavoriteItem(prevValue => {
+        setFavoriteItem((prevValue) => {
             const updatedFavorites = verifyFavorite(id)
-                ? prevValue.filter(value => value !== id.toString())
-                : [...prevValue, id.toString()];
-            localStorage.setItem('favorite', JSON.stringify(updatedFavorites));
-            return updatedFavorites;
-        });
+                ? prevValue.filter((value) => value !== id.toString())
+                : [...prevValue, id.toString()]
+            localStorage.setItem('favorite', JSON.stringify(updatedFavorites))
+            return updatedFavorites
+        })
     }
 
     return (
-        <UsersContext.Provider value={{
-            user,
-            setUser,
-            users,
-            setUsers,
-            favoriteItem,
-            setFavoriteItem,
-            getAllGames,
-            setFavorite
-        }}>
+        <UsersContext.Provider
+            value={{
+                user,
+                setUser,
+                users,
+                setUsers,
+                favoriteItem,
+                setFavoriteItem,
+                getAllGames,
+                setFavorite,
+            }}
+        >
             {children}
         </UsersContext.Provider>
     )
