@@ -7,10 +7,10 @@ interface UsersContextType {
     setUser: React.Dispatch<React.SetStateAction<User | null>>;
     users: User[];
     setUsers: React.Dispatch<React.SetStateAction<User[]>>;
-    favoriteItem: string | string[];
+    favoriteItem: string[];
     setFavoriteItem: React.Dispatch<React.SetStateAction<string | string[]>>;
     getAllGames: () => Game[];
-    setFavorite: (item: string | string[]) => void;
+    setFavorite: (item: string | number) => void;
 }
 
 const UsersContext = createContext<UsersContextType | undefined>(undefined);

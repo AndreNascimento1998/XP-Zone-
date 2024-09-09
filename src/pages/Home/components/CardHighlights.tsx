@@ -1,5 +1,6 @@
 import CardReword from '@/components/Card/CardReword'
 import useCardHighlights from "./hooks/useCardHighlights.ts";
+import Game from "@/types/Game.ts";
 
 interface CardHighlightsProps {
     title: string
@@ -13,18 +14,28 @@ interface CardHighlightsProps {
 
 const CardHighlights = ({ title, games }: CardHighlightsProps) => {
     const {
+        favoriteItem,
         favoriteItemFunction,
         handleClick
     } = useCardHighlights()
+
+    const verifyFavorite= (id: string | number) => {
+        return Array.isArray(favoriteItem) && favoriteItem.includes(id.toString());
+    }
 
     return (
         <div className={'flex flex-col gap-2'}>
             <div className={'px-4 text-[20px]'}>{title}</div>
             <div className={'flex lg:px-4 flex-grow lg:flex-wrap gap-4 overflow-x-auto lg:overflow-x-hidden'}>
-                {games.map((game, gameIndex) => (
+                {games.map((game: Game, gameIndex: number) => (
                     <div key={gameIndex}>
                         <div className={'relative w-[245px] min-w-[90%] padding-left padding-right cursor-pointer'}>
-                            <CardReword onClick={handleClick} onClickFavorite={favoriteItemFunction} game={game} />
+                            <CardReword
+                                isFavorite={verifyFavorite(game.id)}
+                                onClick={handleClick}
+                                onClickFavorite={favoriteItemFunction}
+                                game={game}
+                            />
                         </div>
                     </div>
                 ))}

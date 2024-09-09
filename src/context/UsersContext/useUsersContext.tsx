@@ -1,5 +1,5 @@
 import { useContext } from 'react'
-import UsersContext from './UsersContext.tsx'
+import UsersContext from './UsersContext.ts'
 
 const useUsersContext = () => {
     const context = useContext(UsersContext)

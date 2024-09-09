@@ -7,9 +7,10 @@ interface CardRewordProps {
     game: Game
     onClick?: (game: Game) => void
     onClickFavorite?: (game: Game) => void
+    isFavorite: boolean
 }
 
-const CardReword = ({ game, onClick, onClickFavorite }: CardRewordProps) => {
+const CardReword = ({ game, isFavorite, onClick, onClickFavorite }: CardRewordProps) => {
     const { platformName } = usePlatformEnum()
     const { images } = useCardReword()
 
@@ -28,9 +29,13 @@ const CardReword = ({ game, onClick, onClickFavorite }: CardRewordProps) => {
         >
             <div
                 onClick={() => favoriteItem(game)}
-                className={'absolute hover:border-white right-2 hover:scale-[1.2] top-2 bg-card-light p-3 rounded-full border-[2px] border-[#E54B65]'}>
-                <HeartIcon/>
+                className={`
+                absolute hover:border-white right-2 hover:scale-[1.2] top-2 p-3 rounded-full border-[2px]
+                    ${isFavorite ? 'bg-[#E54B65] border-[#280A57]' : 'border-[#E54B65] bg-card-light'}
+                `}>
+                <HeartIcon favoriteColor={isFavorite} />
             </div>
+
             <div onClick={() => handleClick(game)}>
                 <div>
                     <img src={images[game?.src]} alt={game?.name} className={'w-full'}/>
