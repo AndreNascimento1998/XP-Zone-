@@ -13,10 +13,14 @@ const useCardHighlights = () => {
         setFavorite(game.id)
     }
 
+    const verifyFavorite= (id: string | number) => {
+        return Array.isArray(favoriteItem) && favoriteItem.includes(id.toString());
+    }
+
     return {
         handleClick,
         favoriteItemFunction,
-        favoriteItem
+        verifyFavorite
     }
 }
 

@@ -14,14 +14,10 @@ interface CardHighlightsProps {
 
 const CardHighlights = ({ title, games }: CardHighlightsProps) => {
     const {
-        favoriteItem,
+        verifyFavorite,
         favoriteItemFunction,
         handleClick
     } = useCardHighlights()
-
-    const verifyFavorite= (id: string | number) => {
-        return Array.isArray(favoriteItem) && favoriteItem.includes(id.toString());
-    }
 
     return (
         <div className={'flex flex-col gap-2'}>
