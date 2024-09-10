@@ -2,11 +2,13 @@ import Card from '@/components/Card/Card.tsx'
 import { useContext } from 'react'
 import UsersContext from '@/context/UsersContext/UsersContext.ts'
 import useImages from '@/hooks/useImages.ts'
+import useFilterGames from "@/hooks/useFilterGamesFavorite.ts";
 
 const LibraryFavorite = () => {
-    const { favoriteItem, getAllGames } = useContext(UsersContext)
+    const { favoriteItem } = useContext(UsersContext)
+    const { filterGames } = useFilterGames()
     const { images } = useImages()
-    const games = getAllGames().filter((game) => favoriteItem.includes(game.id.toString()))
+    const games = filterGames(favoriteItem)
 
     return (
         <div>
