@@ -4,6 +4,7 @@ import Home from '@/layouts/HomePageLayout'
 import RegisterUser from '@/pages/Login/RegisterUser'
 import LandingPageLayout from '@/layouts/LandingPageLayout'
 import Dashboard from '@/pages/Dashboard/Index.tsx'
+import Library from "@/pages/Library/Index.tsx";
 
 const routes = createBrowserRouter([
     {
@@ -26,6 +27,10 @@ const routes = createBrowserRouter([
                 path: '/dashboard',
                 element: <Dashboard />,
             },
+            {
+                path: '/library',
+                element: <Library />
+            }
         ],
     },
 ])

@@ -5,6 +5,7 @@ import CardProfile from '@/components/Card/CardProfile.tsx'
 import useMainPagesLayout from '@/layouts/hooks/useMainPagesLayout.ts'
 import Footer from "@/pages/Footer/Index.tsx";
 import {Link} from "react-router-dom";
+import './styles/MainPagesLayout.scss'
 
 const Dashboard = ({children}) => {
     const {
@@ -29,7 +30,7 @@ const Dashboard = ({children}) => {
                         description={description}
                     />
                 </div>
-                <div className={'hidden xl:flex gap-40 font-oxanium font-bold text-[20px]'}>
+                <div className={'hidden xl:flex gap-40 mb-4 font-oxanium font-bold text-[20px]'}>
                     {
                         itemsTabs.map((item, index) => (
                             <Link
@@ -37,10 +38,11 @@ const Dashboard = ({children}) => {
                             >
                                 <div
                                     key={index}
-                                    className={`cursor-pointer
-                                    ${routeName === item.nameRoute ? 'border-b-[4px] bg-btn-primary bg-clip-text text-transparent' : '' } `}
+                                    className={`cursor-pointer relative
+                                    ${routeName === item.nameRoute ? ' bg-btn-primary bg-clip-text text-transparent' : ''} `}
                                 >
                                     {item.name}
+                                    <div className={`absolute ${routeName === item.nameRoute ? 'border-animation w-[100%] border-[4px] rounded-[10px]' : 'hidden' }`} />
                                 </div>
                             </Link>
                         ))

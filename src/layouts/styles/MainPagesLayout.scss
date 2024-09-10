@@ -1,0 +1,14 @@
+@keyframes borderExpand {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+        border-color: #E54B65;
+    }
+}
+
+.border-animation {
+    animation: borderExpand 1s forwards;
+}
