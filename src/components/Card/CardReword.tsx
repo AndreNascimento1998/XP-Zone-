@@ -7,10 +7,11 @@ interface CardRewordProps {
     game: Game
     onClick?: (game: Game) => void
     onClickFavorite?: (game: Game) => void
+    isFavoriteStyle?: boolean
     isFavorite?: boolean
 }
 
-const CardReword = ({ game, isFavorite, onClick, onClickFavorite }: CardRewordProps) => {
+const CardReword = ({ game, isFavoriteStyle, onClick, onClickFavorite, isFavorite }: CardRewordProps) => {
     const { platformName } = usePlatformEnum()
     const { images } = useImages()
 
@@ -27,15 +28,18 @@ const CardReword = ({ game, isFavorite, onClick, onClickFavorite }: CardRewordPr
             className={`min-w-0 bg-card border-[3px] border-[#E54B65] rounded-[16px]
             transition-all cursor-pointer`}
         >
-            <div
-                onClick={() => favoriteItem(game)}
-                className={`
-                absolute hover:border-white right-2 hover:scale-[1.2] top-2 p-3 rounded-full border-[2px]
-                    ${isFavorite ? 'bg-[#E54B65] border-[#280A57]' : 'border-[#E54B65] bg-card-light'}
-                `}
-            >
-                <HeartIcon favoriteColor={isFavorite} />
-            </div>
+            {
+                isFavorite &&
+                <div
+                    onClick={() => favoriteItem(game)}
+                    className={`
+                    absolute hover:border-white right-2 hover:scale-[1.2] top-2 p-3 rounded-full border-[2px]
+                        ${isFavoriteStyle ? 'bg-[#E54B65] border-[#280A57]' : 'border-[#E54B65] bg-card-light'}
+                    `}
+                >
+                    <HeartIcon favoriteColor={isFavoriteStyle} />
+                </div>
+            }
 
             <div onClick={() => handleClick(game)}>
                 <div>

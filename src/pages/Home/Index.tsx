@@ -10,10 +10,10 @@ const Home = () => {
         <div className={'flex flex-col gap-20'}>
             <HeroSection />
             <CardDetails users={users} />
-            {gamesHighlight ? <CardHighlights title={'Jogos em destaque'} games={gamesHighlight} /> : null}
-            {gamesXbox ? <CardHighlights title={'Jogos do Xbox'} games={gamesXbox} /> : null}
-            {gamesPs.length ? <CardHighlights title={'Jogos do Playstation'} games={gamesPs} /> : null}
-            {gamesNintendo.length ? <CardHighlights title={'Jogos do Nintendo'} games={gamesNintendo} /> : null}
+            {gamesHighlight ? <CardHighlights title={'Jogos em destaque'} games={gamesHighlight} isFavorite={true} /> : null}
+            {gamesXbox ? <CardHighlights title={'Jogos do Xbox'} games={gamesXbox} isFavorite={true} /> : null}
+            {gamesPs.length ? <CardHighlights title={'Jogos do Playstation'} games={gamesPs} isFavorite={true} /> : null}
+            {gamesNintendo.length ? <CardHighlights title={'Jogos do Nintendo'} games={gamesNintendo} isFavorite={true} /> : null}
             <SectionBanner />
         </div>
     )

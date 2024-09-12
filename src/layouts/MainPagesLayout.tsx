@@ -34,15 +34,15 @@ const Dashboard = ({children}) => {
                     {
                         itemsTabs.map((item, index) => (
                             <Link
+                                key={index}
                                 to={`/${item.nameRoute}`}
                             >
                                 <div
-                                    key={index}
                                     className={`cursor-pointer relative
                                     ${routeName === item.nameRoute ? ' bg-btn-primary bg-clip-text text-transparent' : ''} `}
                                 >
                                     {item.name}
-                                    <div className={`absolute ${routeName === item.nameRoute ? 'border-animation w-[100%] border-[4px] rounded-[10px]' : 'hidden' }`} />
+                                    <div  className={`absolute ${routeName === item.nameRoute ? 'border-animation w-[100%] border-[4px] rounded-[10px]' : 'hidden' }`} />
                                 </div>
                             </Link>
                         ))

@@ -10,9 +10,10 @@ interface CardHighlightsProps {
         src: string
         highlight: boolean
     }[]
+    isFavorite?: boolean
 }
 
-const CardHighlights = ({ title, games }: CardHighlightsProps) => {
+const CardHighlights = ({ title, games, isFavorite }: CardHighlightsProps) => {
     const { verifyFavorite, favoriteItemFunction, handleClick } = useCardHighlights()
 
     return (
@@ -23,10 +24,11 @@ const CardHighlights = ({ title, games }: CardHighlightsProps) => {
                     <div key={gameIndex}>
                         <div className={'relative w-[245px] min-w-[90%] padding-left padding-right cursor-pointer'}>
                             <CardReword
-                                isFavorite={verifyFavorite(game.id)}
+                                isFavoriteStyle={verifyFavorite(game.id)}
                                 onClick={handleClick}
                                 onClickFavorite={favoriteItemFunction}
                                 game={game}
+                                isFavorite={isFavorite}
                             />
                         </div>
                     </div>
