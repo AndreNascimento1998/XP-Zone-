@@ -16,9 +16,11 @@ const Library = () => {
     return (
         <div>
             <MainPagesLayout>
-                <CardsLibrary title={'Jogos Xbox'} games={xboxGames} />
-                <CardsLibrary title={'Jogos Playstation'} games={psGames} />
-                <CardsLibrary title={'Jogos Nintendo'} games={ninGames} />
+                <div className={'flex flex-col gap-10 '}>
+                    <CardsLibrary title={'Jogos Xbox'} games={xboxGames} />
+                    <CardsLibrary title={'Jogos Playstation'} games={psGames} />
+                    <CardsLibrary title={'Jogos Nintendo'} games={ninGames} />
+                </div>
             </MainPagesLayout>
         </div>
     )

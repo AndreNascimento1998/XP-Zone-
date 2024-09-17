@@ -5,6 +5,7 @@ import RegisterUser from '@/pages/Login/RegisterUser'
 import LandingPageLayout from '@/layouts/LandingPageLayout'
 import Dashboard from '@/pages/Dashboard/Index.tsx'
 import Library from "@/pages/Library/Index.tsx";
+import Favorite from "@/pages/Favorite/Index.tsx";
 
 const routes = createBrowserRouter([
     {
@@ -30,6 +31,10 @@ const routes = createBrowserRouter([
             {
                 path: '/library',
                 element: <Library />
+            },
+            {
+                path: '/favorites',
+                element: <Favorite />
             }
         ],
     },

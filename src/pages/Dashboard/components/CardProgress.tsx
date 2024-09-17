@@ -18,16 +18,16 @@ const CardProgress = () => {
                 </div>
                 <div className={'col-span-5 flex flex-col items-center gap-2'}>
                     <div className={'w-full flex items-center gap-1'}>
-                        <span>90%</span>
-                        <BarsProgress percentage={90} />
+                        <span>10%</span>
+                        <BarsProgress percentage={10} />
                     </div>
                     <div className={'w-full flex items-center gap-1'}>
-                        <span>90%</span>
-                        <BarsProgress percentage={90} />
+                        <span>98%</span>
+                        <BarsProgress percentage={98} />
                     </div>
                     <div className={'w-full flex items-center gap-1'}>
-                        <span>90%</span>
-                        <BarsProgress percentage={90} />
+                        <span>53%</span>
+                        <BarsProgress percentage={53} />
                     </div>
                 </div>
             </div>

@@ -13,9 +13,9 @@ const CardsLibrary = ({games, title}: CardLibraryProps) => {
         <div className={'flex flex-col gap-4'}>
             <div className={'text-[20px]'}>{title}</div>
             {games.length === 0 ?
-                <div className={'text-center'}> Nenhum item encontrado</div>
+                <div className={'text-center bg-btn-primary font-bold italic rounded-[10px] p-1'}> Nenhum item encontrado</div>
                 :
-                <div className={'flex gap-4 lg:flex-wrap overflow-x-scroll'}>
+                <div className={'flex gap-4 overflow-x-auto lg:overflow-x-hidden lg:flex-wrap '}>
                     {
                         games.map((game) => (
                             <div className={'min-w-full md:min-w-0'} key={game.id}>
