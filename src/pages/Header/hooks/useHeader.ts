@@ -16,10 +16,10 @@ const useHeader = () => {
     ]
 
     const items = [
-        { name: 'Dashboard', component: DashboardIcon, callback: () => dashboardRoute() },
+        { name: 'Dashboard', component: DashboardIcon, callback: () => routeGeneric('/dashboard') },
         { name: 'Meus dados', component: MyDataIcon, callback: () => console.log('dois') },
-        { name: 'Biblioteca', component: LibraryIcon, callback: () => console.log('dois') },
-        { name: 'Favoritos', component: FavoriteIcon, callback: () => console.log('dois') },
+        { name: 'Biblioteca', component: LibraryIcon, callback: () => routeGeneric('/library') },
+        { name: 'Favoritos', component: FavoriteIcon, callback: () => routeGeneric('/favorites') },
         { name: 'Sair', component: ExitIcon, callback: () => lougoutUser() },
     ]
 
@@ -28,8 +28,8 @@ const useHeader = () => {
         navigate('/landing-page')
     }
 
-    const dashboardRoute = () => {
-        navigate('/dashboard')
+    const routeGeneric = (route: string) => {
+        navigate(route)
     }
 
     return {
