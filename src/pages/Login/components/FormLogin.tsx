@@ -3,11 +3,13 @@ import Button from '@/components/Button/Button'
 import { Link } from 'react-router-dom'
 import useFormLogin from '@/pages/Login/components/hooks/useFormLogin'
 import { FieldError } from 'react-hook-form'
+import {ToastContainer} from "react-toastify";
 
 const Login = () => {
     const { handleSubmit, register, errors, getErrorMessage, handleSubmitForm } = useFormLogin()
 
     return (
+        <>
         <form onSubmit={handleSubmit(handleSubmitForm)} className={'w-full flex flex-col gap-2'}>
             <div className={'w-full flex flex-col gap-2'}>
                 <Input
@@ -48,6 +50,8 @@ const Login = () => {
                 <Button type={'submit'}>Entrar</Button>
             </div>
         </form>
+            <ToastContainer />
+        </>
     )
 }
 

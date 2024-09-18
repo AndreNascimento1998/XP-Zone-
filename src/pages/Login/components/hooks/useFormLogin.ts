@@ -7,6 +7,7 @@ import IDataForm from '@/types/DataForm'
 import useAuth from '@/hooks/useAuth'
 import mock from '@/mocks/user.json'
 import User from '@/types/User'
+import {toast} from "react-toastify";
 
 const schema = z.object({
     email: z.string().min(1, 'Campo obrigatório'),
@@ -37,6 +38,12 @@ const useFormLogin = () => {
 
             return emailUser.password === password ? emailUser : false
         } catch (e) {
+            toast.error('Email ou Senha errado.', {
+                bodyClassName: 'text-[white]',
+                bodyStyle: { background: '#e74c3c' },
+                progressStyle: { background: '#fff0f0' },
+                style: { background: '#e74c3c' },
+            })
             console.log(e)
             return false
         }

@@ -6,11 +6,17 @@ import LandingPageLayout from '@/layouts/LandingPageLayout'
 import Dashboard from '@/pages/Dashboard/Index.tsx'
 import Library from "@/pages/Library/Index.tsx";
 import Favorite from "@/pages/Favorite/Index.tsx";
+import PrivateRoute from "./PrivateRoute.tsx";
+import PrivateRouteRegister from "./PrivateRouteRegister.tsx";
 
 const routes = createBrowserRouter([
     {
         path: '/register-user',
-        element: <RegisterUser />,
+        element: (
+            <PrivateRouteRegister>
+                <RegisterUser />
+            </PrivateRouteRegister>
+        ),
     },
     {
         path: '/landing-page',
@@ -26,15 +32,27 @@ const routes = createBrowserRouter([
             },
             {
                 path: '/dashboard',
-                element: <Dashboard />,
+                element: (
+                    <PrivateRoute>
+                        <Dashboard />
+                    </PrivateRoute>
+                ),
             },
             {
                 path: '/library',
-                element: <Library />
+                element: (
+                    <PrivateRoute>
+                        <Library />
+                    </PrivateRoute>
+                )
             },
             {
                 path: '/favorites',
-                element: <Favorite />
+                element: (
+                    <PrivateRoute>
+                        <Favorite />
+                    </PrivateRoute>
+                )
             }
         ],
     },
