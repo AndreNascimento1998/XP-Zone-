@@ -10,16 +10,18 @@ const HeroSection = () => {
                 <Slider
                     slides={responsiveSlides}
                     slidesPerView={1}
-                    spaceBetween={0}
+                    spaceBetween={1}
                     navigation={false}
                     pagination={{
                         clickable: true,
                         dynamicBullets: true,
+
                     }}
                     autoplay={{
                         delay: 5000,
                         disableOnInteraction: true,
                     }}
+                    loop={true}
                 />
             </div>
             <div className={'flex flex-col gap-2'}>

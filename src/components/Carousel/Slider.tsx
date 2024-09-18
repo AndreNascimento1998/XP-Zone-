@@ -20,6 +20,7 @@ interface SliderProps {
     dynamicBullets?: boolean
     navigation?: boolean
     onClick?: (slide: Slide) => void
+    loop?: boolean
 }
 
 const Slider = ({
@@ -28,6 +29,7 @@ const Slider = ({
     spaceBetween = 10,
     pagination = false,
     autoplay = false,
+    loop = false,
     navigation = true,
     onClick,
 }: SliderProps) => {
@@ -40,6 +42,7 @@ const Slider = ({
                 spaceBetween={spaceBetween}
                 pagination={pagination}
                 autoplay={autoplay}
+                loop={loop}
                 navigation={navigation}
                 modules={[Pagination, Autoplay, Navigation]}
                 className="mySwiper"

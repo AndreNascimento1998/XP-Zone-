@@ -37,7 +37,7 @@ const Header = () => {
                 </div>
                 <div>
                     <ButtonCustom onItemClick={(item) => console.log(item)} items={items}>
-                        <div className={'bg-green-900 hover:bg-gray-500 hover:bg-opacity-40 rounded-full p-3'}>
+                        <div className={'bg-green-900 hover:bg-gray-500 hover:bg-opacity-40 rounded-full p-3 2xl:p-[0.8rem]'}>
                             {firstLetter(user?.name)}
                         </div>
                     </ButtonCustom>
