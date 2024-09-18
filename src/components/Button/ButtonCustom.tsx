@@ -24,7 +24,7 @@ const ButtonCustom = ({ items, onItemClick, children }: ButtonCustomProps) => {
                 className={`absolute right-0 top-full transition-max-height z-50 duration-300 ease-out overflow-hidden ${isOpen ? 'max-h-50' : 'max-h-0 opacity-0'}`}
             >
                 <div className="absolute right-4 top-[-8px] w-0 h-0 border-l-[8px] border-r-[8px] border-b-[8px] border-transparent border-b-[#E54B65]"></div>
-                <ul className="bg-card-light border-[2px] border-[#E54B65] bg-opacity-80 p-3 w-[150px] xl:w-[180px] rounded-md list-none break-words text-center font-bold">
+                <ul className="bg-card-light border-[2px] border-[#E54B65] bg-opacity-90 p-3 w-[150px] xl:w-[180px] rounded-md list-none break-words text-center font-bold">
                     {items &&
                         items.map((item, index) => (
                             <li
