@@ -3,18 +3,12 @@ import bannerDesktop from '@/assets/images/dashboard/banner-desktop.png'
 import CardRules from '@/components/Card/CardRules.tsx'
 import CardProfile from '@/components/Card/CardProfile.tsx'
 import useMainPagesLayout from '@/layouts/hooks/useMainPagesLayout.ts'
-import Footer from "@/pages/Footer/Index.tsx";
-import {Link} from "react-router-dom";
+import Footer from '@/pages/Footer/Index.tsx'
+import { Link } from 'react-router-dom'
 import './styles/MainPagesLayout.scss'
 
-const Dashboard = ({children}) => {
-    const {
-        description,
-        user,
-        routeName,
-        handleClick,
-        itemsTabs
-    } = useMainPagesLayout()
+const Dashboard = ({ children }) => {
+    const { description, user, routeName, handleClick, itemsTabs } = useMainPagesLayout()
 
     return (
         <div>
@@ -31,22 +25,19 @@ const Dashboard = ({children}) => {
                     />
                 </div>
                 <div className={'hidden xl:flex gap-40 mb-4 font-oxanium font-bold text-[20px]'}>
-                    {
-                        itemsTabs.map((item, index) => (
-                            <Link
-                                key={index}
-                                to={`/${item.nameRoute}`}
-                            >
-                                <div
-                                    className={`cursor-pointer relative
+                    {itemsTabs.map((item, index) => (
+                        <Link key={index} to={`/${item.nameRoute}`}>
+                            <div
+                                className={`cursor-pointer relative
                                     ${routeName === item.nameRoute ? ' bg-btn-primary bg-clip-text text-transparent' : ''} `}
-                                >
-                                    {item.name}
-                                    <div  className={`absolute ${routeName === item.nameRoute ? 'border-animation w-[100%] border-[4px] rounded-[10px]' : 'hidden' }`} />
-                                </div>
-                            </Link>
-                        ))
-                    }
+                            >
+                                {item.name}
+                                <div
+                                    className={`absolute ${routeName === item.nameRoute ? 'border-animation w-[100%] border-[4px] rounded-[10px]' : 'hidden'}`}
+                                />
+                            </div>
+                        </Link>
+                    ))}
                 </div>
                 {children}
             </div>

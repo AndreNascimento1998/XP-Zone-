@@ -4,10 +4,10 @@ import Home from '@/layouts/HomePageLayout'
 import RegisterUser from '@/pages/Login/RegisterUser'
 import LandingPageLayout from '@/layouts/LandingPageLayout'
 import Dashboard from '@/pages/Dashboard/Index.tsx'
-import Library from "@/pages/Library/Index.tsx";
-import Favorite from "@/pages/Favorite/Index.tsx";
-import PrivateRoute from "./PrivateRoute.tsx";
-import PrivateRouteRegister from "./PrivateRouteRegister.tsx";
+import Library from '@/pages/Library/Index.tsx'
+import Favorite from '@/pages/Favorite/Index.tsx'
+import PrivateRoute from './PrivateRoute.tsx'
+import PrivateRouteRegister from './PrivateRouteRegister.tsx'
 
 const routes = createBrowserRouter([
     {
@@ -44,7 +44,7 @@ const routes = createBrowserRouter([
                     <PrivateRoute>
                         <Library />
                     </PrivateRoute>
-                )
+                ),
             },
             {
                 path: '/favorites',
@@ -52,8 +52,8 @@ const routes = createBrowserRouter([
                     <PrivateRoute>
                         <Favorite />
                     </PrivateRoute>
-                )
-            }
+                ),
+            },
         ],
     },
 ])

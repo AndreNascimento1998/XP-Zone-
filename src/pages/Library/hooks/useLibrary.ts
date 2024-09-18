@@ -1,8 +1,7 @@
-import Game from "@/types/Game.ts";
-import useGameFilterPlatform from "@/hooks/useGameFilterPlatform.ts"
+import Game from '@/types/Game.ts'
+import useGameFilterPlatform from '@/hooks/useGameFilterPlatform.ts'
 
 const useLibrary = (games: Game[]) => {
-
     const { filterPlatform } = useGameFilterPlatform()
     const xboxGames: Game[] = filterPlatform(games, ['xone', 'xseries', 'x360'])
     const psGames: Game[] = filterPlatform(games, ['ps4', 'ps5', 'ps3'])
@@ -11,7 +10,7 @@ const useLibrary = (games: Game[]) => {
     return {
         xboxGames,
         psGames,
-        ninGames
+        ninGames,
     }
 }
 

@@ -1,9 +1,8 @@
 import CardProgress from '@/pages/Dashboard/components/CardProgress.tsx'
 import LibraryFavorite from './components/LibraryFavorite.tsx'
-import MainPagesLayout from "@/layouts/MainPagesLayout.tsx";
+import MainPagesLayout from '@/layouts/MainPagesLayout.tsx'
 
 const Dashboard = () => {
-
     return (
         <div>
             <MainPagesLayout>

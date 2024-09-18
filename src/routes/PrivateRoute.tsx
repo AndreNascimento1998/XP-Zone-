@@ -1,5 +1,5 @@
 import { Navigate } from 'react-router-dom'
-import usePrivateRoute from "./hooks/usePrivateRoute.ts";
+import usePrivateRoute from './hooks/usePrivateRoute.ts'
 
 interface PrivateRouteProps {
     children: JSX.Element

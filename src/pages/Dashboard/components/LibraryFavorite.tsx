@@ -2,7 +2,7 @@ import Card from '@/components/Card/Card.tsx'
 import { useContext } from 'react'
 import UsersContext from '@/context/UsersContext/UsersContext.ts'
 import useImages from '@/hooks/useImages.ts'
-import useFilterGames from "@/hooks/useFilterGamesFavorite.ts";
+import useFilterGames from '@/hooks/useFilterGamesFavorite.ts'
 
 const LibraryFavorite = () => {
     const { favoriteItem } = useContext(UsersContext)

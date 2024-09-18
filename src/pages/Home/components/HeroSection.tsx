@@ -15,7 +15,6 @@ const HeroSection = () => {
                     pagination={{
                         clickable: true,
                         dynamicBullets: true,
-
                     }}
                     autoplay={{
                         delay: 5000,

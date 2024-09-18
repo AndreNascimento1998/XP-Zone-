@@ -28,8 +28,7 @@ const CardReword = ({ game, isFavoriteStyle, onClick, onClickFavorite, isFavorit
             className={`min-w-0 bg-card border-[3px] border-[#E54B65] rounded-[16px]
             transition-all cursor-pointer`}
         >
-            {
-                isFavorite &&
+            {isFavorite && (
                 <div
                     onClick={() => favoriteItem(game)}
                     className={`
@@ -39,7 +38,7 @@ const CardReword = ({ game, isFavoriteStyle, onClick, onClickFavorite, isFavorit
                 >
                     <HeartIcon favoriteColor={isFavoriteStyle} />
                 </div>
-            }
+            )}
 
             <div onClick={() => handleClick(game)}>
                 <div>

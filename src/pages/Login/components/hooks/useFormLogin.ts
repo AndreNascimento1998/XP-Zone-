@@ -7,7 +7,7 @@ import IDataForm from '@/types/DataForm'
 import useAuth from '@/hooks/useAuth'
 import mock from '@/mocks/user.json'
 import User from '@/types/User'
-import {toast} from "react-toastify";
+import { toast } from 'react-toastify'
 
 const schema = z.object({
     email: z.string().min(1, 'Campo obrigatório'),

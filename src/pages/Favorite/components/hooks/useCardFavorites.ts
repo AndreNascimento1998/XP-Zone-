@@ -1,7 +1,7 @@
-import {useContext} from "react";
-import UsersContext from "@/context/UsersContext/UsersContext.ts";
-import useFilterGamesFavorite from "@/hooks/useFilterGamesFavorite.ts";
-import Game from "@/types/Game.ts";
+import { useContext } from 'react'
+import UsersContext from '@/context/UsersContext/UsersContext.ts'
+import useFilterGamesFavorite from '@/hooks/useFilterGamesFavorite.ts'
+import Game from '@/types/Game.ts'
 const useCardFavorites = () => {
     const { setFavorite } = useContext(UsersContext)
     const { favoriteItem } = useContext(UsersContext)

@@ -1,6 +1,6 @@
 import useUsersContext from '@/context/UsersContext/useUsersContext'
-import {useLocation} from "react-router-dom";
-import {useEffect, useState} from "react";
+import { useLocation } from 'react-router-dom'
+import { useEffect, useState } from 'react'
 
 const useMainPagesLayout = () => {
     const { user } = useUsersContext()
@@ -26,7 +26,7 @@ const useMainPagesLayout = () => {
         {
             name: 'Favoritos',
             nameRoute: 'favorites',
-        }
+        },
     ]
 
     const parsedRoute = () => {
@@ -35,7 +35,7 @@ const useMainPagesLayout = () => {
 
     useEffect(() => {
         parsedRoute()
-    }, [location.pathname]);
+    }, [location.pathname])
 
     return {
         description,
