@@ -3,6 +3,9 @@ import hogwartsMobile from '@/assets/images/landing-page/hogwarts-mobile.png'
 import CardReword from '@/components/Card/CardReword'
 import Button from '@/components/Button/Button'
 import Game from '@/types/Game'
+import Modal from "@/components/Modal/Modal.tsx";
+import {useState} from "react";
+import Card from "@/components/Card/Card.tsx";
 
 const GiftCard = () => {
     const game: Game = {
@@ -13,10 +16,29 @@ const GiftCard = () => {
         highlight: false,
     }
 
+    const [openModal, setOpenModal] = useState(false)
+
+    const handleCloseModal = () => {
+        setOpenModal(false)
+    }
+
     return (
         <div className={'relative'}>
-            <img src={hogwartsMobile} alt="hogwarts" className={'w-full block lg:hidden'} />
-            <img src={hogwarts} alt="hogwarts" className={'w-full hidden lg:block'} />
+            <Modal openModal={openModal} onClickClose={handleCloseModal} >
+                <Card>
+                    <div className={'font-oxanium font-bold bg-btn-primary bg-clip-text text-transparent text-[22px]'}>
+                        Todos os jogos estarão disponíveis para compra, são 3 contas e
+                        tem interação de compra de jogos entre as contas já cadastradas.
+                    </div>
+                    <br />
+                    <div className={'font-oxanium font-bold bg-btn-primary bg-clip-text text-transparent text-[22px]'}>
+                        Procure a interação entre as contas e favoritar, o intuito é ter o
+                        mínimo de interação com meu banco de dados, no quesito salvar e deletar.
+                    </div>
+                </Card>
+            </Modal>
+            <img src={hogwartsMobile} alt="hogwarts" className={'w-full block lg:hidden'}/>
+            <img src={hogwarts} alt="hogwarts" className={'w-full hidden lg:block'}/>
             <div className={'absolute block lg:grid grid-cols-2 px-20 items-center w-full top-40 lg:top-80'}>
                 <div className={'flex flex-col  items-center'}>
                     <div className={'w-full lg:w-1/2'}>
@@ -39,7 +61,7 @@ const GiftCard = () => {
                                 <span>Aproveite e compre também nas lojas da XP Zone os melhores artigos gamers.</span>
                             </div>
                             <div className={'mb-8'}>
-                                <Button>Comprar agora</Button>
+                                <Button onClick={() => setOpenModal(true)}>Comprar agora</Button>
                             </div>
                         </div>
                     </div>
@@ -55,7 +77,7 @@ const GiftCard = () => {
                     <span>Aproveite e compre também nas lojas da XP Zone os melhores artigos gamers.</span>
                 </div>
                 <div className={'mb-8'}>
-                    <Button>Comprar agora</Button>
+                    <Button onClick={() => setOpenModal(true)}>Comprar agora</Button>
                 </div>
             </div>
         </div>
