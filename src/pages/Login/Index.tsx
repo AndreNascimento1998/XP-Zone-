@@ -6,7 +6,7 @@ import ClosePageIcon from '@/assets/Icons/Others/ClosePageIcon'
 
 const Login = () => {
     return (
-        <div className={'h-[100vh] rounded-none lg:rounded-[20px] lg:h-full px-4 py-10 lg:px-10'}>
+        <div className={'lg:h-full px-4 py-10 lg:px-10'}>
             <div className={'flex justify-between lg:hidden'}>
                 <Link to={'/landing-page'}>
                     <ArrowToBackIcon />

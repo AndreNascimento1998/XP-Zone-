@@ -3,6 +3,8 @@ import { useContext } from 'react'
 import UsersContext from '@/context/UsersContext/UsersContext.ts'
 import useImages from '@/hooks/useImages.ts'
 import useFilterGames from '@/hooks/useFilterGamesFavorite.ts'
+import Button from "@/components/Button/Button.tsx";
+import {Link} from "react-router-dom";
 
 const LibraryFavorite = () => {
     const { favoriteItem } = useContext(UsersContext)
@@ -38,7 +40,10 @@ const LibraryFavorite = () => {
                             </div>
                         ))
                     ) : (
-                        <div className={'text-center'}>Não há jogos favoritos no momento</div>
+                        <>
+                            <div className={'text-center'}>Não há jogos favoritos no momento</div>
+                            <Link to={'/'}><Button>Adicionar</Button></Link>
+                        </>
                     )}
                 </div>
             </Card>

@@ -17,7 +17,7 @@ const HeroSection = () => {
     return (
         <div className={'relative w-full'}>
             <Modal openModal={openModal} onClickClose={handleCloseModal}>
-                <div className={'bg-primary'}>
+                <div className={'bg-primary rounded-[40px] lg:rounded-[20px]'}>
                     <Login />
                 </div>
             </Modal>
@@ -41,7 +41,7 @@ const HeroSection = () => {
                         <div className={'flex gap-2'}>
                             <Link to={'/register-user'}>
                                 {' '}
-                                <Button>Cadastrar</Button>
+                                <Button outlined={true}>Cadastrar</Button>
                             </Link>
                             <Button onClick={handleClick}>Entrar</Button>
                         </div>

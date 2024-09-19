@@ -43,8 +43,8 @@ const Login = () => {
                         <div className={'invisible'}>|</div>
                     )}
                 </div>
-                <div className={'w-full grid grid-cols-2 gap-2 mt-4'}>
-                    <Link to={'/register-user'}>
+                <div className={'w-full grid grid-cols-2 lg:grid-cols-1 gap-2 mt-4'}>
+                    <Link className={'block lg:hidden'} to={'/register-user'}>
                         <Button type={'button'} outlined={true}>
                             Cadastrar
                         </Button>

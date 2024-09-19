@@ -1,7 +1,7 @@
 import { FieldValues, UseFormRegister } from 'react-hook-form'
 import { useState } from 'react'
 import HiddenPasswordIcon from '@/assets/Icons/Others/HiddenPasswordIcon'
-import ShowPasswordIcon from "../../assets/Icons/Others/ShowPasswordIcon.tsx";
+import ShowPasswordIcon from "@/assets/Icons/Others/ShowPasswordIcon.tsx";
 
 interface InputProps {
     label: string
