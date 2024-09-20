@@ -8,7 +8,7 @@ import Library from '@/pages/Library/Index.tsx'
 import Favorite from '@/pages/Favorite/Index.tsx'
 import PrivateRoute from './PrivateRoute.tsx'
 import PrivateRouteRegister from './PrivateRouteRegister.tsx'
-import PurchaseGame from "@/pages/PurchaseGame/Index.tsx";
+import PurchaseGame from '@/pages/PurchaseGame/Index.tsx'
 
 const routes = createBrowserRouter([
     {
@@ -62,7 +62,7 @@ const routes = createBrowserRouter([
                         <PurchaseGame />
                     </PrivateRoute>
                 ),
-            }
+            },
         ],
     },
 ])

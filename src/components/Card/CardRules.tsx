@@ -1,7 +1,7 @@
 import Card from '@/components/Card/Card'
 import Button from '@/components/Button/Button.tsx'
-import Modal from "@/components/Modal/Modal.tsx";
-import {useState} from "react";
+import Modal from '@/components/Modal/Modal.tsx'
+import { useState } from 'react'
 
 interface CardRulesProps {
     title: string
@@ -18,16 +18,16 @@ const CardRules = ({ title, description, buttonText }: CardRulesProps) => {
 
     return (
         <div className={'border-[2px] border-[white] rounded-[10px]'}>
-            <Modal openModal={openModal} onClickClose={handleCloseModal} >
+            <Modal openModal={openModal} onClickClose={handleCloseModal}>
                 <Card>
                     <div className={'font-oxanium font-bold bg-btn-primary bg-clip-text text-transparent text-[22px]'}>
-                        Todos os jogos estarão disponíveis para compra, são 3 contas e
-                        tem interação de compra de jogos entre as contas já cadastradas.
+                        Todos os jogos estarão disponíveis para compra, são 3 contas e tem interação de compra de jogos
+                        entre as contas já cadastradas.
                     </div>
                     <br />
                     <div className={'font-oxanium font-bold bg-btn-primary bg-clip-text text-transparent text-[22px]'}>
-                        Procure a interação entre as contas e favoritar, o intuito é ter o
-                        mínimo de interação com meu banco de dados, no quesito salvar e deletar.
+                        Procure a interação entre as contas e favoritar, o intuito é ter o mínimo de interação com meu
+                        banco de dados, no quesito salvar e deletar.
                     </div>
                 </Card>
             </Modal>

@@ -4,7 +4,7 @@ import FavoriteIcon from '@/assets/Icons/Header/FavoriteIcon.tsx'
 import ExitIcon from '@/assets/Icons/Header/ExitIcon.tsx'
 import useAuth from '@/hooks/useAuth.ts'
 import { useNavigate } from 'react-router-dom'
-import HomeIcon from "@/assets/Icons/Header/HomeIcon.tsx";
+import HomeIcon from '@/assets/Icons/Header/HomeIcon.tsx'
 
 const useHeader = () => {
     const { logout } = useAuth()

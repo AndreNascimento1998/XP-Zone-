@@ -9,7 +9,7 @@ import spiderManDesktop from '@/assets/images/landing-page/spider-man-desktop.pn
 import fireGif from '@/assets/fire.gif'
 import Card from '@/components/Card/Card'
 import BarsProgress from '@/components/Bars/BarsProgress'
-import {Link} from "react-router-dom";
+import { Link } from 'react-router-dom'
 
 const AdSection = () => {
     return (
@@ -105,7 +105,9 @@ const AdSection = () => {
                                 </div>
                             </div>
                             <div className={'flex w-1/2'}>
-                                <Link className={'w-full'} to={'/register-user'}><Button>Anúnciar</Button></Link>
+                                <Link className={'w-full'} to={'/register-user'}>
+                                    <Button>Anúnciar</Button>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -131,7 +133,9 @@ const AdSection = () => {
                             </div>
                         </div>
                         <div className={'w-full px-8 xl:px-16'}>
-                            <Link className={'w-full'} to={'/register-user'}><Button>Anúnciar</Button></Link>
+                            <Link className={'w-full'} to={'/register-user'}>
+                                <Button>Anúnciar</Button>
+                            </Link>
                         </div>
                     </div>
                     <div className={'relative xl:hidden'}>

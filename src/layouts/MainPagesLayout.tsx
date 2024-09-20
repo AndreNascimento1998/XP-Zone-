@@ -17,11 +17,7 @@ const Dashboard = ({ children }) => {
             <div className={'relative mb-10 flex flex-col gap-4 pt-[96%] md:pt-[26%] xl:pt-[32%] px-4'}>
                 <div className={'flex flex-col gap-4 lg:flex-row'}>
                     <CardProfile user={user} />
-                    <CardRules
-                        title={'Regras da estante'}
-                        buttonText={'Anúnciar grátis'}
-                        description={description}
-                    />
+                    <CardRules title={'Regras da estante'} buttonText={'Anúnciar grátis'} description={description} />
                 </div>
                 <div className={'hidden xl:flex gap-40 mb-4 font-oxanium font-bold text-[20px]'}>
                     {itemsTabs.map((item, index) => (

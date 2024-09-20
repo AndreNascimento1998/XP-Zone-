@@ -71,7 +71,7 @@ const UsersProvider = ({ children }: UsersProviderProps) => {
                 setFavoriteItem,
                 getAllGames,
                 setFavorite,
-                getGamesById
+                getGamesById,
             }}
         >
             {children}
