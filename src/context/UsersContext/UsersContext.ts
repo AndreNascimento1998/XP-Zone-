@@ -11,6 +11,7 @@ interface UsersContextType {
     setFavoriteItem: React.Dispatch<React.SetStateAction<string | string[]>>
     getAllGames: () => Game[]
     setFavorite: (item: string | number) => void
+    getGamesById: (id: string | number) => Game | null
 }
 
 const UsersContext = createContext<UsersContextType | undefined>(undefined)

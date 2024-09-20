@@ -24,6 +24,28 @@ const UsersProvider = ({ children }: UsersProviderProps) => {
         return []
     }
 
+    const getGamesById = (id: string | number): Game | null => {
+        if (user) {
+            users.forEach((u) => {
+                if (u.id === user.id) {
+                    return user.games.find((game) => game.id == id)
+                }
+            })
+        }
+
+        if (users) {
+            for (const u of users) {
+                if (u.id !== user?.id) {
+                    const game = u.games.find((game) => game.id == id)
+                    if (game) {
+                        return game
+                    }
+                }
+            }
+        }
+        return null
+    }
+
     const verifyFavorite = (id: string | number) => {
         return Array.isArray(favoriteItem) && favoriteItem.includes(id.toString())
     }
@@ -49,6 +71,7 @@ const UsersProvider = ({ children }: UsersProviderProps) => {
                 setFavoriteItem,
                 getAllGames,
                 setFavorite,
+                getGamesById
             }}
         >
             {children}
