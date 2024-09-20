@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom'
 import './styles/MainPagesLayout.scss'
 
 const Dashboard = ({ children }) => {
-    const { description, user, routeName, handleClick, itemsTabs } = useMainPagesLayout()
+    const { description, user, routeName, itemsTabs } = useMainPagesLayout()
 
     return (
         <div>
@@ -18,7 +18,6 @@ const Dashboard = ({ children }) => {
                 <div className={'flex flex-col gap-4 lg:flex-row'}>
                     <CardProfile user={user} />
                     <CardRules
-                        onClick={handleClick}
                         title={'Regras da estante'}
                         buttonText={'Anúnciar grátis'}
                         description={description}
