@@ -15,7 +15,7 @@ const LibraryFavorite = () => {
     return (
         <div>
             <Card>
-                <div className={'flex flex-col max-h-[440px] overflow-y-auto overflow-x-hidden p-1 gap-4 font-oxanium'}>
+                <div className={'flex flex-col max-h-[440px] overflow-y-auto overflow-x-hidden lg:px-2  gap-4 font-oxanium'}>
                     <span className={'uppercase font-bold bg-btn-primary bg-clip-text text-transparent'}>
                         Favoritos
                     </span>
