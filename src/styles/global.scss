@@ -6,9 +6,17 @@ body {
 
 ::-webkit-scrollbar {
     width: 8px;
+    background-color: #120428;
+    border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
     background-color: #E54B65;
     border-radius: 10px;
+}
+
+@media (min-width: 1800px) {
+    ::-webkit-scrollbar {
+        width: 4px;
+    }
 }
